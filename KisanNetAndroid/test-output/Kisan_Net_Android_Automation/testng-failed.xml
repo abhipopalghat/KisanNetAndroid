@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Kisan_Net_Android_Automation]" parallel="none">
+  <parameter name="browser" value=""/>
+  <test name="Change Language(failed)" parallel="none">
+    <parameter name="browser" value=""/>
+    <classes>
+      <class name="com.kisan.kisannet.testscripts.ChangeLanguage">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="changeLanguage"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.ChangeLanguage -->
+    </classes>
+  </test> <!-- Change Language(failed) -->
+</suite> <!-- Failed suite [Kisan_Net_Android_Automation] -->

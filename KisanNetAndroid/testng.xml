@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name =  "Kisan_Net_Android_Automation" parallel="none">
+	
+	<test name="Change Language">
+	<parameter name="browser" value=""></parameter>
+	
+	<classes>
+		<class name="com.kisan.kisannet.testscripts.ChangeLanguage"></class>
+	</classes>
+	</test>
+
+		
+</suite>

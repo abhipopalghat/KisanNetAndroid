@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="53545" started-at="2018-04-25T12:52:01Z" finished-at="2018-04-25T12:52:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="53545" started-at="2018-04-25T12:52:01Z" finished-at="2018-04-25T12:52:54Z">
+      <class name="com.kisan.kisannet.testscripts.SendTextMessageToFollowers">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToFollowers@4fcd19b3]" name="beforeClass" is-config="true" duration-ms="31229" started-at="2018-04-25T18:22:01Z" finished-at="2018-04-25T18:22:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToFollowers@4fcd19b3]" name="beforeMethod" is-config="true" duration-ms="15" started-at="2018-04-25T18:22:32Z" finished-at="2018-04-25T18:22:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sendTextMessageTofollower status=SUCCESS method=SendTextMessageToFollowers.sendTextMessageTofollower()[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToFollowers@4fcd19b3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="sendTextMessageTofollower()[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToFollowers@4fcd19b3]" name="sendTextMessageTofollower" duration-ms="18621" started-at="2018-04-25T18:22:32Z" finished-at="2018-04-25T18:22:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendTextMessageTofollower -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToFollowers@4fcd19b3]" name="afterMethod" is-config="true" duration-ms="3296" started-at="2018-04-25T18:22:51Z" finished-at="2018-04-25T18:22:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sendTextMessageTofollower status=SUCCESS method=SendTextMessageToFollowers.sendTextMessageTofollower()[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToFollowers@4fcd19b3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToFollowers@4fcd19b3]" name="afterClass" is-config="true" duration-ms="367" started-at="2018-04-25T18:22:54Z" finished-at="2018-04-25T18:22:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.kisan.kisannet.testscripts.SendTextMessageToFollowers -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
