@@ -21,6 +21,7 @@ public class SendImageToFollowers extends TestBase {
 		channelChatWindow = new ChannelChatWindow(driver);
 		
 		navigateToAdminsChannel(driver);
+		
 		channelChatWindow.clickOnAttachmentPin();
 		channelChatWindow.clickOnCameraOption();
 		channelChatWindow.clickOnTakeAPicture();
