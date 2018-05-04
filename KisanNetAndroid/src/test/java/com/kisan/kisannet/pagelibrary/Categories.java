@@ -132,9 +132,11 @@ public class Categories {
 	}
 	
 	public void clickNext() {
+		SelectContact selectContact = new SelectContact(driver);
 		waitHelper.waitForElementVisible(nextBtn, 10);
 		driver.findElement(nextBtn).click();
 		logger.info("Clicked on Next Button");
+		waitHelper.waitForElementVisible(selectContact.doneButton, 40);
 	}
 	
 	public void clickBack() {

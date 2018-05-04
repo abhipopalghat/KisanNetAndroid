@@ -19,7 +19,8 @@ public class ChannelDashboard {
 	public By channelName = By.xpath("//android.widget.TextView[@index='1']");
 	public By leftDrawerButton = By.xpath("//android.widget.ImageButton[@content-desc=\"Open\"]");
 	public By notificationIcon = By.id("com.kisan.samvaad.test:id/action_notifications");
-	public By newMessageButton = By.id("com.kisan.samvaad.test:id/floatingActionButtonGoToChat");
+	public By newMessageButtonAdmin = By.id("com.kisan.samvaad.test:id/floatingActionButtonGoToChat");
+	public By newMessageButtonFollower = By.id("com.kisan.samvaad.test:id/floatingButtonChannelFollowerChat");
 	
 	public ChannelDashboard(AndroidDriver<?> driver) {
 		this .driver = driver;
@@ -44,11 +45,15 @@ public class ChannelDashboard {
 		logger.info("Notification icon clickedo on channel dashboard");
 	}
 	
-	public void clickOnNewMessageButton() {
-		waitHelper.waitForElementClickable(driver, 5, newMessageButton);
-		driver.findElement(newMessageButton).click();
+	public void clickOnNewMessageButtonForAdmin() {
+		waitHelper.waitForElementClickable(driver, 5, newMessageButtonAdmin);
+		driver.findElement(newMessageButtonAdmin).click();
 		logger.info("Clicked on new message button from channel dashboard");
 	}
 	
-	
+	public void clickOnNewMessageButtonForFollower() {
+		waitHelper.waitForElementClickable(driver, 5, newMessageButtonFollower);
+		driver.findElement(newMessageButtonFollower).click();
+		logger.info("Clicked on new message button from channel dashboard");
+	}
 }

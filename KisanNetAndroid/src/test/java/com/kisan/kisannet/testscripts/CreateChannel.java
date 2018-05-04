@@ -58,7 +58,7 @@ public class CreateChannel extends TestBase {
 		//selectContact.SelectCheckBox();
 		selectContact.clickDone();
 		
-		String createdChannel = prop.getProperty("ChannelName");
+		String createdChannel = prop.getProperty("ChannelNameToBeCreated");
 		String actualChannel = channelDashboard.getChannelName();
 		VerificationHelper.verifyText(createdChannel, actualChannel);
 	}

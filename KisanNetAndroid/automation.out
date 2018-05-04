@@ -1426,3 +1426,1056 @@
 2018-04-25 18:22:51 INFO  MyChat:50 - Clicked on new message button from channel dashboard
 2018-04-25 18:22:52 INFO  TestBase:171 - Navigated To MyChat
 2018-04-25 18:22:53 INFO  TestBase:171 - Navigated To MyChat
+2018-04-26 12:24:04 INFO  TestBase:86 - Properties file loaded
+2018-04-26 12:24:04 INFO  TestBase:65 - Loading Device Settings
+2018-04-26 12:25:36 INFO  TestBase:86 - Properties file loaded
+2018-04-26 12:25:36 INFO  TestBase:65 - Loading Device Settings
+2018-04-26 12:26:40 INFO  TestBase:75 - Device settings Loaded
+2018-04-26 12:26:40 INFO  WaitHelper:53 - By.className: android.widget.ImageButton
+2018-04-26 12:26:43 INFO  MyChat:46 - Clicked on left drawer button from MyChat
+2018-04-26 12:26:44 INFO  WaitHelper:71 - Element found...
+2018-04-26 12:26:49 INFO  MyChat:58 - Clicking on Start Your Channel
+2018-04-26 12:26:50 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/textview_start_channel
+2018-04-26 12:26:54 INFO  MyChat:52 - Clicked On Start Your Channel Button
+2018-04-26 12:26:54 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/editTextGroupName
+2018-04-26 12:27:07 INFO  WaitHelper:71 - Element found...Channel Name
+2018-04-26 12:27:11 INFO  TestBase:171 - Navigated To MyChat
+2018-04-26 12:27:16 INFO  TestBase:171 - Navigated To MyChat
+2018-04-26 12:27:20 INFO  TestBase:171 - Navigated To MyChat
+2018-04-26 15:17:40 INFO  TestBase:86 - Properties file loaded
+2018-04-26 15:17:40 INFO  TestBase:65 - Loading Device Settings
+2018-04-26 15:17:59 INFO  TestBase:75 - Device settings Loaded
+2018-04-26 15:17:59 INFO  WaitHelper:53 - By.className: android.widget.ImageButton
+2018-04-26 15:18:06 INFO  TestBase:171 - Navigated To MyChat
+2018-04-26 15:18:39 INFO  TestBase:86 - Properties file loaded
+2018-04-26 15:18:39 INFO  TestBase:65 - Loading Device Settings
+2018-04-26 15:19:00 INFO  TestBase:75 - Device settings Loaded
+2018-04-26 15:19:00 INFO  WaitHelper:53 - By.className: android.widget.ImageButton
+2018-04-26 15:19:02 INFO  MyChat:46 - Clicked on left drawer button from MyChat
+2018-04-26 15:19:03 INFO  WaitHelper:71 - Element found...
+2018-04-26 15:19:04 INFO  MyChat:58 - Clicking on Start Your Channel
+2018-04-26 15:19:04 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/textview_start_channel
+2018-04-26 15:19:06 INFO  MyChat:52 - Clicked On Start Your Channel Button
+2018-04-26 15:19:06 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/editTextGroupName
+2018-04-26 15:19:10 INFO  WaitHelper:71 - Element found...Channel Name
+2018-04-26 15:19:14 INFO  TestBase:171 - Navigated To MyChat
+2018-04-26 15:19:17 INFO  TestBase:171 - Navigated To MyChat
+2018-04-26 15:19:21 INFO  TestBase:171 - Navigated To MyChat
+2018-04-26 15:22:31 INFO  TestBase:86 - Properties file loaded
+2018-04-26 15:22:31 INFO  TestBase:65 - Loading Device Settings
+2018-04-26 15:22:56 INFO  TestBase:75 - Device settings Loaded
+2018-04-26 15:23:19 INFO  WaitHelper:53 - By.className: android.widget.ImageButton
+2018-04-26 15:23:26 INFO  MyChat:46 - Clicked on left drawer button from MyChat
+2018-04-26 15:24:06 INFO  WaitHelper:71 - Element found...
+2018-04-26 15:24:10 INFO  MyChat:58 - Clicking on Start Your Channel
+2018-04-26 15:24:15 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/textview_start_channel
+2018-04-26 15:24:17 INFO  MyChat:52 - Clicked On Start Your Channel Button
+2018-04-26 15:24:21 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/editTextGroupName
+2018-04-26 15:24:27 INFO  WaitHelper:71 - Element found...Channel Name
+2018-04-26 15:27:59 INFO  TestBase:86 - Properties file loaded
+2018-04-26 15:27:59 INFO  TestBase:65 - Loading Device Settings
+2018-04-26 15:28:27 INFO  TestBase:75 - Device settings Loaded
+2018-04-26 15:28:38 INFO  WaitHelper:53 - By.className: android.widget.ImageButton
+2018-04-26 15:28:43 INFO  MyChat:46 - Clicked on left drawer button from MyChat
+2018-04-26 15:28:44 INFO  WaitHelper:71 - Element found...
+2018-04-26 15:28:45 INFO  MyChat:58 - Clicking on Start Your Channel
+2018-04-26 15:28:45 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/textview_start_channel
+2018-04-26 15:28:47 INFO  MyChat:52 - Clicked On Start Your Channel Button
+2018-04-26 15:30:20 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/editTextGroupName
+2018-04-26 15:32:24 INFO  TestBase:86 - Properties file loaded
+2018-04-26 15:32:24 INFO  TestBase:65 - Loading Device Settings
+2018-04-26 15:32:50 INFO  TestBase:75 - Device settings Loaded
+2018-04-26 15:32:50 INFO  WaitHelper:53 - By.className: android.widget.ImageButton
+2018-04-26 15:32:51 INFO  MyChat:46 - Clicked on left drawer button from MyChat
+2018-04-26 15:32:52 INFO  WaitHelper:71 - Element found...
+2018-04-26 15:32:53 INFO  MyChat:58 - Clicking on Start Your Channel
+2018-04-26 15:32:53 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/textview_start_channel
+2018-04-26 15:32:55 INFO  MyChat:52 - Clicked On Start Your Channel Button
+2018-04-26 15:32:55 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/editTextGroupName
+2018-04-26 15:33:00 INFO  WaitHelper:71 - Element found...Channel Name
+2018-04-26 15:33:03 INFO  MyChat:66 - Entered Channel Name
+2018-04-26 15:33:04 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/buttonEditChannelBackgroundColor
+2018-04-26 15:33:05 INFO  MyChat:72 - Clicked On Select Background Color Button
+2018-04-26 15:33:05 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/kisan_viewSatBri
+2018-04-26 15:33:06 INFO  MyChat:78 - Selected Background Color
+2018-04-26 15:33:06 INFO  WaitHelper:53 - By.id: android:id/button1
+2018-04-26 15:33:10 INFO  MyChat:84 - Clicked On Ok Button on Color Pallete
+2018-04-26 15:33:10 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-04-26 15:33:11 INFO  MyChat:40 - Clicked on Next Button
+2018-04-26 15:33:11 INFO  WaitHelper:71 - Element found...Describe your channel
+2018-04-26 15:33:12 INFO  WaitHelper:71 - Element found...Describe your channel
+2018-04-26 15:33:17 INFO  MyChat:48 - Description Entered
+2018-04-26 15:33:17 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-04-26 15:33:19 INFO  MyChat:34 - Clicked on Next Button
+2018-04-26 15:33:19 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Animal Husbandry']
+2018-04-26 15:33:20 INFO  MyChat:65 - Clicked on Animal Husbandry Category
+2018-04-26 15:33:20 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Agriculture']
+2018-04-26 15:33:22 INFO  MyChat:47 - Clicked on Agriculture Category
+2018-04-26 15:33:22 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Horticulture']
+2018-04-26 15:33:23 INFO  MyChat:53 - Clicked on Horticulture Category
+2018-04-26 15:33:23 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-04-26 15:33:25 INFO  MyChat:137 - Clicked on Next Button
+2018-04-26 15:33:25 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_done
+2018-04-26 15:33:35 INFO  MyChat:35 - Clicked on Done Button
+2018-04-26 15:33:35 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@index='1']
+2018-04-26 15:33:40 INFO  TestBase:171 - Navigated To MyChat
+2018-04-26 15:36:47 INFO  TestBase:86 - Properties file loaded
+2018-04-26 15:36:47 INFO  TestBase:65 - Loading Device Settings
+2018-04-26 15:37:16 INFO  TestBase:75 - Device settings Loaded
+2018-04-26 15:37:20 INFO  WaitHelper:53 - By.className: android.widget.ImageButton
+2018-04-26 15:37:24 INFO  MyChat:46 - Clicked on left drawer button from MyChat
+2018-04-26 15:37:25 INFO  WaitHelper:71 - Element found...
+2018-04-26 15:37:26 INFO  MyChat:58 - Clicking on Start Your Channel
+2018-04-26 15:37:27 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/textview_start_channel
+2018-04-26 15:37:28 INFO  MyChat:52 - Clicked On Start Your Channel Button
+2018-04-26 15:37:34 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/editTextGroupName
+2018-04-26 15:37:40 INFO  WaitHelper:71 - Element found...Channel Name
+2018-04-26 15:37:45 INFO  MyChat:66 - Entered Channel Name
+2018-04-26 15:38:01 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/buttonEditChannelBackgroundColor
+2018-04-26 15:38:04 INFO  MyChat:72 - Clicked On Select Background Color Button
+2018-04-26 15:38:06 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/kisan_viewSatBri
+2018-04-26 15:38:07 INFO  MyChat:78 - Selected Background Color
+2018-04-26 15:38:14 INFO  WaitHelper:53 - By.id: android:id/button1
+2018-04-26 15:38:19 INFO  MyChat:84 - Clicked On Ok Button on Color Pallete
+2018-04-26 15:38:27 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-04-26 15:38:29 INFO  MyChat:40 - Clicked on Next Button
+2018-04-26 15:38:49 INFO  WaitHelper:71 - Element found...Describe your channel
+2018-04-26 15:38:53 INFO  WaitHelper:71 - Element found...Describe your channel
+2018-04-26 15:38:58 INFO  MyChat:48 - Description Entered
+2018-04-26 15:39:08 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-04-26 15:39:11 INFO  MyChat:34 - Clicked on Next Button
+2018-04-26 15:39:14 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Animal Husbandry']
+2018-04-26 15:39:16 INFO  MyChat:65 - Clicked on Animal Husbandry Category
+2018-04-26 15:39:17 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Agriculture']
+2018-04-26 15:39:19 INFO  MyChat:47 - Clicked on Agriculture Category
+2018-04-26 15:39:21 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Horticulture']
+2018-04-26 15:39:23 INFO  MyChat:53 - Clicked on Horticulture Category
+2018-04-26 15:39:26 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-04-26 15:39:28 INFO  MyChat:137 - Clicked on Next Button
+2018-04-26 15:39:38 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_done
+2018-04-26 15:39:40 INFO  MyChat:35 - Clicked on Done Button
+2018-04-26 15:40:08 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@index='1']
+2018-04-26 15:40:40 INFO  TestBase:171 - Navigated To MyChat
+2018-04-26 15:42:22 INFO  TestBase:86 - Properties file loaded
+2018-04-26 15:42:22 INFO  TestBase:65 - Loading Device Settings
+2018-04-26 15:42:50 INFO  TestBase:75 - Device settings Loaded
+2018-04-26 15:42:50 INFO  WaitHelper:53 - By.className: android.widget.ImageButton
+2018-04-26 15:42:51 INFO  MyChat:46 - Clicked on left drawer button from MyChat
+2018-04-26 15:42:53 INFO  WaitHelper:71 - Element found...
+2018-04-26 15:42:54 INFO  MyChat:58 - Clicking on Start Your Channel
+2018-04-26 15:42:54 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/textview_start_channel
+2018-04-26 15:42:56 INFO  MyChat:52 - Clicked On Start Your Channel Button
+2018-04-26 15:42:56 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/editTextGroupName
+2018-04-26 15:43:00 INFO  WaitHelper:71 - Element found...Channel Name
+2018-04-26 15:43:03 INFO  MyChat:66 - Entered Channel Name
+2018-04-26 15:43:04 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/buttonEditChannelBackgroundColor
+2018-04-26 15:43:05 INFO  MyChat:72 - Clicked On Select Background Color Button
+2018-04-26 15:43:05 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/kisan_viewSatBri
+2018-04-26 15:43:06 INFO  MyChat:78 - Selected Background Color
+2018-04-26 15:43:06 INFO  WaitHelper:53 - By.id: android:id/button1
+2018-04-26 15:43:10 INFO  MyChat:84 - Clicked On Ok Button on Color Pallete
+2018-04-26 15:43:10 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-04-26 15:43:11 INFO  MyChat:40 - Clicked on Next Button
+2018-04-26 15:43:11 INFO  WaitHelper:71 - Element found...Describe your channel
+2018-04-26 15:43:13 INFO  WaitHelper:71 - Element found...Describe your channel
+2018-04-26 15:43:18 INFO  MyChat:48 - Description Entered
+2018-04-26 15:43:18 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-04-26 15:43:19 INFO  MyChat:34 - Clicked on Next Button
+2018-04-26 15:43:19 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Animal Husbandry']
+2018-04-26 15:43:21 INFO  MyChat:65 - Clicked on Animal Husbandry Category
+2018-04-26 15:43:21 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Agriculture']
+2018-04-26 15:43:22 INFO  MyChat:47 - Clicked on Agriculture Category
+2018-04-26 15:43:22 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Horticulture']
+2018-04-26 15:43:24 INFO  MyChat:53 - Clicked on Horticulture Category
+2018-04-26 15:43:24 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-04-26 15:43:25 INFO  MyChat:137 - Clicked on Next Button
+2018-04-26 15:43:25 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_done
+2018-04-26 15:43:33 INFO  MyChat:35 - Clicked on Done Button
+2018-04-26 15:43:33 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@index='1']
+2018-04-26 15:43:38 INFO  TestBase:171 - Navigated To MyChat
+2018-04-26 16:15:44 INFO  TestBase:86 - Properties file loaded
+2018-04-26 16:15:51 INFO  TestBase:65 - Loading Device Settings
+2018-04-26 16:16:57 INFO  TestBase:75 - Device settings Loaded
+2018-04-26 17:35:06 INFO  TestBase:86 - Properties file loaded
+2018-04-26 17:35:06 INFO  TestBase:65 - Loading Device Settings
+2018-04-26 17:35:24 INFO  TestBase:75 - Device settings Loaded
+2018-04-26 17:35:24 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-04-26 17:35:25 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-04-26 17:35:26 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-04-26 17:35:27 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-04-26 17:35:27 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-04-26 17:35:30 INFO  WaitHelper:71 - Element found...Search
+2018-04-26 17:35:35 INFO  MyChat:97 - Entered Channel Name In Search Box
+2018-04-26 17:35:35 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-04-26 17:35:37 INFO  MyChat:104 - Clicked On Searched Channel
+2018-04-26 17:35:37 INFO  WaitHelper:71 - Element found...
+2018-04-26 17:35:38 INFO  MyChat:50 - Clicked on new message button from channel dashboard
+2018-04-26 17:35:38 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_editTextMessageText
+2018-04-26 17:35:40 INFO  WaitHelper:71 - Element found...Type a message
+2018-04-26 17:35:45 INFO  MyChat:47 - Typed a message
+2018-04-26 17:35:45 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_imageButtonSendMessage
+2018-04-26 17:35:46 INFO  MyChat:53 - Clicked On send message button in admins chat window
+2018-04-26 17:35:50 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 12:12:30 INFO  TestBase:86 - Properties file loaded
+2018-05-02 12:12:30 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 12:13:12 INFO  TestBase:75 - Device settings Loaded
+2018-05-02 12:13:12 INFO  WaitHelper:53 - By.className: android.widget.ImageButton
+2018-05-02 12:13:16 INFO  MyChat:46 - Clicked on left drawer button from MyChat
+2018-05-02 12:13:17 INFO  WaitHelper:71 - Element found...
+2018-05-02 12:13:18 INFO  MyChat:58 - Clicking on Start Your Channel
+2018-05-02 12:13:18 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/textview_start_channel
+2018-05-02 12:13:20 INFO  MyChat:52 - Clicked On Start Your Channel Button
+2018-05-02 12:13:20 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/editTextGroupName
+2018-05-02 12:13:25 INFO  WaitHelper:71 - Element found...Channel Name
+2018-05-02 12:13:29 INFO  MyChat:66 - Entered Channel Name
+2018-05-02 12:13:29 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/buttonEditChannelBackgroundColor
+2018-05-02 12:13:31 INFO  MyChat:72 - Clicked On Select Background Color Button
+2018-05-02 12:13:31 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/kisan_viewSatBri
+2018-05-02 12:13:31 INFO  MyChat:78 - Selected Background Color
+2018-05-02 12:13:31 INFO  WaitHelper:53 - By.id: android:id/button1
+2018-05-02 12:13:35 INFO  MyChat:84 - Clicked On Ok Button on Color Pallete
+2018-05-02 12:13:35 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-05-02 12:13:36 INFO  MyChat:40 - Clicked on Next Button
+2018-05-02 12:13:37 INFO  WaitHelper:71 - Element found...Describe your channel
+2018-05-02 12:13:38 INFO  WaitHelper:71 - Element found...Describe your channel
+2018-05-02 12:13:42 INFO  MyChat:48 - Description Entered
+2018-05-02 12:13:42 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-05-02 12:13:44 INFO  MyChat:34 - Clicked on Next Button
+2018-05-02 12:13:44 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Animal Husbandry']
+2018-05-02 12:13:45 INFO  MyChat:65 - Clicked on Animal Husbandry Category
+2018-05-02 12:13:45 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Agriculture']
+2018-05-02 12:13:47 INFO  MyChat:47 - Clicked on Agriculture Category
+2018-05-02 12:13:47 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Horticulture']
+2018-05-02 12:13:48 INFO  MyChat:53 - Clicked on Horticulture Category
+2018-05-02 12:13:48 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-05-02 12:13:49 INFO  MyChat:137 - Clicked on Next Button
+2018-05-02 12:13:49 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_done
+2018-05-02 12:14:13 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 12:14:36 INFO  TestBase:86 - Properties file loaded
+2018-05-02 12:14:36 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 12:14:58 INFO  TestBase:75 - Device settings Loaded
+2018-05-02 12:14:58 INFO  WaitHelper:53 - By.className: android.widget.ImageButton
+2018-05-02 12:15:00 INFO  MyChat:46 - Clicked on left drawer button from MyChat
+2018-05-02 12:15:01 INFO  WaitHelper:71 - Element found...
+2018-05-02 12:15:02 INFO  MyChat:58 - Clicking on Start Your Channel
+2018-05-02 12:15:02 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/textview_start_channel
+2018-05-02 12:15:04 INFO  MyChat:52 - Clicked On Start Your Channel Button
+2018-05-02 12:15:04 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/editTextGroupName
+2018-05-02 12:15:08 INFO  WaitHelper:71 - Element found...Channel Name
+2018-05-02 12:15:11 INFO  MyChat:66 - Entered Channel Name
+2018-05-02 12:15:12 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/buttonEditChannelBackgroundColor
+2018-05-02 12:15:13 INFO  MyChat:72 - Clicked On Select Background Color Button
+2018-05-02 12:15:13 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/kisan_viewSatBri
+2018-05-02 12:15:14 INFO  MyChat:78 - Selected Background Color
+2018-05-02 12:15:14 INFO  WaitHelper:53 - By.id: android:id/button1
+2018-05-02 12:15:18 INFO  MyChat:84 - Clicked On Ok Button on Color Pallete
+2018-05-02 12:15:18 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-05-02 12:15:19 INFO  MyChat:40 - Clicked on Next Button
+2018-05-02 12:15:20 INFO  WaitHelper:71 - Element found...Describe your channel
+2018-05-02 12:15:21 INFO  WaitHelper:71 - Element found...Describe your channel
+2018-05-02 12:15:26 INFO  MyChat:48 - Description Entered
+2018-05-02 12:15:26 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-05-02 12:15:28 INFO  MyChat:34 - Clicked on Next Button
+2018-05-02 12:15:28 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Animal Husbandry']
+2018-05-02 12:15:29 INFO  MyChat:65 - Clicked on Animal Husbandry Category
+2018-05-02 12:15:29 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Agriculture']
+2018-05-02 12:15:31 INFO  MyChat:47 - Clicked on Agriculture Category
+2018-05-02 12:15:31 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Horticulture']
+2018-05-02 12:15:32 INFO  MyChat:53 - Clicked on Horticulture Category
+2018-05-02 12:15:32 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-05-02 12:15:34 INFO  MyChat:137 - Clicked on Next Button
+2018-05-02 12:15:34 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_done
+2018-05-02 12:15:50 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 12:16:40 INFO  TestBase:86 - Properties file loaded
+2018-05-02 12:16:40 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 12:17:01 INFO  TestBase:75 - Device settings Loaded
+2018-05-02 12:17:04 INFO  WaitHelper:53 - By.className: android.widget.ImageButton
+2018-05-02 12:17:07 INFO  MyChat:46 - Clicked on left drawer button from MyChat
+2018-05-02 12:17:09 INFO  WaitHelper:71 - Element found...
+2018-05-02 12:17:09 INFO  MyChat:58 - Clicking on Start Your Channel
+2018-05-02 12:17:10 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/textview_start_channel
+2018-05-02 12:17:12 INFO  MyChat:52 - Clicked On Start Your Channel Button
+2018-05-02 12:17:21 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/editTextGroupName
+2018-05-02 12:17:24 INFO  WaitHelper:71 - Element found...Channel Name
+2018-05-02 12:17:28 INFO  MyChat:66 - Entered Channel Name
+2018-05-02 12:17:28 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/buttonEditChannelBackgroundColor
+2018-05-02 12:17:30 INFO  MyChat:72 - Clicked On Select Background Color Button
+2018-05-02 12:17:30 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/kisan_viewSatBri
+2018-05-02 12:17:31 INFO  MyChat:78 - Selected Background Color
+2018-05-02 12:17:31 INFO  WaitHelper:53 - By.id: android:id/button1
+2018-05-02 12:17:34 INFO  MyChat:84 - Clicked On Ok Button on Color Pallete
+2018-05-02 12:17:34 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-05-02 12:17:36 INFO  MyChat:40 - Clicked on Next Button
+2018-05-02 12:17:37 INFO  WaitHelper:71 - Element found...Describe your channel
+2018-05-02 12:17:38 INFO  WaitHelper:71 - Element found...Describe your channel
+2018-05-02 12:17:42 INFO  MyChat:48 - Description Entered
+2018-05-02 12:17:42 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-05-02 12:17:44 INFO  MyChat:34 - Clicked on Next Button
+2018-05-02 12:17:44 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Animal Husbandry']
+2018-05-02 12:17:45 INFO  MyChat:65 - Clicked on Animal Husbandry Category
+2018-05-02 12:17:45 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Agriculture']
+2018-05-02 12:17:46 INFO  MyChat:47 - Clicked on Agriculture Category
+2018-05-02 12:17:46 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Horticulture']
+2018-05-02 12:17:48 INFO  MyChat:53 - Clicked on Horticulture Category
+2018-05-02 12:17:56 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-05-02 12:17:58 INFO  MyChat:137 - Clicked on Next Button
+2018-05-02 12:18:21 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_done
+2018-05-02 12:18:59 INFO  MyChat:35 - Clicked on Done Button
+2018-05-02 12:19:09 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@index='1']
+2018-05-02 12:19:31 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 12:22:38 INFO  TestBase:86 - Properties file loaded
+2018-05-02 12:22:38 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 12:22:59 INFO  TestBase:75 - Device settings Loaded
+2018-05-02 12:22:59 INFO  WaitHelper:53 - By.className: android.widget.ImageButton
+2018-05-02 12:23:01 INFO  MyChat:46 - Clicked on left drawer button from MyChat
+2018-05-02 12:23:02 INFO  WaitHelper:71 - Element found...
+2018-05-02 12:23:02 INFO  MyChat:58 - Clicking on Start Your Channel
+2018-05-02 12:23:03 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/textview_start_channel
+2018-05-02 12:23:05 INFO  MyChat:52 - Clicked On Start Your Channel Button
+2018-05-02 12:23:05 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/editTextGroupName
+2018-05-02 12:23:09 INFO  WaitHelper:71 - Element found...Channel Name
+2018-05-02 12:23:13 INFO  MyChat:66 - Entered Channel Name
+2018-05-02 12:23:13 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/buttonEditChannelBackgroundColor
+2018-05-02 12:23:15 INFO  MyChat:72 - Clicked On Select Background Color Button
+2018-05-02 12:23:15 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/kisan_viewSatBri
+2018-05-02 12:23:15 INFO  MyChat:78 - Selected Background Color
+2018-05-02 12:23:15 INFO  WaitHelper:53 - By.id: android:id/button1
+2018-05-02 12:23:19 INFO  MyChat:84 - Clicked On Ok Button on Color Pallete
+2018-05-02 12:23:19 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-05-02 12:23:20 INFO  MyChat:40 - Clicked on Next Button
+2018-05-02 12:23:21 INFO  WaitHelper:71 - Element found...Describe your channel
+2018-05-02 12:23:22 INFO  WaitHelper:71 - Element found...Describe your channel
+2018-05-02 12:23:27 INFO  MyChat:48 - Description Entered
+2018-05-02 12:23:27 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-05-02 12:23:28 INFO  MyChat:34 - Clicked on Next Button
+2018-05-02 12:23:28 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Animal Husbandry']
+2018-05-02 12:23:29 INFO  MyChat:65 - Clicked on Animal Husbandry Category
+2018-05-02 12:23:29 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Agriculture']
+2018-05-02 12:23:31 INFO  MyChat:47 - Clicked on Agriculture Category
+2018-05-02 12:23:31 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Horticulture']
+2018-05-02 12:23:32 INFO  MyChat:53 - Clicked on Horticulture Category
+2018-05-02 12:23:32 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-05-02 12:23:34 INFO  MyChat:138 - Clicked on Next Button
+2018-05-02 12:23:46 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 12:27:56 INFO  TestBase:86 - Properties file loaded
+2018-05-02 12:27:56 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 12:28:18 INFO  TestBase:75 - Device settings Loaded
+2018-05-02 12:28:18 INFO  WaitHelper:53 - By.className: android.widget.ImageButton
+2018-05-02 12:28:19 INFO  MyChat:46 - Clicked on left drawer button from MyChat
+2018-05-02 12:28:21 INFO  WaitHelper:71 - Element found...
+2018-05-02 12:28:21 INFO  MyChat:58 - Clicking on Start Your Channel
+2018-05-02 12:28:22 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/textview_start_channel
+2018-05-02 12:28:23 INFO  MyChat:52 - Clicked On Start Your Channel Button
+2018-05-02 12:28:23 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/editTextGroupName
+2018-05-02 12:28:28 INFO  WaitHelper:71 - Element found...Channel Name
+2018-05-02 12:28:31 INFO  MyChat:66 - Entered Channel Name
+2018-05-02 12:28:32 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/buttonEditChannelBackgroundColor
+2018-05-02 12:28:33 INFO  MyChat:72 - Clicked On Select Background Color Button
+2018-05-02 12:28:33 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/kisan_viewSatBri
+2018-05-02 12:28:34 INFO  MyChat:78 - Selected Background Color
+2018-05-02 12:28:34 INFO  WaitHelper:53 - By.id: android:id/button1
+2018-05-02 12:28:38 INFO  MyChat:84 - Clicked On Ok Button on Color Pallete
+2018-05-02 12:28:38 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-05-02 12:28:39 INFO  MyChat:40 - Clicked on Next Button
+2018-05-02 12:28:40 INFO  WaitHelper:71 - Element found...Describe your channel
+2018-05-02 12:28:41 INFO  WaitHelper:71 - Element found...Describe your channel
+2018-05-02 12:28:46 INFO  MyChat:48 - Description Entered
+2018-05-02 12:28:46 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-05-02 12:28:47 INFO  MyChat:34 - Clicked on Next Button
+2018-05-02 12:28:47 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Animal Husbandry']
+2018-05-02 12:28:48 INFO  MyChat:65 - Clicked on Animal Husbandry Category
+2018-05-02 12:28:48 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Agriculture']
+2018-05-02 12:28:50 INFO  MyChat:47 - Clicked on Agriculture Category
+2018-05-02 12:28:50 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@text='Horticulture']
+2018-05-02 12:28:51 INFO  MyChat:53 - Clicked on Horticulture Category
+2018-05-02 12:28:51 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_next
+2018-05-02 12:28:53 INFO  MyChat:138 - Clicked on Next Button
+2018-05-02 12:28:53 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_done
+2018-05-02 12:29:03 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_done
+2018-05-02 12:29:03 INFO  MyChat:35 - Clicked on Done Button
+2018-05-02 12:29:03 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@index='1']
+2018-05-02 12:29:09 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 12:47:28 INFO  TestBase:86 - Properties file loaded
+2018-05-02 12:47:28 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 12:47:49 INFO  TestBase:75 - Device settings Loaded
+2018-05-02 12:47:49 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-02 12:47:50 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-02 12:47:51 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-02 12:47:52 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-02 12:47:52 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-02 12:47:55 INFO  WaitHelper:71 - Element found...Search
+2018-05-02 12:47:58 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-02 12:47:58 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-02 12:47:59 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-02 12:48:04 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 12:49:39 INFO  TestBase:86 - Properties file loaded
+2018-05-02 12:49:39 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 12:50:01 INFO  TestBase:75 - Device settings Loaded
+2018-05-02 12:50:01 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-02 12:50:02 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-02 12:50:03 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-02 12:50:04 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-02 12:50:04 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-02 12:50:06 INFO  WaitHelper:71 - Element found...Search
+2018-05-02 12:50:09 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-02 12:50:09 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-02 12:50:10 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-02 12:50:15 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 12:57:24 INFO  TestBase:86 - Properties file loaded
+2018-05-02 12:57:24 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 12:57:45 INFO  TestBase:75 - Device settings Loaded
+2018-05-02 12:57:45 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-02 12:57:45 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-02 12:57:47 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-02 12:57:48 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-02 12:57:48 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-02 12:57:50 INFO  WaitHelper:71 - Element found...Search
+2018-05-02 12:57:54 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-02 12:57:54 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-02 12:57:55 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-02 12:57:57 INFO  WaitHelper:71 - Element found...
+2018-05-02 12:57:58 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-02 12:57:58 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_editTextMessageText
+2018-05-02 12:58:00 INFO  WaitHelper:71 - Element found...Type a message
+2018-05-02 12:58:06 INFO  MyChat:61 - Typed a message
+2018-05-02 12:58:06 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_imageButtonSendMessage
+2018-05-02 12:58:07 INFO  MyChat:53 - Clicked On send message button in admins chat window
+2018-05-02 12:58:13 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 13:11:51 INFO  TestBase:86 - Properties file loaded
+2018-05-02 13:11:51 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 13:12:12 INFO  TestBase:75 - Device settings Loaded
+2018-05-02 13:12:12 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-02 13:12:14 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-02 13:12:14 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-02 13:12:15 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-02 13:12:15 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-02 13:12:18 INFO  WaitHelper:71 - Element found...Search
+2018-05-02 13:12:21 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-02 13:12:21 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-02 13:12:22 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-02 13:12:25 INFO  WaitHelper:71 - Element found...
+2018-05-02 13:12:26 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-02 13:12:26 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_editTextMessageText
+2018-05-02 13:12:29 INFO  WaitHelper:71 - Element found...Type a message
+2018-05-02 13:12:35 INFO  MyChat:65 - Typed a message
+2018-05-02 13:12:35 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_imageButtonSendMessage
+2018-05-02 13:12:36 INFO  MyChat:57 - Clicked On send message button in admins chat window
+2018-05-02 13:12:36 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@index='1']
+2018-05-02 13:12:42 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 13:13:46 INFO  TestBase:86 - Properties file loaded
+2018-05-02 13:13:46 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 13:14:10 INFO  TestBase:75 - Device settings Loaded
+2018-05-02 13:14:10 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-02 13:14:10 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-02 13:14:12 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-02 13:14:12 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-02 13:14:13 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-02 13:14:16 INFO  WaitHelper:71 - Element found...Search
+2018-05-02 13:14:19 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-02 13:14:19 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-02 13:14:20 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-02 13:14:23 INFO  WaitHelper:71 - Element found...
+2018-05-02 13:14:24 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-02 13:14:24 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_editTextMessageText
+2018-05-02 13:14:27 INFO  WaitHelper:71 - Element found...Type a message
+2018-05-02 13:14:56 INFO  MyChat:65 - Typed a message
+2018-05-02 13:14:56 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_imageButtonSendMessage
+2018-05-02 13:14:56 INFO  MyChat:57 - Clicked On send message button in admins chat window
+2018-05-02 13:14:56 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@index='1']
+2018-05-02 13:15:02 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 13:15:43 INFO  TestBase:86 - Properties file loaded
+2018-05-02 13:15:43 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 13:16:05 INFO  TestBase:75 - Device settings Loaded
+2018-05-02 13:16:05 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-02 13:16:06 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-02 13:16:07 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-02 13:16:08 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-02 13:16:08 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-02 13:16:10 INFO  WaitHelper:71 - Element found...Search
+2018-05-02 13:16:14 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-02 13:16:14 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-02 13:16:15 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-02 13:16:17 INFO  WaitHelper:71 - Element found...
+2018-05-02 13:16:18 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-02 13:16:26 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_editTextMessageText
+2018-05-02 13:16:30 INFO  WaitHelper:71 - Element found...Type a message
+2018-05-02 13:16:38 INFO  MyChat:65 - Typed a message
+2018-05-02 13:16:46 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_imageButtonSendMessage
+2018-05-02 13:16:49 INFO  MyChat:57 - Clicked On send message button in admins chat window
+2018-05-02 13:17:03 INFO  WaitHelper:53 - By.xpath: //android.widget.TextView[@index='1']
+2018-05-02 13:22:02 INFO  TestBase:86 - Properties file loaded
+2018-05-02 13:22:02 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 13:22:50 INFO  TestBase:86 - Properties file loaded
+2018-05-02 13:22:50 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 13:23:14 INFO  TestBase:75 - Device settings Loaded
+2018-05-02 13:23:14 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-02 13:23:17 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-02 13:23:18 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-02 13:23:18 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-02 13:23:19 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-02 13:23:21 INFO  WaitHelper:71 - Element found...Search
+2018-05-02 13:23:24 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-02 13:23:24 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-02 13:23:25 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-02 13:23:28 INFO  WaitHelper:71 - Element found...
+2018-05-02 13:23:29 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-02 13:23:29 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_editTextMessageText
+2018-05-02 13:23:31 INFO  WaitHelper:71 - Element found...Type a message
+2018-05-02 13:23:38 INFO  MyChat:65 - Typed a message
+2018-05-02 13:23:38 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_imageButtonSendMessage
+2018-05-02 13:23:39 INFO  MyChat:57 - Clicked On send message button in admins chat window
+2018-05-02 13:23:45 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 13:23:45 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-02 13:23:45 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-02 13:23:46 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-02 13:23:47 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-02 13:23:47 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-02 13:23:49 INFO  WaitHelper:71 - Element found...Search
+2018-05-02 13:23:53 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-02 13:23:53 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-02 13:23:54 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-02 13:23:58 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 13:24:52 INFO  TestBase:86 - Properties file loaded
+2018-05-02 13:24:52 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 13:25:14 INFO  TestBase:75 - Device settings Loaded
+2018-05-02 13:25:14 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-02 13:25:15 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-02 13:25:16 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-02 13:25:17 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-02 13:25:17 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-02 13:25:20 INFO  WaitHelper:71 - Element found...Search
+2018-05-02 13:25:23 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-02 13:25:23 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-02 13:25:24 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-02 13:25:27 INFO  WaitHelper:71 - Element found...
+2018-05-02 13:25:28 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-02 13:25:28 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_editTextMessageText
+2018-05-02 13:25:30 INFO  WaitHelper:71 - Element found...Type a message
+2018-05-02 13:25:36 INFO  MyChat:65 - Typed a message
+2018-05-02 13:25:36 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_imageButtonSendMessage
+2018-05-02 13:25:37 INFO  MyChat:57 - Clicked On send message button in admins chat window
+2018-05-02 13:25:42 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 13:25:42 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-02 13:25:42 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-02 13:25:43 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-02 13:25:44 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-02 13:25:44 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-02 13:25:46 INFO  WaitHelper:71 - Element found...Search
+2018-05-02 13:25:49 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-02 13:25:49 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-02 13:25:51 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-02 13:25:53 INFO  WaitHelper:71 - Element found...
+2018-05-02 13:25:54 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-02 13:25:59 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 13:26:43 INFO  TestBase:86 - Properties file loaded
+2018-05-02 13:26:43 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 13:27:06 INFO  TestBase:75 - Device settings Loaded
+2018-05-02 13:27:06 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-02 13:27:06 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-02 13:27:07 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-02 13:27:08 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-02 13:27:09 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-02 13:27:11 INFO  WaitHelper:71 - Element found...Search
+2018-05-02 13:27:14 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-02 13:27:14 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-02 13:27:15 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-02 13:27:18 INFO  WaitHelper:71 - Element found...
+2018-05-02 13:27:19 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-02 13:27:26 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_editTextMessageText
+2018-05-02 13:27:31 INFO  WaitHelper:71 - Element found...Type a message
+2018-05-02 13:27:38 INFO  MyChat:65 - Typed a message
+2018-05-02 13:27:41 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_imageButtonSendMessage
+2018-05-02 13:27:41 INFO  MyChat:57 - Clicked On send message button in admins chat window
+2018-05-02 13:27:47 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 13:27:47 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-02 13:27:47 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-02 13:27:48 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-02 13:27:48 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-02 13:27:49 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-02 13:27:51 INFO  WaitHelper:71 - Element found...Search
+2018-05-02 13:27:54 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-02 13:27:54 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-02 13:27:55 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-02 13:28:05 INFO  WaitHelper:71 - Element found...
+2018-05-02 13:28:07 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-02 13:32:15 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 13:34:01 INFO  TestBase:86 - Properties file loaded
+2018-05-02 13:34:01 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 13:34:24 INFO  TestBase:75 - Device settings Loaded
+2018-05-02 13:34:24 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-02 13:34:24 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-02 13:34:26 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-02 13:34:26 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-02 13:34:27 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-02 13:34:29 INFO  WaitHelper:71 - Element found...Search
+2018-05-02 13:34:33 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-02 13:34:33 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-02 13:34:34 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-02 13:34:37 INFO  WaitHelper:71 - Element found...
+2018-05-02 13:34:38 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-02 13:37:31 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_editTextMessageText
+2018-05-02 13:38:53 INFO  TestBase:86 - Properties file loaded
+2018-05-02 13:38:53 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 13:39:15 INFO  TestBase:75 - Device settings Loaded
+2018-05-02 13:39:15 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-02 13:39:19 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-02 13:39:20 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-02 13:39:21 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-02 13:39:21 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-02 13:39:23 INFO  WaitHelper:71 - Element found...Search
+2018-05-02 13:39:27 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-02 13:39:27 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-02 13:39:28 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-02 13:39:30 INFO  WaitHelper:71 - Element found...
+2018-05-02 13:39:32 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-02 13:39:46 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_editTextMessageText
+2018-05-02 13:39:48 INFO  WaitHelper:71 - Element found...Type a message
+2018-05-02 13:39:54 INFO  MyChat:65 - Typed a message
+2018-05-02 13:39:59 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_imageButtonSendMessage
+2018-05-02 13:40:00 INFO  MyChat:57 - Clicked On send message button in admins chat window
+2018-05-02 13:40:05 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 13:40:05 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-02 13:40:05 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-02 13:40:06 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-02 13:40:07 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-02 13:40:07 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-02 13:40:09 INFO  WaitHelper:71 - Element found...Search
+2018-05-02 13:40:13 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-02 13:40:13 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-02 13:40:14 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-02 13:40:28 INFO  WaitHelper:71 - Element found...
+2018-05-02 13:40:31 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-02 15:08:35 INFO  TestBase:86 - Properties file loaded
+2018-05-02 15:08:35 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 15:09:07 INFO  TestBase:75 - Device settings Loaded
+2018-05-02 15:09:07 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-02 15:09:07 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-02 15:09:09 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-02 15:09:10 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-02 15:09:10 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-02 15:09:12 INFO  WaitHelper:71 - Element found...Search
+2018-05-02 15:09:16 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-02 15:09:16 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-02 15:09:17 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-02 15:09:21 INFO  WaitHelper:71 - Element found...
+2018-05-02 15:09:23 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-02 15:09:32 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_editTextMessageText
+2018-05-02 15:09:34 INFO  WaitHelper:71 - Element found...Type a message
+2018-05-02 15:09:40 INFO  MyChat:65 - Typed a message
+2018-05-02 15:10:15 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_imageButtonSendMessage
+2018-05-02 15:10:37 INFO  TestBase:86 - Properties file loaded
+2018-05-02 15:10:37 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 15:12:51 INFO  TestBase:86 - Properties file loaded
+2018-05-02 15:12:51 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 15:14:28 INFO  TestBase:86 - Properties file loaded
+2018-05-02 15:14:28 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 15:15:18 INFO  TestBase:86 - Properties file loaded
+2018-05-02 15:15:18 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 15:15:38 INFO  TestBase:75 - Device settings Loaded
+2018-05-02 15:15:38 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-02 15:15:39 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-02 15:15:40 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-02 15:15:41 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-02 15:15:41 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-02 15:15:43 INFO  WaitHelper:71 - Element found...Search
+2018-05-02 15:15:47 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-02 15:15:47 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-02 15:15:48 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-02 15:15:51 INFO  WaitHelper:71 - Element found...
+2018-05-02 15:15:52 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-02 15:16:33 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_editTextMessageText
+2018-05-02 15:16:35 INFO  WaitHelper:71 - Element found...Type a message
+2018-05-02 15:16:41 INFO  MyChat:65 - Typed a message
+2018-05-02 15:16:48 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_imageButtonSendMessage
+2018-05-02 15:16:49 INFO  MyChat:57 - Clicked On send message button in admins chat window
+2018-05-02 15:16:54 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 15:16:54 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-02 15:16:55 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-02 15:16:56 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-02 15:16:57 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-02 15:16:57 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-02 15:17:00 INFO  WaitHelper:71 - Element found...Search
+2018-05-02 15:17:04 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-02 15:17:04 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-02 15:17:06 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-02 15:17:15 INFO  WaitHelper:71 - Element found...
+2018-05-02 15:17:18 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-02 15:18:51 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 15:27:39 INFO  TestBase:86 - Properties file loaded
+2018-05-02 15:27:39 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 15:28:04 INFO  TestBase:75 - Device settings Loaded
+2018-05-02 15:28:04 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-02 15:28:04 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-02 15:28:06 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-02 15:28:07 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-02 15:28:07 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-02 15:28:09 INFO  WaitHelper:71 - Element found...Search
+2018-05-02 15:28:13 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-02 15:28:13 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-02 15:28:14 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-02 15:28:16 INFO  WaitHelper:71 - Element found...
+2018-05-02 15:28:17 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-02 15:28:17 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_editTextMessageText
+2018-05-02 15:28:21 INFO  WaitHelper:71 - Element found...Type a message
+2018-05-02 15:28:28 INFO  MyChat:65 - Typed a message
+2018-05-02 15:28:28 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_imageButtonSendMessage
+2018-05-02 15:28:30 INFO  MyChat:57 - Clicked On send message button in admins chat window
+2018-05-02 15:28:36 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 15:28:36 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-02 15:28:36 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-02 15:28:38 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-02 15:28:39 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-02 15:28:39 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-02 15:28:42 INFO  WaitHelper:71 - Element found...Search
+2018-05-02 15:28:46 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-02 15:28:46 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-02 15:28:50 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-02 15:28:53 INFO  WaitHelper:71 - Element found...
+2018-05-02 15:28:58 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-02 15:29:03 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 17:40:39 INFO  TestBase:86 - Properties file loaded
+2018-05-02 17:40:39 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 17:41:02 INFO  TestBase:75 - Device settings Loaded
+2018-05-02 17:41:02 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-02 17:41:02 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-02 17:41:04 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-02 17:41:04 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-02 17:41:05 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-02 17:41:07 INFO  WaitHelper:71 - Element found...Search
+2018-05-02 17:41:13 INFO  MyChat:97 - Entered Channel Name In Search Box
+2018-05-02 17:41:13 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-02 17:41:15 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-02 17:41:15 INFO  WaitHelper:71 - Element found...
+2018-05-02 17:41:16 INFO  MyChat:51 - Clicked on new message button from channel dashboard
+2018-05-02 17:41:16 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/textViewOptionOne
+2018-05-02 17:41:29 INFO  TestBase:172 - Navigated To MyChat
+2018-05-02 18:06:38 INFO  TestBase:86 - Properties file loaded
+2018-05-02 18:06:38 INFO  TestBase:65 - Loading Device Settings
+2018-05-02 18:07:16 INFO  TestBase:75 - Device settings Loaded
+2018-05-02 18:07:16 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-02 18:07:17 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-02 18:07:19 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-02 18:07:20 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-02 18:07:20 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-02 18:07:22 INFO  WaitHelper:71 - Element found...Search
+2018-05-02 18:07:28 INFO  MyChat:97 - Entered Channel Name In Search Box
+2018-05-02 18:07:28 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-02 18:07:30 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-02 18:07:35 INFO  WaitHelper:71 - Element found...
+2018-05-02 18:07:46 INFO  MyChat:51 - Clicked on new message button from channel dashboard
+2018-05-02 18:07:46 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_attach
+2018-05-02 18:07:47 INFO  MyChat:82 - Clicked On attachment pin in admins chat window
+2018-05-02 18:07:47 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='0']
+2018-05-02 18:07:48 INFO  MyChat:88 - Clicked On camera option in admins chat window
+2018-05-02 18:07:48 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/textViewOptionOne
+2018-05-02 18:07:50 INFO  MyChat:94 - Clicked On Take a Picture option
+2018-05-02 18:07:50 INFO  WaitHelper:53 - By.id: com.android.camera2:id/shutter_button
+2018-05-02 18:07:52 INFO  MyChat:106 - Taken a photo
+2018-05-02 18:07:56 INFO  TestBase:172 - Navigated To MyChat
+2018-05-04 11:33:55 INFO  TestBase:86 - Properties file loaded
+2018-05-04 11:33:55 INFO  TestBase:65 - Loading Device Settings
+2018-05-04 11:34:18 INFO  TestBase:75 - Device settings Loaded
+2018-05-04 11:34:18 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-04 11:34:21 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-04 11:34:22 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-04 11:34:23 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-04 11:34:23 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-04 11:34:25 INFO  WaitHelper:71 - Element found...Search
+2018-05-04 11:34:32 INFO  MyChat:97 - Entered Channel Name In Search Box
+2018-05-04 11:34:32 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-04 11:34:33 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-04 11:34:34 INFO  WaitHelper:71 - Element found...
+2018-05-04 11:34:36 INFO  MyChat:51 - Clicked on new message button from channel dashboard
+2018-05-04 11:34:36 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_attach
+2018-05-04 11:34:40 INFO  MyChat:86 - Clicked On attachment pin in admins chat window
+2018-05-04 11:34:40 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='0']
+2018-05-04 11:34:43 INFO  MyChat:92 - Clicked On camera option in admins chat window
+2018-05-04 11:34:43 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/textViewOptionOne
+2018-05-04 11:34:44 INFO  MyChat:98 - Clicked On Take a Picture option
+2018-05-04 11:34:44 INFO  WaitHelper:53 - By.id: com.android.camera2:id/shutter_button
+2018-05-04 11:34:49 INFO  MyChat:110 - Clicked on capture photo
+2018-05-04 11:34:49 INFO  WaitHelper:53 - By.id: com.android.camera2:id/done_button
+2018-05-04 11:34:55 INFO  MyChat:116 - Clicked on yes tickmark after capturing photo
+2018-05-04 11:34:55 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/editTextMessageTextWithImage
+2018-05-04 11:34:57 INFO  WaitHelper:71 - Element found...Write a Caption (Optional)
+2018-05-04 11:35:02 INFO  MyChat:124 - Caption added
+2018-05-04 11:35:02 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/imageButtonSend
+2018-05-04 11:35:03 INFO  MyChat:130 - Clicked On send image button in admins chat window
+2018-05-04 11:35:08 INFO  TestBase:172 - Navigated To MyChat
+2018-05-04 11:51:30 INFO  TestBase:86 - Properties file loaded
+2018-05-04 11:51:30 INFO  TestBase:65 - Loading Device Settings
+2018-05-04 11:52:39 INFO  TestBase:86 - Properties file loaded
+2018-05-04 11:52:39 INFO  TestBase:65 - Loading Device Settings
+2018-05-04 11:53:00 INFO  TestBase:75 - Device settings Loaded
+2018-05-04 11:53:00 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-04 11:53:00 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-04 11:53:01 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-04 11:53:02 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-04 11:53:02 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-04 11:53:04 INFO  WaitHelper:71 - Element found...Search
+2018-05-04 11:53:08 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-04 11:53:08 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-04 11:53:09 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-04 11:53:11 INFO  WaitHelper:71 - Element found...
+2018-05-04 11:53:13 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-04 11:53:13 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_editTextMessageText
+2018-05-04 11:53:15 INFO  WaitHelper:71 - Element found...Type a message
+2018-05-04 11:53:21 INFO  MyChat:72 - Typed a message
+2018-05-04 11:53:21 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_imageButtonSendMessage
+2018-05-04 11:53:23 INFO  MyChat:64 - Clicked On send message button in admins chat window
+2018-05-04 11:53:28 INFO  TestBase:172 - Navigated To MyChat
+2018-05-04 11:56:06 INFO  TestBase:86 - Properties file loaded
+2018-05-04 11:56:06 INFO  TestBase:65 - Loading Device Settings
+2018-05-04 11:56:39 INFO  TestBase:75 - Device settings Loaded
+2018-05-04 11:56:39 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-04 11:56:41 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-04 11:56:42 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-04 11:56:44 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-04 11:56:44 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-04 11:56:47 INFO  WaitHelper:71 - Element found...Search
+2018-05-04 11:56:51 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-04 11:56:51 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-04 11:56:56 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-04 11:57:00 INFO  WaitHelper:71 - Element found...
+2018-05-04 11:57:01 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-04 11:57:08 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_editTextMessageText
+2018-05-04 11:57:18 INFO  WaitHelper:71 - Element found...Type a message
+2018-05-04 11:57:26 INFO  MyChat:72 - Typed a message
+2018-05-04 11:57:30 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_imageButtonSendMessage
+2018-05-04 11:57:33 INFO  MyChat:64 - Clicked On send message button in admins chat window
+2018-05-04 11:59:10 INFO  TestBase:86 - Properties file loaded
+2018-05-04 11:59:10 INFO  TestBase:65 - Loading Device Settings
+2018-05-04 12:01:28 INFO  TestBase:86 - Properties file loaded
+2018-05-04 12:01:28 INFO  TestBase:65 - Loading Device Settings
+2018-05-04 12:01:50 INFO  TestBase:75 - Device settings Loaded
+2018-05-04 12:01:50 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-04 12:01:53 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-04 12:01:54 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-04 12:01:55 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-04 12:01:55 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-04 12:01:58 INFO  WaitHelper:71 - Element found...Search
+2018-05-04 12:02:01 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-04 12:02:01 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-04 12:02:02 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-04 12:02:05 INFO  WaitHelper:71 - Element found...
+2018-05-04 12:02:06 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-04 12:02:13 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_editTextMessageText
+2018-05-04 12:02:18 INFO  WaitHelper:71 - Element found...Type a message
+2018-05-04 12:02:25 INFO  MyChat:72 - Typed a message
+2018-05-04 12:02:33 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_imageButtonSendMessage
+2018-05-04 12:02:36 INFO  MyChat:64 - Clicked On send message button in admins chat window
+2018-05-04 12:08:28 INFO  TestBase:86 - Properties file loaded
+2018-05-04 12:08:28 INFO  TestBase:65 - Loading Device Settings
+2018-05-04 12:08:57 INFO  TestBase:75 - Device settings Loaded
+2018-05-04 12:08:57 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-04 12:08:58 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-04 12:09:03 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-04 12:09:04 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-04 12:09:04 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-04 12:09:08 INFO  WaitHelper:71 - Element found...Search
+2018-05-04 12:09:27 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-04 12:09:27 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-04 12:09:29 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-04 12:09:31 INFO  WaitHelper:71 - Element found...
+2018-05-04 12:09:32 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-04 12:09:42 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_editTextMessageText
+2018-05-04 12:09:51 INFO  WaitHelper:71 - Element found...Type a message
+2018-05-04 12:09:58 INFO  MyChat:72 - Typed a message
+2018-05-04 12:10:12 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_imageButtonSendMessage
+2018-05-04 12:10:15 INFO  MyChat:64 - Clicked On send message button in admins chat window
+2018-05-04 12:12:15 INFO  TestBase:86 - Properties file loaded
+2018-05-04 12:12:15 INFO  TestBase:65 - Loading Device Settings
+2018-05-04 12:12:37 INFO  TestBase:75 - Device settings Loaded
+2018-05-04 12:12:37 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-04 12:12:37 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-04 12:12:38 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-04 12:12:39 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-04 12:12:39 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-04 12:12:42 INFO  WaitHelper:71 - Element found...Search
+2018-05-04 12:12:45 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-04 12:12:45 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-04 12:12:46 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-04 12:12:49 INFO  WaitHelper:71 - Element found...
+2018-05-04 12:12:50 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-04 12:12:50 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_editTextMessageText
+2018-05-04 12:12:53 INFO  WaitHelper:71 - Element found...Type a message
+2018-05-04 12:12:59 INFO  MyChat:72 - Typed a message
+2018-05-04 12:12:59 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_imageButtonSendMessage
+2018-05-04 12:13:00 INFO  MyChat:64 - Clicked On send message button in admins chat window
+2018-05-04 12:13:05 INFO  TestBase:172 - Navigated To MyChat
+2018-05-04 12:15:13 INFO  TestBase:86 - Properties file loaded
+2018-05-04 12:15:13 INFO  TestBase:65 - Loading Device Settings
+2018-05-04 12:15:35 INFO  TestBase:75 - Device settings Loaded
+2018-05-04 12:15:35 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-04 12:15:35 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-04 12:15:36 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-04 12:15:37 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-04 12:15:37 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-04 12:15:40 INFO  WaitHelper:71 - Element found...Search
+2018-05-04 12:15:43 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-04 12:15:43 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-04 12:15:44 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-04 12:15:46 INFO  WaitHelper:71 - Element found...
+2018-05-04 12:15:47 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-04 12:15:52 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_editTextMessageText
+2018-05-04 12:15:57 INFO  WaitHelper:71 - Element found...Type a message
+2018-05-04 12:16:05 INFO  MyChat:72 - Typed a message
+2018-05-04 12:16:09 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_imageButtonSendMessage
+2018-05-04 12:16:12 INFO  MyChat:64 - Clicked On send message button in admins chat window
+2018-05-04 12:22:55 INFO  TestBase:87 - Properties file loaded
+2018-05-04 12:22:55 INFO  TestBase:66 - Loading Device Settings
+2018-05-04 12:23:16 INFO  TestBase:76 - Device settings Loaded
+2018-05-04 12:23:16 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-04 12:23:16 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-04 12:23:17 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-04 12:23:18 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-04 12:23:19 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-04 12:23:21 INFO  WaitHelper:71 - Element found...Search
+2018-05-04 12:23:25 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-04 12:23:25 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-04 12:23:26 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-04 12:23:28 INFO  WaitHelper:71 - Element found...
+2018-05-04 12:23:29 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-04 12:23:29 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_editTextMessageText
+2018-05-04 12:23:32 INFO  WaitHelper:71 - Element found...Type a message
+2018-05-04 12:23:38 INFO  MyChat:72 - Typed a message
+2018-05-04 12:23:38 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/chatmessages_imageButtonSendMessage
+2018-05-04 12:23:40 INFO  MyChat:64 - Clicked On send message button in admins chat window
+2018-05-04 12:23:45 INFO  TestBase:173 - Navigated To MyChat
+2018-05-04 12:23:45 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-04 12:23:45 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-04 12:23:46 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-04 12:23:47 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-04 12:23:47 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-04 12:23:49 INFO  WaitHelper:71 - Element found...Search
+2018-05-04 12:23:53 INFO  MyChat:112 - Entered Channel Name In Search Box
+2018-05-04 12:23:53 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-04 12:23:54 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-04 12:23:57 INFO  WaitHelper:71 - Element found...
+2018-05-04 12:23:58 INFO  MyChat:57 - Clicked on new message button from channel dashboard
+2018-05-04 12:24:05 INFO  TestBase:173 - Navigated To MyChat
+2018-05-04 12:33:58 INFO  TestBase:87 - Properties file loaded
+2018-05-04 12:33:58 INFO  TestBase:66 - Loading Device Settings
+2018-05-04 12:34:24 INFO  TestBase:76 - Device settings Loaded
+2018-05-04 12:34:24 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-04 12:34:25 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-04 12:34:26 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-04 12:34:26 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-04 12:34:27 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-04 12:34:29 INFO  WaitHelper:71 - Element found...Search
+2018-05-04 12:34:36 INFO  MyChat:97 - Entered Channel Name In Search Box
+2018-05-04 12:34:36 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-04 12:34:38 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-04 12:34:39 INFO  WaitHelper:71 - Element found...
+2018-05-04 12:34:40 INFO  MyChat:51 - Clicked on new message button from channel dashboard
+2018-05-04 12:34:40 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_attach
+2018-05-04 12:34:42 INFO  MyChat:86 - Clicked On attachment pin in admins chat window
+2018-05-04 12:34:42 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='0']
+2018-05-04 12:34:43 INFO  MyChat:92 - Clicked On camera option in admins chat window
+2018-05-04 12:34:43 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/textViewOptionOne
+2018-05-04 12:34:44 INFO  MyChat:98 - Clicked On Take a Picture option
+2018-05-04 12:34:44 INFO  WaitHelper:53 - By.id: com.android.camera2:id/shutter_button
+2018-05-04 12:34:48 INFO  MyChat:110 - Clicked on capture photo
+2018-05-04 12:34:48 INFO  WaitHelper:53 - By.id: com.android.camera2:id/done_button
+2018-05-04 12:34:53 INFO  MyChat:116 - Clicked on yes tickmark after capturing photo
+2018-05-04 12:34:53 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/editTextMessageTextWithImage
+2018-05-04 12:34:56 INFO  WaitHelper:71 - Element found...Write a Caption (Optional)
+2018-05-04 12:35:00 INFO  MyChat:124 - Caption added
+2018-05-04 12:35:00 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/imageButtonSend
+2018-05-04 12:35:02 INFO  MyChat:130 - Clicked On send image button in admins chat window
+2018-05-04 12:35:07 INFO  TestBase:173 - Navigated To MyChat
+2018-05-04 12:35:07 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-04 12:35:08 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-04 12:35:08 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-04 12:35:09 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-04 12:35:10 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-04 12:35:12 INFO  WaitHelper:71 - Element found...Search
+2018-05-04 12:35:17 INFO  MyChat:97 - Entered Channel Name In Search Box
+2018-05-04 12:35:17 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-04 12:35:19 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-04 12:35:22 INFO  TestBase:173 - Navigated To MyChat
+2018-05-04 12:46:23 INFO  TestBase:87 - Properties file loaded
+2018-05-04 12:46:23 INFO  TestBase:66 - Loading Device Settings
+2018-05-04 12:46:51 INFO  TestBase:76 - Device settings Loaded
+2018-05-04 12:46:51 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-04 12:46:52 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-04 12:46:54 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-04 12:46:54 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-04 12:46:55 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-04 12:46:58 INFO  WaitHelper:71 - Element found...Search
+2018-05-04 12:47:05 INFO  MyChat:97 - Entered Channel Name In Search Box
+2018-05-04 12:47:05 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-04 12:47:08 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-04 12:47:13 INFO  WaitHelper:71 - Element found...
+2018-05-04 12:47:15 INFO  MyChat:51 - Clicked on new message button from channel dashboard
+2018-05-04 12:47:15 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_attach
+2018-05-04 12:47:17 INFO  MyChat:86 - Clicked On attachment pin in admins chat window
+2018-05-04 12:47:17 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='0']
+2018-05-04 12:47:20 INFO  MyChat:92 - Clicked On camera option in admins chat window
+2018-05-04 12:47:20 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/textViewOptionOne
+2018-05-04 12:47:21 INFO  MyChat:98 - Clicked On Take a Picture option
+2018-05-04 12:47:21 INFO  WaitHelper:53 - By.id: com.android.camera2:id/shutter_button
+2018-05-04 12:47:23 INFO  MyChat:110 - Clicked on capture photo
+2018-05-04 12:47:23 INFO  WaitHelper:53 - By.id: com.android.camera2:id/done_button
+2018-05-04 12:47:28 INFO  MyChat:116 - Clicked on yes tickmark after capturing photo
+2018-05-04 12:47:28 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/editTextMessageTextWithImage
+2018-05-04 12:47:31 INFO  WaitHelper:71 - Element found...Write a Caption (Optional)
+2018-05-04 12:47:35 INFO  MyChat:124 - Caption added
+2018-05-04 12:47:35 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/imageButtonSend
+2018-05-04 12:47:37 INFO  MyChat:130 - Clicked On send image button in admins chat window
+2018-05-04 12:47:42 INFO  TestBase:173 - Navigated To MyChat
+2018-05-04 12:47:42 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-04 12:47:43 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-04 12:47:43 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-04 12:47:44 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-04 12:47:45 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-04 12:47:47 INFO  WaitHelper:71 - Element found...Search
+2018-05-04 12:47:53 INFO  MyChat:97 - Entered Channel Name In Search Box
+2018-05-04 12:47:53 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-04 12:47:54 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-04 12:47:55 INFO  WaitHelper:71 - Element found...
+2018-05-04 12:47:56 INFO  MyChat:51 - Clicked on new message button from channel dashboard
+2018-05-04 12:48:00 INFO  TestBase:173 - Navigated To MyChat
+2018-05-04 13:03:32 INFO  TestBase:87 - Properties file loaded
+2018-05-04 13:03:32 INFO  TestBase:66 - Loading Device Settings
+2018-05-04 13:04:04 INFO  TestBase:76 - Device settings Loaded
+2018-05-04 13:04:05 INFO  TestBase:173 - Navigated To MyChat
+2018-05-04 13:04:05 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-04 13:04:05 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-04 13:04:06 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-04 13:04:07 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-04 13:04:08 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-04 13:04:10 INFO  WaitHelper:71 - Element found...Search
+2018-05-04 13:04:16 INFO  MyChat:97 - Entered Channel Name In Search Box
+2018-05-04 13:04:16 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-04 13:04:18 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-04 13:04:19 INFO  WaitHelper:71 - Element found...
+2018-05-04 13:04:21 INFO  MyChat:51 - Clicked on new message button from channel dashboard
+2018-05-04 13:04:21 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/action_attach
+2018-05-04 13:04:23 INFO  MyChat:86 - Clicked On attachment pin in admins chat window
+2018-05-04 13:04:23 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='0']
+2018-05-04 13:04:24 INFO  MyChat:92 - Clicked On camera option in admins chat window
+2018-05-04 13:04:24 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/textViewOptionOne
+2018-05-04 13:04:26 INFO  MyChat:98 - Clicked On Take a Picture option
+2018-05-04 13:04:26 INFO  WaitHelper:53 - By.id: com.android.camera2:id/shutter_button
+2018-05-04 13:04:27 INFO  MyChat:110 - Clicked on capture photo
+2018-05-04 13:04:27 INFO  WaitHelper:53 - By.id: com.android.camera2:id/done_button
+2018-05-04 13:04:33 INFO  MyChat:116 - Clicked on yes tickmark after capturing photo
+2018-05-04 13:04:33 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/editTextMessageTextWithImage
+2018-05-04 13:04:36 INFO  WaitHelper:71 - Element found...Write a Caption (Optional)
+2018-05-04 13:04:40 INFO  MyChat:124 - Caption added
+2018-05-04 13:04:40 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/imageButtonSend
+2018-05-04 13:04:41 INFO  MyChat:130 - Clicked On send image button in admins chat window
+2018-05-04 13:04:47 INFO  TestBase:173 - Navigated To MyChat
+2018-05-04 13:04:47 INFO  WaitHelper:53 - By.xpath: //android.widget.ImageView[@content-desc='More options']
+2018-05-04 13:04:47 INFO  MyChat:70 - Clicking on right drawer option menu
+2018-05-04 13:04:48 INFO  WaitHelper:53 - By.xpath: //android.widget.LinearLayout[@index='2']
+2018-05-04 13:04:49 INFO  MyChat:88 - Clicking on search a channel option from right drawer
+2018-05-04 13:04:50 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/searchTextView
+2018-05-04 13:04:55 INFO  WaitHelper:71 - Element found...Search
+2018-05-04 13:05:02 INFO  MyChat:97 - Entered Channel Name In Search Box
+2018-05-04 13:05:02 INFO  WaitHelper:53 - By.id: com.kisan.samvaad.test:id/relativeLayoutMyChat
+2018-05-04 13:05:04 INFO  MyChat:104 - Clicked On Searched Channel
+2018-05-04 13:05:04 INFO  WaitHelper:71 - Element found...
+2018-05-04 13:05:06 INFO  MyChat:51 - Clicked on new message button from channel dashboard
+2018-05-04 13:05:10 INFO  TestBase:173 - Navigated To MyChat

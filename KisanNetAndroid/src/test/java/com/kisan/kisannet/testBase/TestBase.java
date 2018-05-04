@@ -32,6 +32,7 @@ import org.testng.annotations.BeforeMethod;
 import com.kisan.kisannet.excelreader.ExcelReader;
 import com.kisan.kisannet.helper.assertionHelper.VerificationHelper;
 import com.kisan.kisannet.pagelibrary.Categories;
+import com.kisan.kisannet.pagelibrary.ChannelDashboard;
 import com.kisan.kisannet.pagelibrary.CreateChannelPage;
 import com.kisan.kisannet.pagelibrary.EnterChannelInfo;
 import com.kisan.kisannet.pagelibrary.InviteManually;
@@ -147,7 +148,7 @@ public class TestBase {
 	@BeforeMethod
 	public void beforeMethod(ITestResult result) {
 		test = extent.startTest(result.getName());
-		test.log(LogStatus.INFO, result.getName() + "test started");
+		test.log(LogStatus.INFO, result.getName() + " test started");
 	}
 	
 	@BeforeClass
@@ -168,15 +169,39 @@ public class TestBase {
 		MyChat mychat = new MyChat(driver);
 		while(!mychat.isUserOnMyChat()) {
 			driver.navigate().back();
-			logger.info("Navigated To MyChat");
 		}
+		logger.info("Navigated To MyChat");
 	}
 	
-	/*public String[][] get_Data(String excelname, String sheetname) throws IOException{
+	public String[][] get_Data(String excelname, String sheetname) throws IOException{
 		excelreader = new ExcelReader();
 		String excellocation = System.getProperty("user.dir")+"\\src\\test\\java\\com\\kisan\\kisannet\\resources"+excelname;
 		return excelreader.getExcelData(excellocation, sheetname);
-	}*/
+	}
+	
+	public void navigateToFollowersChannel(AndroidDriver<?> driver) throws Exception {
+		MyChat mychat = new MyChat(driver);
+		ChannelDashboard channelDashboard = new ChannelDashboard(driver);
+		navigateToMyChat();
+		mychat.clickOnRightDrawerMenu();
+		mychat.clickOnSearchChannelOption();
+		mychat.searchFollowersChannel();
+		mychat.clickOnSearchedChannel();
+		driver.navigate().back();
+		channelDashboard.clickOnNewMessageButtonForFollower();	
+	}
+	
+	public void navigateToAdminsChannel(AndroidDriver<?> driver) throws Exception {
+		MyChat mychat = new MyChat(driver);
+		ChannelDashboard channelDashboard = new ChannelDashboard(driver);
+		navigateToMyChat();
+		mychat.clickOnRightDrawerMenu();
+		mychat.clickOnSearchChannelOption();
+		mychat.searchAdminsChannel();
+		mychat.clickOnSearchedChannel();
+		//driver.navigate().back();
+		channelDashboard.clickOnNewMessageButtonForAdmin();
+	}
 	
 	/*public static void main(String[] args) throws Exception {
 		TestBase test = new TestBase();

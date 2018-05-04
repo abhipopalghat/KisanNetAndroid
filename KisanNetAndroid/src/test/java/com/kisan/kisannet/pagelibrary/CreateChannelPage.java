@@ -61,7 +61,7 @@ public class CreateChannelPage {
 	public void enterChannelName() {
 		waitHelper.waitForElementVisible(channelName, 5);
 		driver.findElement(channelName).click();
-		String channelName = TestBase.prop.getProperty("ChannelName");
+		String channelName = TestBase.prop.getProperty("ChannelNameToBeCreated");
 		GenericHelper.enter_Text(driver, this.channelName, channelName);
 		logger.info("Entered Channel Name");
 	}

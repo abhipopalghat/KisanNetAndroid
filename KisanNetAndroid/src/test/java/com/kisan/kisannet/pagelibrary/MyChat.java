@@ -89,7 +89,7 @@ public class MyChat {
 		driver.findElement(searchChannel).click();
 	} 
 
-	public void searchChannel() {
+	public void searchAdminsChannel() {
 		waitHelper.waitForElementVisible(searchBox, 10);
 		driver.findElement(searchBox).click();
 		String channel = TestBase.prop.getProperty("AdminsChannel");
@@ -101,8 +101,15 @@ public class MyChat {
 		waitHelper.waitForElementVisible(searchedChannelList, 10);
 		List<AndroidElement> searchedChannels = (List<AndroidElement>) driver.findElements(searchedChannelList);
 		searchedChannels.get(0).click();
-		logger.info("Clicked On Searched Channel");
-		
+		logger.info("Clicked On Searched Channel");		
+	}
+	
+	public void searchFollowersChannel() {
+		waitHelper.waitForElementVisible(searchBox, 10);
+		driver.findElement(searchBox).click();
+		String channel = TestBase.prop.getProperty("FollowersChannel");
+		GenericHelper.enter_Text(driver, searchBox, channel);
+		logger.info("Entered Channel Name In Search Box");
 	}
 
 		
