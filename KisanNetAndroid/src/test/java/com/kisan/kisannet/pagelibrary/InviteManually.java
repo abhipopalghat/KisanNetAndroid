@@ -13,7 +13,7 @@ import io.appium.java_client.android.AndroidDriver;
 public class InviteManually {
 	
 	public AndroidDriver<?> driver;
-	private final Logger logger = LoggerHelper.getLogger(MyChat.class);
+	private final Logger logger = LoggerHelper.getLogger(InviteManually.class);
 	WaitHelper waitHelper;
 	
 	public By backArrow = By.className("android.widget.ImageButton");

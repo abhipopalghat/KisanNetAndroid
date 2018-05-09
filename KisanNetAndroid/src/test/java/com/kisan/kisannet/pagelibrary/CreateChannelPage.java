@@ -13,7 +13,7 @@ import io.appium.java_client.android.AndroidDriver;
 public class CreateChannelPage {
 
 	public AndroidDriver<?> driver;
-	private final Logger logger = LoggerHelper.getLogger(MyChat.class);
+	private final Logger logger = LoggerHelper.getLogger(CreateChannelPage.class);
 	WaitHelper waitHelper;
 	
 	public By backArrow = By.className("android.widget.ImageButton");
@@ -36,13 +36,13 @@ public class CreateChannelPage {
 		
 	public void clickNext() {
 		waitHelper.waitForElementVisible(nextButton, 10);
-		driver.findElement(nextButton).click();;
+		driver.findElement(nextButton).click();
 		logger.info("Clicked on Next Button");
 	}
 	
 	public void clickBack() {
 		waitHelper.waitForElementVisible(backArrow, 10);
-		driver.findElement(backArrow).click();;
+		driver.findElement(backArrow).click();
 		logger.info("Clicked on Back Button");
 	}
 	

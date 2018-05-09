@@ -12,7 +12,7 @@ import io.appium.java_client.android.AndroidDriver;
 public class Categories {
 	
 	public AndroidDriver<?> driver;
-	private final Logger logger = LoggerHelper.getLogger(MyChat.class);
+	private final Logger logger = LoggerHelper.getLogger(Categories.class);
 	WaitHelper waitHelper;
 	
 	public By agricultureCategory = By.xpath("//android.widget.TextView[@text='Agriculture']");

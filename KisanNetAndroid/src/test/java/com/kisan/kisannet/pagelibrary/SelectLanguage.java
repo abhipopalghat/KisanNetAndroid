@@ -14,7 +14,7 @@ import io.appium.java_client.android.AndroidDriver;
 public class SelectLanguage {
 	
 	public AndroidDriver<?> driver;
-	private final Logger logger = LoggerHelper.getLogger(MyChat.class);
+	private final Logger logger = LoggerHelper.getLogger(SelectLanguage.class);
 	WaitHelper waitHelper;
 	
 	public By english= By.xpath("//android.widget.TextView[@text='English']");

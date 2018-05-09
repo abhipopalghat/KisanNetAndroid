@@ -112,9 +112,8 @@ public class GenericHelper{
 		AndroidElement element = (AndroidElement) driver.findElement(locator);
 		WaitHelper waitHelper = new WaitHelper(driver);
 		waitHelper.waitForElementClickable(driver, 10, locator);
-        //element.click();
-		Actions action = new Actions(driver);
-		action.sendKeys(text).perform();	
+       	Actions action = new Actions(driver);
+		action.sendKeys(text).perform();
 	}
 
 }

@@ -23,12 +23,7 @@ public class SendTextMessageToAdmin extends TestBase {
 		channelDashboard = new ChannelDashboard(driver);
 		channelChatWindow = new ChannelChatWindow(driver);
 				
-		myChat.clickOnRightDrawerMenu();
-		myChat.clickOnSearchChannelOption();
-		myChat.searchFollowersChannel();
-		myChat.clickOnSearchedChannel();
-		driver.navigate().back();
-		channelDashboard.clickOnNewMessageButtonForFollower();
+		navigateToFollowersChannel(driver);
 		channelChatWindow.sendTextMessageToAdmin();
 		channelChatWindow.clickOnsendMessageButton();	
 		

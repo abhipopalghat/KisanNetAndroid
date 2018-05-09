@@ -26,8 +26,12 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 import com.kisan.kisannet.excelreader.ExcelReader;
 import com.kisan.kisannet.helper.assertionHelper.VerificationHelper;
@@ -71,7 +75,7 @@ public class TestBase {
 		capabilities.setCapability("appPackage", prop.getProperty("AppPackage"));
 		capabilities.setCapability("appActivity", prop.getProperty("AppActivity"));
 		capabilities.setCapability("noReset", "true");
-		capabilities.setCapability("newCommandTimeout","840");
+		capabilities.setCapability("newCommandTimeout","1840");
 		driver = new AndroidDriver(new URL(prop.getProperty("Url")), capabilities);
 		logger.info("Device settings Loaded");
 	}
@@ -151,19 +155,21 @@ public class TestBase {
 		test.log(LogStatus.INFO, result.getName() + " test started");
 	}
 	
+	
+	
 	@BeforeClass
-	public void beforeClass() throws Exception {
+	public void beforeSuite() throws Exception {
 		loadDeviceProperties();
 		deviceSettings();
 		//get_Data("TestData", "ChannelNames");
 	}
 	
 	@AfterClass
-	public void afterClass() {
-		//driver.quit();
+	public void afterTest() throws Exception {
 		extent.endTest(test);
 		extent.flush();
 	}
+	
 	
 	public void navigateToMyChat() throws Exception {
 		MyChat mychat = new MyChat(driver);

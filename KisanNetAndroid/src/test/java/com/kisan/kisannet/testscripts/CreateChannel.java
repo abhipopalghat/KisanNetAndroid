@@ -26,7 +26,7 @@ public class CreateChannel extends TestBase {
 
 	@Test
 	
-	public void CreateChannel() throws Exception {
+	public void createPublicChannel() throws Exception {
 		myChat = new MyChat(driver);
 		leftDrawer = new LeftDrawer(driver);
 		createChannel = new CreateChannelPage(driver);

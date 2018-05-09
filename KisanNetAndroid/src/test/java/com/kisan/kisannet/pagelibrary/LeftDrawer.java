@@ -17,7 +17,7 @@ import io.appium.java_client.android.AndroidElement;
 public class LeftDrawer {
 	
 	public AndroidDriver<?> driver;
-	private final Logger logger = LoggerHelper.getLogger(MyChat.class);
+	private final Logger logger = LoggerHelper.getLogger(LeftDrawer.class);
 	WaitHelper waitHelper;
 	
 	public  By userProfileImage = By.xpath("//*[@id='circleView']");
@@ -40,7 +40,6 @@ public class LeftDrawer {
 	}
 	
 	public void clickonUserProfileImage() throws Exception {
-		//Thread.sleep(5000);
 		waitHelper.waitForElementClickable(driver, 15, userProfileImage);
 		logger.info("Clicking on user profile image");
 		driver.findElement(userProfileImage).click();

@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name =  "Kisan_Net_Android_Automation" parallel="none">
-	
-	<test name="Change Language">
-	<parameter name="browser" value=""></parameter>
-	
-	<classes>
-		<class name="com.kisan.kisannet.testscripts.ChangeLanguage"></class>
-	</classes>
-	</test>
+<suite name="Kisan_Net_Android_Automation" parallel="none">
 
+	<test name="Test aOne">
+		<classes>
+			<class name="com.kisan.kisannet.testscripts.CreateChannel"></class>
+			
+		</classes>
+	</test>
+	
+	<test name="Test two">
+		<classes>
+			
+			<class name="com.kisan.kisannet.testscripts.SendTextMessageToFollowers"></class>
 		
+		</classes>
+	</test>
+	
+	<test name="Test three">
+		<classes>
+			
+			<class name="com.kisan.kisannet.testscripts.SendTextMessageToAdmin"></class>
+		
+		</classes>
+	</test>
+	
+	<test name="Test four">
+		<classes>
+			
+			<class name="com.kisan.kisannet.testscripts.SendImageToAdmin"></class>
+		</classes>
+	</test>
+	
+	
 </suite>

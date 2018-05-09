@@ -1,17 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Kisan_Net_Android_Automation]" parallel="none">
-  <parameter name="browser" value=""/>
-  <test name="Change Language(failed)" parallel="none">
-    <parameter name="browser" value=""/>
+  <test name="Test three(failed)" parallel="none">
     <classes>
-      <class name="com.kisan.kisannet.testscripts.ChangeLanguage">
+      <class name="com.kisan.kisannet.testscripts.CreateChannel">
         <methods>
-          <include name="beforeClass"/>
           <include name="beforeMethod"/>
-          <include name="changeLanguage"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.kisan.kisannet.testscripts.ChangeLanguage -->
+      </class> <!-- com.kisan.kisannet.testscripts.CreateChannel -->
+      <class name="com.kisan.kisannet.testscripts.SendImageToAdmin">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendImageToAdmin -->
+      <class name="com.kisan.kisannet.testscripts.SendTextMessageToFollowers">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendTextMessageToFollowers -->
+      <class name="com.kisan.kisannet.testscripts.SendTextMessageToAdmin">
+        <methods>
+          <include name="SendTextMessageToAdmin"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendTextMessageToAdmin -->
     </classes>
-  </test> <!-- Change Language(failed) -->
+  </test> <!-- Test three(failed) -->
+  <test name="Test four(failed)" parallel="none">
+    <classes>
+      <class name="com.kisan.kisannet.testscripts.CreateChannel">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.CreateChannel -->
+      <class name="com.kisan.kisannet.testscripts.SendImageToAdmin">
+        <methods>
+          <include name="sendImageToAdmin"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendImageToAdmin -->
+      <class name="com.kisan.kisannet.testscripts.SendTextMessageToFollowers">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendTextMessageToFollowers -->
+      <class name="com.kisan.kisannet.testscripts.SendTextMessageToAdmin">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendTextMessageToAdmin -->
+    </classes>
+  </test> <!-- Test four(failed) -->
 </suite> <!-- Failed suite [Kisan_Net_Android_Automation] -->

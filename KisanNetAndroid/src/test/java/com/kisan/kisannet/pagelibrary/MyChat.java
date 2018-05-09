@@ -34,7 +34,7 @@ public class MyChat {
 	By searchBox = By.id("com.kisan.samvaad.test:id/searchTextView");
 	By searchedChannelList = By.id("com.kisan.samvaad.test:id/relativeLayoutMyChat");
 	
-	public MyChat(AndroidDriver driver) {
+	public MyChat(AndroidDriver<?> driver) {
 		
 		this.driver = driver;
 		waitHelper = new WaitHelper(driver);
@@ -51,6 +51,7 @@ public class MyChat {
 		waitHelper.waitForElementVisible(discoverIcon, 5);
 		logger.info("Clicking on discover icon");
 		driver.findElement(discoverIcon).click();
+	    waitHelper.setImplicitWait(50, TimeUnit.SECONDS);    //Wait for discover page to load
 	} 
 	
 	public boolean isUserOnMyChat() {

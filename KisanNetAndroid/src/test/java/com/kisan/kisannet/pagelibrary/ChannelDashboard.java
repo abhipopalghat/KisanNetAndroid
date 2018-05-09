@@ -13,7 +13,7 @@ import io.appium.java_client.android.AndroidDriver;
 public class ChannelDashboard {
 
 	public AndroidDriver<?> driver;
-	private final Logger logger = LoggerHelper.getLogger(MyChat.class);
+	private final Logger logger = LoggerHelper.getLogger(ChannelDashboard.class);
 	WaitHelper waitHelper;
 	
 	public By channelName = By.xpath("//android.widget.TextView[@index='1']");
@@ -46,12 +46,14 @@ public class ChannelDashboard {
 	}
 	
 	public void clickOnNewMessageButtonForAdmin() {
-		waitHelper.waitForElementClickable(driver, 5, newMessageButtonAdmin);
+		waitHelper.setImplicitWait(5, TimeUnit.SECONDS);
+		waitHelper.waitForElementClickable(driver, 15, newMessageButtonAdmin);
 		driver.findElement(newMessageButtonAdmin).click();
 		logger.info("Clicked on new message button from channel dashboard");
 	}
 	
-	public void clickOnNewMessageButtonForFollower() {
+	public void clickOnNewMessageButtonForFollower() throws Exception {
+		waitHelper.setImplicitWait(5, TimeUnit.SECONDS);
 		waitHelper.waitForElementClickable(driver, 5, newMessageButtonFollower);
 		driver.findElement(newMessageButtonFollower).click();
 		logger.info("Clicked on new message button from channel dashboard");

@@ -15,7 +15,7 @@ import io.appium.java_client.android.AndroidElement;
 
 public class SelectContact {
 	public AndroidDriver<?> driver;
-	private final Logger logger = LoggerHelper.getLogger(MyChat.class);
+	private final Logger logger = LoggerHelper.getLogger(SelectContact.class);
 	WaitHelper waitHelper;
 	
 	public By backArrow = By.xpath("//android.widget.ImageButton[@inded='0']");

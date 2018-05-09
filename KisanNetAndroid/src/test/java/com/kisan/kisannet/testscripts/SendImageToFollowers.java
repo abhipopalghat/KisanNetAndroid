@@ -15,7 +15,7 @@ public class SendImageToFollowers extends TestBase {
 	public ChannelChatWindow channelChatWindow;
 	
 	@Test
-	public void sendTextMessageToFollower() throws Exception {
+	public void sendImageToFollower() throws Exception {
 		myChat = new MyChat(driver);
 		channelDashboard = new ChannelDashboard(driver);
 		channelChatWindow = new ChannelChatWindow(driver);
@@ -26,9 +26,9 @@ public class SendImageToFollowers extends TestBase {
 		channelChatWindow.clickOnCameraOption();
 		channelChatWindow.clickOnTakeAPicture();
 		channelChatWindow.clickOnShutterButton();
-		channelChatWindow.clickOnYesButtonAfterCapturingPhoto();
-		channelChatWindow.writeACaptionToCapturedImage();
-		channelChatWindow.clickOnsendImageButton();
+		channelChatWindow.clickOnYesButtonAfterCapturingMedia();
+		channelChatWindow.writeACaption();
+		channelChatWindow.clickOnSendMediaButton();
 	
 		navigateToAdminsChannel(driver);
 		String expectedCaption = prop.getProperty("WriteACaption");
