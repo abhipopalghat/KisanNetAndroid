@@ -33,6 +33,7 @@ public class InviteToDownloadApp extends TestBase {
 		invitePeople = new InvitePeople(driver);
 		inviteManually = new InviteManually(driver);
 		
+		
 		myChat.clickOnRightDrawerMenu();
 		myChat.clickOnInviteToKisanOption();
 		invitePeople.clickOnEnterNumberField();
