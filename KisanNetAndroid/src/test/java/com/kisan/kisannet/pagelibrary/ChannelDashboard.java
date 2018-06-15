@@ -16,7 +16,7 @@ public class ChannelDashboard {
 	private final Logger logger = LoggerHelper.getLogger(ChannelDashboard.class);
 	WaitHelper waitHelper;
 	
-	public By channelName = By.xpath("//android.widget.TextView[@index='1']");
+	public By channelName = By.xpath("//android.widget.TextView[@instance='0']");
 	public By leftDrawerButton = By.xpath("//android.widget.ImageButton[@content-desc=\"Open\"]");
 	public By notificationIcon = By.id("com.kisan.samvaad.test:id/action_notifications");
 	public By newMessageButtonAdmin = By.id("com.kisan.samvaad.test:id/floatingActionButtonGoToChat");
@@ -57,5 +57,11 @@ public class ChannelDashboard {
 		waitHelper.waitForElementClickable(driver, 5, newMessageButtonFollower);
 		driver.findElement(newMessageButtonFollower).click();
 		logger.info("Clicked on new message button from channel dashboard");
+	}
+	
+	public void clickOnChannelName() {
+		waitHelper.waitForElementVisible(channelName, 5);
+		driver.findElement(channelName).click();
+		logger.info("Clicked on channel name");
 	}
 }

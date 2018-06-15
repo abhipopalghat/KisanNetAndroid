@@ -8,13 +8,15 @@ import org.openqa.selenium.WebElement;
 
 import com.kisan.kisannet.helper.Logger.LoggerHelper;
 
+import io.appium.java_client.android.AndroidDriver;
+
 
 public class JavaScriptHelper {
 
-	private WebDriver driver;
+	private AndroidDriver<?> driver;
 	private Logger Log = LoggerHelper.getLogger(JavaScriptHelper.class);
 
-	public JavaScriptHelper(WebDriver driver) {
+	public JavaScriptHelper(AndroidDriver<?> driver) {
 		this.driver = driver;
 		Log.debug("JavaScriptHelper : " + this.driver.hashCode());
 	}
@@ -29,6 +31,12 @@ public class JavaScriptHelper {
 		JavascriptExecutor exe = (JavascriptExecutor) driver;
 		Log.info(script);
 		return exe.executeScript(script, args);
+	}
+	
+	public void executeScriptCopy(String script, Object... args) {
+		JavascriptExecutor exe = (JavascriptExecutor) driver;
+		Log.info(script);
+		exe.executeScript(script, args);
 	}
 
 	public void scrollToElemet(WebElement element) {

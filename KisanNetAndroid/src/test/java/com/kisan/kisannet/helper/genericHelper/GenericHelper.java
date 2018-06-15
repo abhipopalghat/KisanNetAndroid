@@ -108,12 +108,14 @@ public class GenericHelper{
 		return elementText;
 	}
 	
-	public static void enter_Text(AndroidDriver<?> driver, By locator, String text){
-		AndroidElement element = (AndroidElement) driver.findElement(locator);
+	public static void enter_Text(AndroidDriver<?> driver, By locator, String text) throws Exception{
 		WaitHelper waitHelper = new WaitHelper(driver);
 		waitHelper.waitForElementClickable(driver, 10, locator);
-       	Actions action = new Actions(driver);
+		Actions action = new Actions(driver);
+		Thread.sleep(5);
 		action.sendKeys(text).perform();
+		//action.sendKeys(driver.findElement(locator), text);
+		
 	}
 
 }

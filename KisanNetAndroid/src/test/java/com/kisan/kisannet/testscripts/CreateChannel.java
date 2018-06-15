@@ -35,6 +35,7 @@ public class CreateChannel extends TestBase {
 		selectContact = new SelectContact(driver);
 		inviteManually = new InviteManually(driver);
 		channelDashboard = new ChannelDashboard(driver);
+		
 		myChat.clickonLeftdrawerButton();
 		leftDrawer.clickonstartYourChannel();
 		createChannel.clickStartYourChannelButton();

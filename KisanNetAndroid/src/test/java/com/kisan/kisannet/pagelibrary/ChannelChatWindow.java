@@ -60,7 +60,7 @@ public class ChannelChatWindow {
 		
 	}
 	
-	public void sendTextMessageToFollowers() {
+	public void sendTextMessageToFollowers() throws Exception {
 		waitHelper.waitForElementVisible(typeAMessage, 5);
 		driver.findElement(typeAMessage).click();
 		String message = TestBase.prop.getProperty("TextMessageToFollowers");
@@ -74,7 +74,7 @@ public class ChannelChatWindow {
 		logger.info("Clicked On send message button in admins chat window");
 	}
 	
-	public void sendTextMessageToAdmin() {
+	public void sendTextMessageToAdmin() throws Exception {
 		waitHelper.waitForElementVisible(typeAMessage, 5);
 		driver.findElement(typeAMessage).click();
 		String message = TestBase.prop.getProperty("TextMessageToAdmin");
@@ -128,7 +128,7 @@ public class ChannelChatWindow {
 		logger.info("Clicked on yes tickmark after capturing photo");
 	}
 	
-	public void writeACaption() {
+	public void writeACaption() throws Exception {
 		waitHelper.waitForElementVisible(writeACaption, 10);
 		driver.findElement(writeACaption).click();
 		String message = TestBase.prop.getProperty("WriteACaption");

@@ -41,7 +41,7 @@ public class SelectContact {
 		logger.info("Clicked on Back Button");
 	}
 	
-	public void searchContact() {
+	public void searchContact() throws Exception {
 		waitHelper.waitForElementVisible(searchBox, 10);
 		driver.findElement(searchBox).click();
 		String contact = TestBase.prop.getProperty("ContactToInvite");

@@ -17,8 +17,10 @@ public class FollowChannel extends TestBase{
 		discover = new DiscoverPage(driver);
 		
 		myChat.clickonDiscoverIcon();
-		discover.searchChannel();
+		//discover.searchChannel();
+		discover.moveToChannel();
 		discover.followChannel();
+		
 	}
 	
 }

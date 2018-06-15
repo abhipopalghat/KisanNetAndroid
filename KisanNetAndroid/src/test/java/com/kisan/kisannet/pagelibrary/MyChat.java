@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 
+import com.kisan.kisannet.helper.Javascript.JavaScriptHelper;
 import com.kisan.kisannet.helper.Logger.LoggerHelper;
 import com.kisan.kisannet.helper.Wait.WaitHelper;
 import com.kisan.kisannet.helper.genericHelper.GenericHelper;
@@ -22,6 +23,7 @@ public class MyChat {
 	public AndroidDriver<?> driver;
 	private final Logger logger = LoggerHelper.getLogger(MyChat.class);
 	WaitHelper waitHelper;
+	JavaScriptHelper javaScriptHelper;
 	
 	By leftDrawerButton = By.className("android.widget.ImageButton");
 	By discoverIcon = By.id("com.kisan.samvaad.test:id/action_discover");
@@ -32,12 +34,13 @@ public class MyChat {
 	By changeLanguage = By.xpath("//android.widget.LinearLayout[@index='1']");
 	By searchChannel = By.xpath("//android.widget.LinearLayout[@index='2']");	
 	By searchBox = By.id("com.kisan.samvaad.test:id/searchTextView");
-	By searchedChannelList = By.id("com.kisan.samvaad.test:id/relativeLayoutMyChat");
+	By searchedChannelList = By.xpath("//android.widget.TextView[@resource-id='com.kisan.samvaad.test:id/textViewCommunityName']");
 	
 	public MyChat(AndroidDriver<?> driver) {
 		
 		this.driver = driver;
 		waitHelper = new WaitHelper(driver);
+		javaScriptHelper = new JavaScriptHelper(driver);
 	}
 	
 	public void clickonLeftdrawerButton() throws Exception {
@@ -58,9 +61,9 @@ public class MyChat {
 		boolean present;
 		
 			try {
-				driver.findElement(discoverIcon);
+				driver.findElement(discoverIcon).isDisplayed();
 				present =true;
-			} catch (NoSuchElementException e) {
+			} catch (Exception e) {
 				present = false;
 			}
 		return present;
@@ -85,17 +88,37 @@ public class MyChat {
 	} 
 	
 	public void clickOnSearchChannelOption() throws Exception {
-		waitHelper.waitForElementVisible(searchChannel, 5);
-		logger.info("Clicking on search a channel option from right drawer");
+		waitHelper.waitForElementVisible(searchChannel, 5);	
 		driver.findElement(searchChannel).click();
+		logger.info("Clicked on search a channel option from right drawer");
 	} 
 
-	public void searchAdminsChannel() {
+	public void searchAdminsChannel() throws Exception {
 		waitHelper.waitForElementVisible(searchBox, 10);
 		driver.findElement(searchBox).click();
 		String channel = TestBase.prop.getProperty("AdminsChannel");
 		GenericHelper.enter_Text(driver, searchBox, channel);
+		//javaScriptHelper.executeScriptCopy("arguments[0].value= 'Automation Channel';", driver.findElement(searchBox));
 		logger.info("Entered Channel Name In Search Box");
+	}
+	
+	public Boolean searchEditedChannel() throws Exception {
+		waitHelper.waitForElementVisible(searchBox, 10);
+		driver.findElement(searchBox).click();
+		String channel = TestBase.prop.getProperty("EditedChannelName");
+		GenericHelper.enter_Text(driver, searchBox, channel);
+		waitHelper.waitForElementVisible(searchedChannelList, 10);
+		List<AndroidElement> searchedChannels = (List<AndroidElement>) driver.findElements(searchedChannelList);
+		Boolean flag = false;
+		System.out.println(searchedChannels.get(0).getText());
+		for(int i=0; i<searchedChannels.size(); i++) {
+			if(searchedChannels.get(i).getText().equals(channel)) {
+				flag = true;
+				break;
+			}
+		}
+		return flag;
+		
 	}
 	
 	public void clickOnSearchedChannel() {
@@ -105,7 +128,7 @@ public class MyChat {
 		logger.info("Clicked On Searched Channel");		
 	}
 	
-	public void searchFollowersChannel() {
+	public void searchFollowersChannel() throws Exception {
 		waitHelper.waitForElementVisible(searchBox, 10);
 		driver.findElement(searchBox).click();
 		String channel = TestBase.prop.getProperty("FollowersChannel");

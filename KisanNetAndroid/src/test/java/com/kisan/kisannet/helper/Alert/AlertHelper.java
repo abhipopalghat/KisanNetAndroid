@@ -8,13 +8,15 @@ import org.openqa.selenium.WebDriver;
 
 import com.kisan.kisannet.helper.Logger.LoggerHelper;
 
+import io.appium.java_client.android.AndroidDriver;
+
 
 public class AlertHelper{
 	
 	private WebDriver driver;
 	private Logger oLog = LoggerHelper.getLogger(AlertHelper.class);
 	
-	public AlertHelper(WebDriver driver) {
+	public AlertHelper(AndroidDriver<?> driver) {
 		this.driver = driver;
 		oLog.debug("AlertHelper : " + this.driver.hashCode());
 	}

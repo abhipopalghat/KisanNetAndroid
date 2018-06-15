@@ -55,10 +55,10 @@ public class CreateChannelPage {
 	public void clickUploadImage() {
 		waitHelper.waitForElementVisible(imageUpload, 10);
 		driver.findElement(imageUpload).click();
-		logger.info("Clicked On Start Your Channel Button");
+		logger.info("Clicked On image upload button");
 	}
 	
-	public void enterChannelName() {
+	public void enterChannelName() throws Exception {
 		waitHelper.waitForElementVisible(channelName, 5);
 		driver.findElement(channelName).click();
 		String channelName = TestBase.prop.getProperty("ChannelNameToBeCreated");

@@ -40,7 +40,7 @@ public class EnterChannelInfo {
 		logger.info("Clicked on Back Button");
 	}
 	
-	public void enterDescription() {
+	public void enterDescription() throws Exception {
 		waitHelper.waitForElementClickable(driver, 10, aboutChannel);
 		driver.findElement(aboutChannel).click();
 		String description = TestBase.prop.getProperty("Description");

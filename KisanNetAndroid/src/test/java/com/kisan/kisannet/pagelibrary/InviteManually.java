@@ -38,7 +38,7 @@ public class InviteManually {
 		logger.info("Clicked on Back Button");
 	}
 	
-	public void enterMobileNumberManually() {
+	public void enterMobileNumberManually() throws Exception {
 		waitHelper.waitForElementVisible(enterNumberBox, 10);
 		driver.findElement(enterNumberBox).click();
 		String manualContact = TestBase.prop.getProperty("InviteManually");

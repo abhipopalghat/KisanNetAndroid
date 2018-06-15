@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.kisan.kisannet.testscripts.SendTextMessageToFollowers">
+        <methods>
+          <include name="sendTextMessageToFollower"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendTextMessageToFollowers -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

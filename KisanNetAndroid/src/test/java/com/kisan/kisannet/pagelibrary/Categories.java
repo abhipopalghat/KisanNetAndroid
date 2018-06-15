@@ -39,8 +39,7 @@ public class Categories {
 		this.driver = driver;
 		waitHelper = new WaitHelper(driver);
 	}
-	
-	
+		
 	public void selectAgricultureCategory(){
 		waitHelper.waitForElementVisible(agricultureCategory, 10);
 		driver.findElement(agricultureCategory).click();

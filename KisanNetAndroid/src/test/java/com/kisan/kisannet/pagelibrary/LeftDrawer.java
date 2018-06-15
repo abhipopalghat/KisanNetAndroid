@@ -4,11 +4,14 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 
 import com.google.common.base.Utf8;
+import com.kisan.kisannet.helper.Alert.AlertHelper;
 import com.kisan.kisannet.helper.Logger.LoggerHelper;
 import com.kisan.kisannet.helper.Wait.WaitHelper;
+import com.kisan.kisannet.testBase.TestBase;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
@@ -19,24 +22,26 @@ public class LeftDrawer {
 	public AndroidDriver<?> driver;
 	private final Logger logger = LoggerHelper.getLogger(LeftDrawer.class);
 	WaitHelper waitHelper;
+	AlertHelper alertHelper;
 	
-	public  By userProfileImage = By.xpath("//*[@id='circleView']");
+	public  By userProfileImage = By.id("com.kisan.samvaad.test:id/circleView");
 	public  By myChats = By.xpath("//android.support.v7.widget.LinearLayoutCompat[@index='1']");
 	public  By startYourChannel= By.xpath("//android.support.v7.widget.LinearLayoutCompat[@index='2']");
 	public  By language = By.xpath("//android.support.v7.widget.LinearLayoutCompat[@index='4']");
 	public  By share = By.xpath("//android.support.v7.widget.LinearLayoutCompat[@index='5']");
 	public  By support = By.xpath("//android.support.v7.widget.LinearLayoutCompat[@index='6']");
 	public  By logout = By.xpath("//android.support.v7.widget.LinearLayoutCompat[@index='7']");
-	public  By logoutYesButton = By.xpath("//*[@id='button1']");
-	public  By logoutNoButton = By.xpath("//*[@id='button2']");
+	public  By logoutYesButton = By.id("android:id/button2");
+	public  By logoutNoButton = By.id("android:id/button2");
 	public  By opacity = By.xpath(""); 
 	public  By appLanguage = By.xpath("//android.widget.CheckedTextView[@resource-id='com.kisan.samvaad.test:id/design_menu_item_text']");
-
+	public  By userName = By.id("com.kisan.samvaad.test:id/textViewName");
 	
 	
 	public LeftDrawer(AndroidDriver driver) {
 		this.driver = driver;
 		waitHelper = new WaitHelper(driver);
+		alertHelper = new AlertHelper(driver);
 	}
 	
 	public void clickonUserProfileImage() throws Exception {
@@ -121,5 +126,25 @@ public class LeftDrawer {
 	    }
 	    return flag;
 	
+	}
+	
+	public String getUserName() {
+		waitHelper.waitForElementVisible(userName, 5);
+		String userFullName = driver.findElement(userName).getText();
+		return userFullName;		
+	}
+	
+	public boolean compareEditedUserName() {
+		String userFullName = getUserName();
+		String fName = TestBase.prop.getProperty("EditedFirstName");
+		String lName = TestBase.prop.getProperty("EditedLastName");
+		String completeEditedName = fName+" "+lName;
+		System.out.println(completeEditedName);
+		if(userFullName.equals(completeEditedName)) {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
 }
