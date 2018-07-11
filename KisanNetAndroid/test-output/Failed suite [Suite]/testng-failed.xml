@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]">
+  <test name="Test(failed)(failed)">
+    <classes>
+      <class name="com.kisan.kisannet.testscripts.EditChannelProfile">
+        <methods>
+          <include name="editChannelProfile"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.EditChannelProfile -->
+      <class name="com.kisan.kisannet.testscripts.EditSelfProfile">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.EditSelfProfile -->
+      <class name="com.kisan.kisannet.testscripts.ChangeLanguage">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="changeLanguage"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.ChangeLanguage -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

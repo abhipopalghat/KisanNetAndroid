@@ -27,7 +27,7 @@ public class InviteToFollowChannel extends TestBase {
 		inviteManually = new InviteManually(driver);
 	}
 	
-	@Test
+	@Test()
 	public void inviteByContactName() throws Exception {
 		
 		myChat.clickOnRightDrawerMenu();
@@ -37,13 +37,14 @@ public class InviteToFollowChannel extends TestBase {
 		channelDashboard.clickOnChannelName();
 		channelProfile.clickOnRightDrawer();
 		channelProfile.clickOnInviteOption();
+		alertHelper.AcceptPermissions();
 		invitePeople.enterContactName();
 		driver.navigate().back();
 		invitePeople.selectSearchedContactToInviteChannel();
 		invitePeople.clickOnDoneButton();
 	}
 	
-	@Test
+	@Test()
 	public void inviteManually() throws Exception {
 		
 		myChat.clickOnRightDrawerMenu();

@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.kisan.kisannet.testscripts.InviteToFollowChannel">
+      <class name="com.kisan.kisannet.testscripts.FollowChannel">
         <methods>
-          <include name="inviteByContactName"/>
           <include name="beforeMethod"/>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
+          <include name="followChannelFormChannelProfile" invocation-numbers="0"/>
           <include name="afterMethod"/>
-          <include name="initializePages"/>
+          <include name="followChannelFormDiscover" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.kisan.kisannet.testscripts.InviteToFollowChannel -->
+      </class> <!-- com.kisan.kisannet.testscripts.FollowChannel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

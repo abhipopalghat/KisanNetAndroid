@@ -25,6 +25,7 @@ public class ChannelProfile {
 	By leaveChannel = By.xpath("//android.widget.LinearLayout[@index='4']");
 	By showFollowers = By.id("com.kisan.samvaad.test:id/textViewMember");
 	By chatIcon = By.id("com.kisan.samvaad.test:id/floatingActionButton");
+	By followButton = By.id("com.kisan.samvaad.test:id/floatingActionButton");
 	
 	public ChannelProfile(AndroidDriver<?> driver) {
 		this.driver = driver;
@@ -89,6 +90,13 @@ public class ChannelProfile {
 		waitHelper.waitForElementVisible(chatIcon, 5);
 		driver.findElement(chatIcon).click();
 		logger.info("Clicked on chat icon");
+	}
+	
+	public void clickOnFollowButton() throws Exception {
+		waitHelper.waitForElementVisible(followButton, 5);
+		driver.findElement(followButton).click();
+		logger.info("Clicked on follow icon");
+		Thread.sleep(10000);
 	}
 	
 }

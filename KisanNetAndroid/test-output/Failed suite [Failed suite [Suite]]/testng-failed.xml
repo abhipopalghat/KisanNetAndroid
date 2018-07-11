@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Failed suite [Suite]]]">
+  <test name="Test(failed)(failed)(failed)">
+    <classes>
+      <class name="com.kisan.kisannet.testscripts.SendTextMessageToFollowers">
+        <methods>
+          <include name="sendTextMessageToFollower"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendTextMessageToFollowers -->
+      <class name="com.kisan.kisannet.testscripts.ChangeLanguage">
+        <methods>
+          <include name="changeLanguage"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.ChangeLanguage -->
+      <class name="com.kisan.kisannet.testscripts.SendLocationToFollowers">
+        <methods>
+          <include name="sendImageToFollower"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendLocationToFollowers -->
+      <class name="com.kisan.kisannet.testscripts.SendImageToFollowers">
+        <methods>
+          <include name="sendImageToFollower"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendImageToFollowers -->
+      <class name="com.kisan.kisannet.testscripts.SendAudioToFollowers">
+        <methods>
+          <include name="sendImageToFollower"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendAudioToFollowers -->
+      <class name="com.kisan.kisannet.testscripts.SendVideoToFollowers">
+        <methods>
+          <include name="sendImageToFollower"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendVideoToFollowers -->
+    </classes>
+  </test> <!-- Test(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Suite]]] -->

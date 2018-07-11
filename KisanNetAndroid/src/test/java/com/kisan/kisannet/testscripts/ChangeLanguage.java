@@ -15,12 +15,13 @@ import com.kisan.kisannet.testBase.TestBase;
 
 public class ChangeLanguage extends TestBase {
 	
+	
 	public MyChat myChat;
 	public LeftDrawer leftDrawer;
 	public SelectLanguage selectLanguage;
 
 		
-	@Test 
+	@Test(priority = 10) 
 	public void changeLanguage() throws Exception {
 		myChat = new MyChat(driver);
 		leftDrawer = new LeftDrawer(driver);
@@ -29,7 +30,7 @@ public class ChangeLanguage extends TestBase {
 		myChat.clickonLeftdrawerButton();
 		leftDrawer.clickonLanguage();
 		String language = selectLanguage.clickMarathi();
-		logger.info("Clicked on "+language+"Language");
+		logger.info("Clicked on "+language+ "Language");
 		boolean status = leftDrawer.verifyAppLanguge(prop.getProperty("ChangeLanguage"));
 		driver.navigate().back();
 		if(status) {

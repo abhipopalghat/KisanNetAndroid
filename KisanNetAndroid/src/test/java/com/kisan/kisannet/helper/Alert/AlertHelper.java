@@ -3,12 +3,14 @@ package com.kisan.kisannet.helper.Alert;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 
 import com.kisan.kisannet.helper.Logger.LoggerHelper;
 
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidElement;
 
 
 public class AlertHelper{
@@ -78,5 +80,27 @@ public class AlertHelper{
 		alert.sendKeys(text);
 		alert.accept();
 		oLog.info(text);
+	}
+	
+	public void AcceptPermissions() {
+		By allowButton = By.id("com.android.packageinstaller:id/permission_allow_button");
+		
+		while(isAlertPopUpPresent(allowButton)){
+			driver.findElement(allowButton).click();
+		}
+	}
+	
+	public boolean isAlertPopUpPresent(By allowButton) {
+		boolean alertPresent;
+		try {
+				driver.findElement(allowButton).isDisplayed(); 
+				alertPresent = true;
+			}
+		catch (Exception e) {
+			alertPresent = false;
+		}			
+		
+		return alertPresent;
+		
 	}
 }

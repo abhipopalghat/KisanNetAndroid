@@ -13,7 +13,7 @@ public class InviteToDownloadApp extends TestBase {
 	InvitePeople invitePeople;
 	InviteManually inviteManually;
 	
-	@Test
+	@Test()
 	public void inviteByContact() throws Exception {
 		myChat = new MyChat(driver);
 		invitePeople = new InvitePeople(driver);
@@ -21,13 +21,14 @@ public class InviteToDownloadApp extends TestBase {
 		
 		myChat.clickOnRightDrawerMenu();
 		myChat.clickOnInviteToKisanOption();
+		alertHelper.AcceptPermissions();
 		invitePeople.enterContactName();
 		driver.navigate().back();
 		invitePeople.selectSearchedContactToDownloadApp();
 		invitePeople.clickOnInviteButton();
 	}
 	
-	@Test
+	@Test()
 	public void inviteManually() throws Exception{
 		myChat = new MyChat(driver);
 		invitePeople = new InvitePeople(driver);

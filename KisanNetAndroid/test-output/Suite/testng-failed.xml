@@ -1,16 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" name="Failed suite [Suite]">
+<suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
+      <class name="com.kisan.kisannet.testscripts.ChangeLanguage">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.ChangeLanguage -->
+      <class name="com.kisan.kisannet.testscripts.SendImageToAdmin">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendImageToAdmin -->
+      <class name="com.kisan.kisannet.testscripts.Logout">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.Logout -->
+      <class name="com.kisan.kisannet.testscripts.InviteToDownloadApp">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.InviteToDownloadApp -->
+      <class name="com.kisan.kisannet.testscripts.EditSelfProfile">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="editSelfProfile"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.EditSelfProfile -->
+      <class name="com.kisan.kisannet.testscripts.SendVideoToFollowers">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendVideoToFollowers -->
+      <class name="com.kisan.kisannet.testscripts.CreateChannel">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.CreateChannel -->
+      <class name="com.kisan.kisannet.testscripts.SendVideoToAdmin">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendVideoToAdmin -->
+      <class name="com.kisan.kisannet.testscripts.SendAudioToFollowers">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendAudioToFollowers -->
+      <class name="com.kisan.kisannet.testscripts.SendLocationToAdmin">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendLocationToAdmin -->
+      <class name="com.kisan.kisannet.testscripts.SendTextMessageToAdmin">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendTextMessageToAdmin -->
+      <class name="com.kisan.kisannet.testscripts.InviteToFollowChannel">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="initializePages"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.InviteToFollowChannel -->
+      <class name="com.kisan.kisannet.testscripts.EditChannelProfile">
+        <methods>
+          <include name="editChannelProfile"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.EditChannelProfile -->
+      <class name="com.kisan.kisannet.testscripts.FollowChannel">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="followChannelFormChannelProfile" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.FollowChannel -->
+      <class name="com.kisan.kisannet.testscripts.SendImageToFollowers">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendImageToFollowers -->
       <class name="com.kisan.kisannet.testscripts.SendTextMessageToFollowers">
         <methods>
-          <include name="sendTextMessageToFollower"/>
           <include name="beforeMethod"/>
+          <include name="afterTest"/>
           <include name="beforeSuite"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.kisan.kisannet.testscripts.SendTextMessageToFollowers -->
+      <class name="com.kisan.kisannet.testscripts.SendAudioToAdmin">
+        <methods>
+          <include name="sendAudioToAdmin"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendAudioToAdmin -->
+      <class name="com.kisan.kisannet.testscripts.SendLocationToFollowers">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendLocationToFollowers -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -102,6 +102,15 @@ public class MyChat {
 		logger.info("Entered Channel Name In Search Box");
 	}
 	
+	public void searchChannelToEdit() throws Exception {
+		waitHelper.waitForElementVisible(searchBox, 10);
+		driver.findElement(searchBox).click();
+		String channel = TestBase.prop.getProperty("ChannelToBeEdited");
+		GenericHelper.enter_Text(driver, searchBox, channel);
+		//javaScriptHelper.executeScriptCopy("arguments[0].value= 'Automation Channel';", driver.findElement(searchBox));
+		logger.info("Entered Channel Name In Search Box");
+	}
+	
 	public Boolean searchEditedChannel() throws Exception {
 		waitHelper.waitForElementVisible(searchBox, 10);
 		driver.findElement(searchBox).click();
@@ -117,6 +126,8 @@ public class MyChat {
 				break;
 			}
 		}
+		driver.navigate().back();
+		driver.navigate().back();
 		return flag;
 		
 	}
@@ -133,6 +144,13 @@ public class MyChat {
 		driver.findElement(searchBox).click();
 		String channel = TestBase.prop.getProperty("FollowersChannel");
 		GenericHelper.enter_Text(driver, searchBox, channel);
+		logger.info("Entered Channel Name In Search Box");
+	}
+	
+	public void searchChannel(String channelName) throws Exception {
+		waitHelper.waitForElementVisible(searchBox, 10);
+		driver.findElement(searchBox).click();
+		GenericHelper.enter_Text(driver, searchBox, channelName);
 		logger.info("Entered Channel Name In Search Box");
 	}
 

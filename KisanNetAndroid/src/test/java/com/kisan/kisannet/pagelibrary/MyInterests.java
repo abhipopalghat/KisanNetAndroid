@@ -19,7 +19,7 @@ public class MyInterests {
 	
 	public By backArrow = By.className("android.widget.ImageButton");
 	public By nextButton = By.id("com.kisan.samvaad.test:id/action_next");
-	public By categories = By.xpath("//android.widget.LinearLayout[contains(@clickable,'true')]");
+	public By categories = By.className("android.widget.CheckBox");
 	public By doneButton = By.id("com.kisan.samvaad.test:id/action_done");
 
 	public MyInterests(AndroidDriver<?> driver) {
@@ -47,7 +47,11 @@ public class MyInterests {
 	
 	public void selectCategories() {
 		List<AndroidElement> catetories = (List<AndroidElement>)driver.findElements(categories);
-		System.out.println(catetories.size());
+		/*System.out.println(catetories.get(0).isSelected());
+		System.out.println(catetories.get(3).isSelected());*/
+		for(int i=0;i<5;i++) {
+			catetories.get(i).click();
+		}
 		for(int i=0;i<5;i++) {
 			catetories.get(i).click();
 		}

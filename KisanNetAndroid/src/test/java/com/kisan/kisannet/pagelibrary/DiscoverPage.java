@@ -37,7 +37,8 @@ public class DiscoverPage {
 	public By backArrow = By.className("android.widget.ImageButton");
 	public By refreshButton = By.id("com.kisan.samvaad.test:id/action_refresh");
 	public By searchButton = By.id("com.kisan.samvaad.test:id/action_search");
-	public By searchTextBox = By.className("android.widget.EditText");
+	//public By searchTextBox = By.className("android.widget.EditText");
+	public By searchTextBox = By.xpath("//android.widget.TextView[@text='Discover']");
 	public By filter = By.id("com.kisan.samvaad.test:id/action_filter");
 	public By channelName = By.id("com.kisan.samvaad.test:id/textViewCommunityName");
 	//public By tempChannelName = By.xpath("//android.widget.TextView[starts-with(@text,"+channel+")]");
@@ -87,25 +88,20 @@ public class DiscoverPage {
 		logger.info("Clicked on Search Box");
 	}
 	
-	
-	
-	public void searchChannel() throws Exception {
+	public void searchChannel(String channelName) throws Exception {
 		if(driver.findElement(searchButton)!=null) {		//Checks if user lands directly on discover page
 		driver.findElement(searchButton).click();
 		driver.findElement(searchTextBox).click();
-		String channel = TestBase.prop.getProperty("ChannelToBeFollowedFromDiscover");
-		GenericHelper.enter_Text(driver, searchTextBox, channel);
-		
-		//AndroidElement followButton = getChannelToBeFollowed();
-		
-		//driver.navigate().back();
+		//String channel = TestBase.prop.getProperty("ChannelToBeFollowedFromProfile");
+		driver.findElement(searchTextBox).sendKeys(channelName);
 		logger.info("Searched channel");
 		}
 		else {
 			isFirstTimeOnDiscover();						//Checks if user lands on Got it screen overlay
-			searchChannel();
+			searchChannel(channelName);
 		}
 	}
+	
 	
 	public void clickOnFilterButton() {
 		waitHelper.waitForElementVisible(filter, 10);
@@ -118,20 +114,21 @@ public class DiscoverPage {
 		List<AndroidElement> channels = (List<AndroidElement>)driver.findElements(channelName);
 		int totalCount = channels.size();
 		int channelIndex = 0;
-		for(channelIndex=0;channelIndex<=totalCount;channelIndex++) {
-			if(channels.get(channelIndex).getText()==channel) {
-				break;
-			}
+		System.out.println(channels.get(channelIndex).getText());
+		for(channelIndex=0;channelIndex<totalCount;channelIndex++) {
+			if(channels.get(channelIndex).getText().equalsIgnoreCase(channel)) 
+				break;		
 		}
 		return channelIndex;
 	}
 	
-	public void followChannel() {
+	public void followChannel() throws Exception {
 		waitHelper.waitForElementVisible(followButton, 10);
 		String channelToBeFollowed = TestBase.prop.getProperty("ChannelToBeFollowedFromDiscover");
 		int channelIndex = getSearchedChannelIndex(channelToBeFollowed);
 		List<AndroidElement> followButtons = (List<AndroidElement>)driver.findElements(followButton);
 		followButtons.get(channelIndex).click();
+		Thread.sleep(3000);
 		logger.info("Clicked on follow button");
 	}
 	

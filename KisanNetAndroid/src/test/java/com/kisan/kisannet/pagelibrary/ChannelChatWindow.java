@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import com.kisan.kisannet.helper.Alert.AlertHelper;
 import com.kisan.kisannet.helper.Logger.LoggerHelper;
 import com.kisan.kisannet.helper.Wait.WaitHelper;
 import com.kisan.kisannet.helper.genericHelper.GenericHelper;
@@ -47,7 +48,7 @@ public class ChannelChatWindow {
 	public By allCaptions = By.id("com.kisan.samvaad.test:id/textViewMessage");
 	public By recordAudio = By.id("com.kisan.samvaad.test:id/linearLayoutOptionOne");
 	public By startRecording = By.id("com.kisan.samvaad.test:id/buttonRecordAudioStart");
-	public By stopRecording = By.className("android.widget.ImageButton");
+	public By stopRecording = By.id("com.kisan.samvaad.test:id/buttonRecordAudioStop");
 	public By sendAudio = By.id("com.kisan.samvaad.test:id/buttonSendAudio");
 	public By audioIcon = By.id("com.kisan.samvaad.test:id/imageViewAudioMessage");
 	public By currentLocation =By.id("com.kisan.samvaad.test:id/addressLinearLayout");
@@ -57,7 +58,6 @@ public class ChannelChatWindow {
 	public ChannelChatWindow(AndroidDriver<?> driver) {
 		this.driver = driver;
 		waitHelper = new WaitHelper(driver);
-		
 	}
 	
 	public void sendTextMessageToFollowers() throws Exception {
@@ -212,5 +212,11 @@ public class ChannelChatWindow {
 		int totalTitles = locationtitles.size();
 		WebElement currentLocation = locationtitles.get(totalTitles-1);
 		return currentLocation;
+	}
+	
+	public String getChannelName() {
+		waitHelper.waitForElementVisible(channelName, 20);
+		String channelNameOnToolbar = driver.findElement(channelName).getText();
+		return channelNameOnToolbar;
 	}
 }

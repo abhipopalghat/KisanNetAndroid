@@ -111,18 +111,18 @@ public class LeftDrawer {
 	    case "Marathi":
 	    	 if(myChatText.equals("माझे संवाद")) {
 	 	    	flag=true;
-	 	    	break;
 	 	    }
+	    	break;
 	    case "Hindi":
 	    	if(myChatText.equals("बातचीत")) {
 	 	    	flag=true;
-	 	    	break;
 	 	    }
+	    	break;
 	    case "English":
 	    	if(myChatText.equals("My Chats")) {
-	 	    	flag=true;
-	 	    	break;
+	 	    	flag=true;	
 	 	    }
+	    	break;
 	    }
 	    return flag;
 	

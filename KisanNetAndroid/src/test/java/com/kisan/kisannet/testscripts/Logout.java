@@ -11,7 +11,7 @@ public class Logout extends TestBase {
 	MyChat myChat;
 	LeftDrawer leftDrawer;
 	
-	@Test
+	@Test(priority = 9)
 	public void logout() throws Exception{
 		myChat = new MyChat(driver);
 		leftDrawer = new LeftDrawer(driver);

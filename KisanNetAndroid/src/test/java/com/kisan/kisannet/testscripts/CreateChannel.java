@@ -24,7 +24,7 @@ public class CreateChannel extends TestBase {
 	public InviteManually inviteManually;
 	public ChannelDashboard channelDashboard;
 
-	@Test
+	@Test()
 	
 	public void createPublicChannel() throws Exception {
 		myChat = new MyChat(driver);
@@ -41,6 +41,16 @@ public class CreateChannel extends TestBase {
 		createChannel.clickStartYourChannelButton();
 		createChannel.enterChannelName();
 		driver.navigate().back();
+		
+		//Upload profile pic
+		createChannel.clickUploadImage();
+		createChannel.ClickTakeAPictureButton();
+		alertHelper.AcceptPermissions();
+		Thread.sleep(5000);
+		createChannel.clickShutterButton();
+		createChannel.clickOnYesButtonAfterCapturingMedia();
+		createChannel.clickOnconfirmUploadProfileImage();
+		
 		createChannel.SelectBackgroundColor();
 		createChannel.SetBackgroundColor();
 		createChannel.ClickOkOnColorPalette();

@@ -19,7 +19,7 @@ public class EditSelfProfile extends TestBase{
 	public EditSelfProfilePage editProfilePage;
 	public MyInterests myInterests;
 	
-	@Test
+	@Test()
 	public void editSelfProfile() throws Exception {
 		myChat = new MyChat(driver);
 		leftDrawer = new LeftDrawer(driver);
@@ -28,27 +28,39 @@ public class EditSelfProfile extends TestBase{
 		myInterests = new MyInterests(driver);
 		
 		myChat.clickonLeftdrawerButton();
+		
+		//Capture profile picture
 		leftDrawer.clickonUserProfileImage();
 		selfProfile.clickEditProfileButton();
 		editProfilePage.clickonUserProfileImage();
-		//Thread.sleep(5000);
 		editProfilePage.clickTakeAPictureButton();
+		alertHelper.AcceptPermissions();
 		Thread.sleep(5000);
 		editProfilePage.clickShutterButton();
 		editProfilePage.clickOnYesButtonAfterCapturingMedia();
 		editProfilePage.clickOnconfirmUploadProfileImage();
+		
+		// Enter first name and last name
 		editProfilePage.clearFirstNameField();
 		editProfilePage.enterFirstName();
 		editProfilePage.clearLastNameField();
 		editProfilePage.enterLastName();
 		driver.navigate().back();
+		
+		//Enter about you
 		editProfilePage.clearAboutYouField();
 		editProfilePage.enterAboutYou();
 		driver.navigate().back();
+		
+		//Change interests
 		editProfilePage.clickAddMore();
 		myInterests.selectCategories();
 		myInterests.clickNextButton();
+		
+		//Complete the updating profile
 		editProfilePage.clickDoneButton();
+		
+		//Verify the changes
 		navigateToMyChat();
 		myChat.clickonLeftdrawerButton();
 		Boolean flag = leftDrawer.compareEditedUserName();

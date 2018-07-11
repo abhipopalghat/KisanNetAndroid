@@ -57,7 +57,8 @@ public class EditSelfProfilePage {
 	
 	public void clearFirstNameField() throws Exception {
 		Thread.sleep(5000);
-		waitHelper.waitForElementClickable(driver, 15, firstName);	
+		waitHelper.waitForElementVisible(firstName, 30);
+		//waitHelper.waitForElementClickable(driver, 15, firstName);	
 		driver.findElement(firstName).click();
 		Thread.sleep(2000);
 		driver.findElement(firstName).clear();
@@ -72,7 +73,7 @@ public class EditSelfProfilePage {
 	}
 	
 	public void clearLastNameField() throws Exception {
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		waitHelper.waitForElementClickable(driver, 15, lastName);
 		driver.findElement(lastName).clear();
 		logger.info("Cleared last name field");

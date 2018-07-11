@@ -49,7 +49,7 @@ public class EditChannelProfilePage {
 	}
 	
 	public void clearChannelNameField() throws Exception {
-		Thread.sleep(5000);
+		waitHelper.waitForElementVisible(channelName, 30);
 		waitHelper.waitForElementClickable(driver, 15, channelName);	
 		driver.findElement(channelName).click();
 		Thread.sleep(2000);

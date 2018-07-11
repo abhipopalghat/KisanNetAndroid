@@ -4,15 +4,11 @@
 
 	<test name="Test aOne">
 		<classes>
-			<class name="com.kisan.kisannet.testscripts.CreateChannel"></class>
 			<class name="com.kisan.kisannet.testscripts.SendTextMessageToFollowers"></class>
-			<class name="com.kisan.kisannet.testscripts.SendTextMessageToAdmin"></class>
 			<class name="com.kisan.kisannet.testscripts.SendImageToFollowers"></class>
-			<class name="com.kisan.kisannet.testscripts.SendImageToAdmin"></class>
-			<class name="com.kisan.kisannet.testscripts.SendVideoToFollowers"></class>
-			<class name="com.kisan.kisannet.testscripts.SendVideoToAdmin"></class>
+			<class name="com.kisan.kisannet.testscripts.SendVideoToFollowers"></class>	
 			<class name="com.kisan.kisannet.testscripts.SendAudioToFollowers"></class>
-			<class name="com.kisan.kisannet.testscripts.SendAudioToAdmin"></class>
+			<class name="com.kisan.kisannet.testscripts.SendLocationToFollowers"></class>
 		
 		</classes>
 	</test>

@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
@@ -34,6 +35,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import com.kisan.kisannet.excelreader.ExcelReader;
+import com.kisan.kisannet.helper.Alert.AlertHelper;
 import com.kisan.kisannet.helper.assertionHelper.VerificationHelper;
 import com.kisan.kisannet.pagelibrary.Categories;
 import com.kisan.kisannet.pagelibrary.ChannelDashboard;
@@ -62,10 +64,11 @@ public class TestBase {
 	public static ITestResult result;
 	public ExcelReader excelreader;
 	public static VerificationHelper softAssertion;
+	public AlertHelper alertHelper;
 	
 	public static final Logger logger = Logger.getLogger(TestBase.class.getName());
 	
-	
+		
 	public void deviceSettings() throws MalformedURLException {
 		logger.info("Loading Device Settings");
 		DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -76,7 +79,13 @@ public class TestBase {
 		capabilities.setCapability("appActivity", prop.getProperty("AppActivity"));
 		capabilities.setCapability("noReset", "true");
 		capabilities.setCapability("newCommandTimeout","1840");
+		capabilities.setCapability("autoGrantPermissions", true);
+		capabilities.setCapability("autoAcceptAlerts", true);
+		capabilities.setCapability("testobject_api_key", "92F914B9D96C44B0947BD853191FF7DD");
+		
 		driver = new AndroidDriver(new URL(prop.getProperty("Url")), capabilities);
+		//driver = new AndroidDriver(new URL(prop.getProperty("SauceUrl")), capabilities);
+		alertHelper = new AlertHelper(driver);
 		logger.info("Device settings Loaded");
 	}
 	
@@ -150,7 +159,7 @@ public class TestBase {
 	}
 	
 	@BeforeMethod
-	public void beforeMethod(ITestResult result) {
+	public void beforeMethod(Method result) {
 		test = extent.startTest(result.getName());
 		test.log(LogStatus.INFO, result.getName() + " test started");
 	}
@@ -208,12 +217,6 @@ public class TestBase {
 		//driver.navigate().back();
 		channelDashboard.clickOnNewMessageButtonForAdmin();
 	}
-	
-	/*public static void main(String[] args) throws Exception {
-		TestBase test = new TestBase();
-		test.loadDeviceProperties();
-		test.deviceSettings();
-	}*/
 	
 
 }

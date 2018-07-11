@@ -22,7 +22,7 @@ public class EditChannelProfile extends TestBase {
 	public MyInterests myInterests;
 	public CreateChannelPage createChannelPage;
 	
-	@Test
+	@Test()
 	public void editChannelProfile() throws Exception {
 		myChat = new MyChat(driver);
 		channelDashboard = new ChannelDashboard(driver);
@@ -34,7 +34,7 @@ public class EditChannelProfile extends TestBase {
 		//Navigate to admins channel
 		myChat.clickOnRightDrawerMenu();
 		myChat.clickOnSearchChannelOption();
-		myChat.searchAdminsChannel();
+		myChat.searchChannelToEdit();
 		myChat.clickOnSearchedChannel();
 		
 		channelDashboard.clickOnChannelName();
@@ -48,6 +48,7 @@ public class EditChannelProfile extends TestBase {
 		//edit channel image
 		editChannelProfilePage.clickonChannelProfileImage();
 		editChannelProfilePage.clickTakeAPictureButton();
+		alertHelper.AcceptPermissions();
 		Thread.sleep(5000);
 		editChannelProfilePage.clickShutterButton();
 		editChannelProfilePage.clickOnYesButtonAfterCapturingMedia();

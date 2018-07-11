@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Kisan_Net_Android_Automation]" parallel="none">
+  <test name="Test aOne(failed)" parallel="none">
+    <classes>
+      <class name="com.kisan.kisannet.testscripts.SendVideoToFollowers">
+        <methods>
+          <include name="sendVideoToFollower"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendVideoToFollowers -->
+      <class name="com.kisan.kisannet.testscripts.SendImageToFollowers">
+        <methods>
+          <include name="sendImageToFollower"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendImageToFollowers -->
+      <class name="com.kisan.kisannet.testscripts.SendLocationToFollowers">
+        <methods>
+          <include name="sendLocationToFollower"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendLocationToFollowers -->
+      <class name="com.kisan.kisannet.testscripts.SendTextMessageToFollowers">
+        <methods>
+          <include name="sendTextMessageToFollower"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendTextMessageToFollowers -->
+      <class name="com.kisan.kisannet.testscripts.SendAudioToFollowers">
+        <methods>
+          <include name="sendAudioToFollower"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendAudioToFollowers -->
+    </classes>
+  </test> <!-- Test aOne(failed) -->
+</suite> <!-- Failed suite [Kisan_Net_Android_Automation] -->

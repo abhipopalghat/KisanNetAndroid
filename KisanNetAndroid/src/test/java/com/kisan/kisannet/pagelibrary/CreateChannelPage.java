@@ -1,5 +1,7 @@
 package com.kisan.kisannet.pagelibrary;
 
+import java.util.concurrent.TimeUnit;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 
@@ -26,6 +28,9 @@ public class CreateChannelPage {
 	public By colorBucketOkBtn = By.id("android:id/button1");
 	public By colrBucketCancelBtn = By.id("android:id/button2");
 	public By takeAPicture = By.id("com.kisan.samvaad.test:id/textViewOptionOne");
+	By shutter = By.id("com.android.camera2:id/shutter_button");
+	By yesAfterCapturingPhoto = By.id("com.android.camera2:id/done_button");
+	By confirmUploadProfileImage = By.id("com.kisan.samvaad.test:id/imageButtonCrop");
 	public By chooseFromGallery = By.id("com.kisan.samvaad.test:id/textViewOptionTwo");
 	public By cancelImage = By.xpath("//android.widget.TextView[@text='Cancel']");
 	
@@ -67,7 +72,7 @@ public class CreateChannelPage {
 	}
 	
 	public void SelectBackgroundColor() {
-		waitHelper.waitForElementVisible(colorBucket, 10);
+		waitHelper.waitForElementVisible(colorBucket, 30);
 		driver.findElement(colorBucket).click();
 		logger.info("Clicked On Select Background Color Button");
 	}
@@ -106,5 +111,25 @@ public class CreateChannelPage {
 		waitHelper.waitForElementVisible(cancelImage, 10);
 		driver.findElement(cancelImage).click();
 		logger.info("Clicked On Cancel Button on Choose Channel Image Popup");
+	}
+	
+	public void clickShutterButton() throws Exception {
+		Thread.sleep(2000);
+		waitHelper.waitForElementVisible(shutter, 15);
+		driver.findElement(shutter).click();
+		logger.info("Captured profile photo");
+	}
+	
+	public void clickOnYesButtonAfterCapturingMedia() {
+		waitHelper.waitForElementVisible(yesAfterCapturingPhoto, 40);
+		driver.findElement(yesAfterCapturingPhoto).click();
+		logger.info("Clicked on yes tickmark after capturing photo");
+	}
+	
+	public void clickOnconfirmUploadProfileImage() {
+		waitHelper.waitForElementVisible(confirmUploadProfileImage, 40);
+		driver.findElement(confirmUploadProfileImage).click();
+		waitHelper.setImplicitWait(10, TimeUnit.SECONDS);
+		logger.info("Set profile image");
 	}
 }

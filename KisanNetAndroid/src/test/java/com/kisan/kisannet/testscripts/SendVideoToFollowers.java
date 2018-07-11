@@ -14,8 +14,8 @@ public class SendVideoToFollowers extends TestBase {
 	public ChannelChatWindow channelChatWindow;
 
 
-	@Test
-	public void sendImageToFollower() throws Exception {
+	@Test(priority = 2)
+	public void sendVideoToFollower() throws Exception {
 		myChat = new MyChat(driver);
 		channelDashboard = new ChannelDashboard(driver);
 		channelChatWindow = new ChannelChatWindow(driver);
@@ -25,6 +25,7 @@ public class SendVideoToFollowers extends TestBase {
 		channelChatWindow.clickOnAttachmentPin();
 		channelChatWindow.clickOnCameraOption();
 		channelChatWindow.clickOnRecordAVideo();
+		alertHelper.AcceptPermissions();
 		channelChatWindow.clickOnShutterButton();
 		Thread.sleep(4);
 		channelChatWindow.clickOnShutterButton();
@@ -33,10 +34,10 @@ public class SendVideoToFollowers extends TestBase {
 		channelChatWindow.clickOnSendMediaButton();
 		driver.navigate().back();
 		
-		navigateToAdminsChannel(driver);
+		/*navigateToAdminsChannel(driver);
 		String expectedCaption = prop.getProperty("WriteACaption");
 		String actualCaption = channelChatWindow.getLatestCaption();
-		VerificationHelper.verifyText(expectedCaption, actualCaption);
+		VerificationHelper.verifyText(expectedCaption, actualCaption);*/
 		
 	}
 
