@@ -9,6 +9,11 @@
 			<class name="com.kisan.kisannet.testscripts.SendVideoToFollowers"></class>	
 			<class name="com.kisan.kisannet.testscripts.SendAudioToFollowers"></class>
 			<class name="com.kisan.kisannet.testscripts.SendLocationToFollowers"></class>
+			<class name="com.kisan.kisannet.testscripts.SendTextMessageToAdmin"></class>
+			<class name="com.kisan.kisannet.testscripts.SendImageToAdmin"></class>
+			<class name="com.kisan.kisannet.testscripts.SendVideoToAdmin"></class>	
+			<class name="com.kisan.kisannet.testscripts.SendAudioToAdmin"></class>
+			<class name="com.kisan.kisannet.testscripts.SendLocationToAdmin"></class>
 		
 		</classes>
 	</test>

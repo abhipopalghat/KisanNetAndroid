@@ -92,7 +92,6 @@ public class DiscoverPage {
 		if(driver.findElement(searchButton)!=null) {		//Checks if user lands directly on discover page
 		driver.findElement(searchButton).click();
 		driver.findElement(searchTextBox).click();
-		//String channel = TestBase.prop.getProperty("ChannelToBeFollowedFromProfile");
 		driver.findElement(searchTextBox).sendKeys(channelName);
 		logger.info("Searched channel");
 		}
@@ -114,7 +113,6 @@ public class DiscoverPage {
 		List<AndroidElement> channels = (List<AndroidElement>)driver.findElements(channelName);
 		int totalCount = channels.size();
 		int channelIndex = 0;
-		System.out.println(channels.get(channelIndex).getText());
 		for(channelIndex=0;channelIndex<totalCount;channelIndex++) {
 			if(channels.get(channelIndex).getText().equalsIgnoreCase(channel)) 
 				break;		
@@ -143,9 +141,18 @@ public class DiscoverPage {
 	
 	public void openChannelProfile() {
 		waitHelper.waitForElementVisible(channelName, 15);
-		String channelToBeOpened = TestBase.prop.getProperty("ChannelToBeFollowedFromProfile");
+		String channelToBeOpened = TestBase.prop.getProperty("ChannelToBeFollowedFromProfile");// wrong parameter
 		int channelIndex = getSearchedChannelIndex(channelToBeOpened);
 		List<AndroidElement> channels = (List<AndroidElement>)driver.findElements(channelName);
+		System.out.println(channels.size());
+		channels.get(channelIndex).click();
+		logger.info("Opened Channel");
+	}
+	
+	public void openChannelProfileToUnfollow(String channelName) {
+		waitHelper.waitForElementVisible(this.channelName, 15);
+		int channelIndex = getSearchedChannelIndex(channelName);
+		List<AndroidElement> channels = (List<AndroidElement>)driver.findElements(this.channelName);
 		System.out.println(channels.size());
 		channels.get(channelIndex).click();
 		logger.info("Opened Channel");
@@ -162,14 +169,10 @@ public class DiscoverPage {
 		    int endY = (int) (size.height * .2);
 		    Thread.sleep(5000);	    
 		        while(!isChannelFound()) {
-		        	//new TouchAction((PerformsTouchActions) driver).press(startX, startY).waitAction(Duration.ofMillis(2000)).moveTo(startX, endY).release().perform();
 		        	new TouchAction((PerformsTouchActions) driver).press(PointOption.point(startX, startY)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(2000))).moveTo(PointOption.point(startX, endY)).release().perform();
-
 		        	Thread.sleep(1000);
 		        }
-		        //driver.findElement(tempChannelName).click();
 		       AndroidElement ele = (AndroidElement) driver.findElement(tempChannelName);
-		       // new TouchActions(driver).singleTap(driver.findElement(tempChannelName));
 		        new TouchActions(driver).singleTap(ele);
 		        Thread.sleep(5000);
 	}

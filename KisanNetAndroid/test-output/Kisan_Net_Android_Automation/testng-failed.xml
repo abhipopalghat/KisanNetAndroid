@@ -6,27 +6,44 @@
       <class name="com.kisan.kisannet.testscripts.SendVideoToFollowers">
         <methods>
           <include name="sendVideoToFollower"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
         </methods>
       </class> <!-- com.kisan.kisannet.testscripts.SendVideoToFollowers -->
       <class name="com.kisan.kisannet.testscripts.SendImageToFollowers">
         <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
           <include name="sendImageToFollower"/>
+          <include name="afterMethod"/>
         </methods>
       </class> <!-- com.kisan.kisannet.testscripts.SendImageToFollowers -->
       <class name="com.kisan.kisannet.testscripts.SendLocationToFollowers">
         <methods>
-          <include name="sendLocationToFollower"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
         </methods>
       </class> <!-- com.kisan.kisannet.testscripts.SendLocationToFollowers -->
       <class name="com.kisan.kisannet.testscripts.SendTextMessageToFollowers">
         <methods>
-          <include name="sendTextMessageToFollower"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
           <include name="beforeSuite"/>
+          <include name="afterMethod"/>
         </methods>
       </class> <!-- com.kisan.kisannet.testscripts.SendTextMessageToFollowers -->
       <class name="com.kisan.kisannet.testscripts.SendAudioToFollowers">
         <methods>
           <include name="sendAudioToFollower"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
         </methods>
       </class> <!-- com.kisan.kisannet.testscripts.SendAudioToFollowers -->
     </classes>

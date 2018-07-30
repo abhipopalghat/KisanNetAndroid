@@ -65,6 +65,7 @@ public class TestBase {
 	public ExcelReader excelreader;
 	public static VerificationHelper softAssertion;
 	public AlertHelper alertHelper;
+
 	
 	public static final Logger logger = Logger.getLogger(TestBase.class.getName());
 	
@@ -84,7 +85,6 @@ public class TestBase {
 		capabilities.setCapability("testobject_api_key", "92F914B9D96C44B0947BD853191FF7DD");
 		
 		driver = new AndroidDriver(new URL(prop.getProperty("Url")), capabilities);
-		//driver = new AndroidDriver(new URL(prop.getProperty("SauceUrl")), capabilities);
 		alertHelper = new AlertHelper(driver);
 		logger.info("Device settings Loaded");
 	}
@@ -146,16 +146,15 @@ public class TestBase {
 		}
 		
 		else if(result.getStatus() == ITestResult.STARTED) {
-			test.log(LogStatus.INFO, result.getName()+ "test is started");
-		}
-		
+			test.log(LogStatus.INFO, result.getName() + "test is started");
+		}	
 	}
 	
-	@AfterMethod
-	public void afterMethod(ITestResult result) throws Throwable {
-		navigateToMyChat();
-		getResult(result);
-		
+	@BeforeClass
+	public void beforeSuite() throws Exception {
+		loadDeviceProperties();
+		deviceSettings();
+		//get_Data("TestData", "ChannelNames");
 	}
 	
 	@BeforeMethod
@@ -163,14 +162,11 @@ public class TestBase {
 		test = extent.startTest(result.getName());
 		test.log(LogStatus.INFO, result.getName() + " test started");
 	}
-	
-	
-	
-	@BeforeClass
-	public void beforeSuite() throws Exception {
-		loadDeviceProperties();
-		deviceSettings();
-		//get_Data("TestData", "ChannelNames");
+		
+	@AfterMethod
+	public void afterMethod(ITestResult result) throws Throwable {
+		getResult(result);
+		navigateToMyChat();
 	}
 	
 	@AfterClass
@@ -193,30 +189,5 @@ public class TestBase {
 		String excellocation = System.getProperty("user.dir")+"\\src\\test\\java\\com\\kisan\\kisannet\\resources"+excelname;
 		return excelreader.getExcelData(excellocation, sheetname);
 	}
-	
-	public void navigateToFollowersChannel(AndroidDriver<?> driver) throws Exception {
-		MyChat mychat = new MyChat(driver);
-		ChannelDashboard channelDashboard = new ChannelDashboard(driver);
-		navigateToMyChat();
-		mychat.clickOnRightDrawerMenu();
-		mychat.clickOnSearchChannelOption();
-		mychat.searchFollowersChannel();
-		mychat.clickOnSearchedChannel();
-		driver.navigate().back();
-		channelDashboard.clickOnNewMessageButtonForFollower();	
-	}
-	
-	public void navigateToAdminsChannel(AndroidDriver<?> driver) throws Exception {
-		MyChat mychat = new MyChat(driver);
-		ChannelDashboard channelDashboard = new ChannelDashboard(driver);
-		navigateToMyChat();
-		mychat.clickOnRightDrawerMenu();
-		mychat.clickOnSearchChannelOption();
-		mychat.searchAdminsChannel();
-		mychat.clickOnSearchedChannel();
-		//driver.navigate().back();
-		channelDashboard.clickOnNewMessageButtonForAdmin();
-	}
-	
 
 }

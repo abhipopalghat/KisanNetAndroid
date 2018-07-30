@@ -1,6 +1,7 @@
 package com.kisan.kisannet.testscripts;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.kisan.kisannet.pagelibrary.ChannelDashboard;
@@ -22,8 +23,8 @@ public class EditChannelProfile extends TestBase {
 	public MyInterests myInterests;
 	public CreateChannelPage createChannelPage;
 	
-	@Test()
-	public void editChannelProfile() throws Exception {
+	@Test(dataProvider = "ChannelToBeEdited")
+	public void editChannelProfile(String channelName) throws Exception {
 		myChat = new MyChat(driver);
 		channelDashboard = new ChannelDashboard(driver);
 		channelProfile = new ChannelProfile(driver);
@@ -34,27 +35,31 @@ public class EditChannelProfile extends TestBase {
 		//Navigate to admins channel
 		myChat.clickOnRightDrawerMenu();
 		myChat.clickOnSearchChannelOption();
-		myChat.searchChannelToEdit();
-		myChat.clickOnSearchedChannel();
+		myChat.searchChannel(channelName);
+		//myChat.searchChannelToEdit();
+		//myChat.clickOnSearchedChannel();
+		myChat.openSearchedChannel(channelName);
 		
 		channelDashboard.clickOnChannelName();
 		channelProfile.clickOnRightDrawer();
 		channelProfile.clickOnEditProfileOption();
 		
-		//Edit channel name
-		editChannelProfilePage.clearChannelNameField();
-		editChannelProfilePage.enterChannelName();
-		
+		driver.navigate().back();
 		//edit channel image
 		editChannelProfilePage.clickonChannelProfileImage();
 		editChannelProfilePage.clickTakeAPictureButton();
 		alertHelper.AcceptPermissions();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		editChannelProfilePage.clickShutterButton();
 		editChannelProfilePage.clickOnYesButtonAfterCapturingMedia();
 		editChannelProfilePage.clickOnconfirmUploadProfileImage();
 		
+		//Edit channel name
+		editChannelProfilePage.clearChannelNameField();
+		editChannelProfilePage.enterChannelName();	
+		
 		//edit channel description
+		driver.navigate().back();
 		editChannelProfilePage.clearChannelDescriptionField();
 		editChannelProfilePage.enterChannelDescription();
 		
@@ -83,4 +88,11 @@ public class EditChannelProfile extends TestBase {
 			Assert.assertTrue(false, "Edit profile is not sucessful");
 		}
 	}
+	
+	@DataProvider(name = "ChannelToBeEdited")
+	  public Object[][] dp() {
+	    return new Object[][] {
+	      new Object[] { TestBase.prop.getProperty("ChannelToBeEdited") },
+	    };
+	  }
 }

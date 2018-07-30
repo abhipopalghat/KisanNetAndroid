@@ -1,6 +1,7 @@
 package com.kisan.kisannet.testscripts;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.kisan.kisannet.pagelibrary.ChannelDashboard;
@@ -27,13 +28,14 @@ public class InviteToFollowChannel extends TestBase {
 		inviteManually = new InviteManually(driver);
 	}
 	
-	@Test()
-	public void inviteByContactName() throws Exception {
+	@Test(dataProvider = "Contact Invite")
+	public void inviteToFollowChannelByContactName(String channelName) throws Exception {
 		
 		myChat.clickOnRightDrawerMenu();
 		myChat.clickOnSearchChannelOption();
-		myChat.searchAdminsChannel();
-		myChat.clickOnSearchedChannel();
+		myChat.searchChannel(channelName);
+		myChat.openSearchedChannel(channelName);
+		
 		channelDashboard.clickOnChannelName();
 		channelProfile.clickOnRightDrawer();
 		channelProfile.clickOnInviteOption();
@@ -44,13 +46,14 @@ public class InviteToFollowChannel extends TestBase {
 		invitePeople.clickOnDoneButton();
 	}
 	
-	@Test()
-	public void inviteManually() throws Exception {
+	@Test(dataProvider = "Manual Invite")
+	public void inviteToFollowChannelManually(String channelName) throws Exception {
 		
 		myChat.clickOnRightDrawerMenu();
 		myChat.clickOnSearchChannelOption();
-		myChat.searchAdminsChannel();
-		myChat.clickOnSearchedChannel();
+		myChat.searchChannel(channelName);
+		myChat.openSearchedChannel(channelName);
+		
 		channelDashboard.clickOnChannelName();
 		channelProfile.clickOnRightDrawer();
 		channelProfile.clickOnInviteOption();
@@ -58,4 +61,18 @@ public class InviteToFollowChannel extends TestBase {
 		inviteManually.enterMobileNumberManually();
 		inviteManually.clickInvite();
 	}
+	
+	@DataProvider(name = "Manual Invite")
+	  public Object[][] dp1() {
+	    return new Object[][] {
+	      new Object[] { TestBase.prop.getProperty("AdminsChannel") },
+	    };
+	  }
+	
+	@DataProvider(name = "Contact Invite")
+	  public Object[][] dp() {
+	    return new Object[][] {
+	      new Object[] { TestBase.prop.getProperty("AdminsChannel") },
+	    };
+	  }
 }

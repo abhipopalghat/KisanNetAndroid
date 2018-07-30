@@ -46,7 +46,7 @@ public class CreateChannel extends TestBase {
 		createChannel.clickUploadImage();
 		createChannel.ClickTakeAPictureButton();
 		alertHelper.AcceptPermissions();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		createChannel.clickShutterButton();
 		createChannel.clickOnYesButtonAfterCapturingMedia();
 		createChannel.clickOnconfirmUploadProfileImage();
@@ -61,6 +61,8 @@ public class CreateChannel extends TestBase {
 		categories.selectAgricultureCategory();
 		categories.selectHorticultureCategory();
 		categories.clickNext();
+		
+		alertHelper.AcceptPermissions();
 		//selectContact.clickEnterNumber();
 		//inviteManually.enterMobileNumberManually();
 		//inviteManually.clickInvite();

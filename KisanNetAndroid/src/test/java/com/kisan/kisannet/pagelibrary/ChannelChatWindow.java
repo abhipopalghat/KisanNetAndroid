@@ -1,6 +1,8 @@
 package com.kisan.kisannet.pagelibrary;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
@@ -11,8 +13,10 @@ import com.kisan.kisannet.helper.Alert.AlertHelper;
 import com.kisan.kisannet.helper.Logger.LoggerHelper;
 import com.kisan.kisannet.helper.Wait.WaitHelper;
 import com.kisan.kisannet.helper.genericHelper.GenericHelper;
+import com.kisan.kisannet.testBase.Devices;
 import com.kisan.kisannet.testBase.TestBase;
 
+import bsh.Capabilities;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
@@ -21,6 +25,7 @@ public class ChannelChatWindow {
 	public AndroidDriver<?> driver;
 	private final Logger logger = LoggerHelper.getLogger(ChannelChatWindow.class);
 	WaitHelper waitHelper;
+	public Devices device;
 	
 	public By backArrow = By.xpath("//android.widget.ImageButton[@index='0']");
 	public By channelName = By.id("com.kisan.samvaad.test:id/textViewCommunityName");
@@ -42,9 +47,11 @@ public class ChannelChatWindow {
 	public By allMessages = By.id("com.kisan.samvaad.test:id/textViewMessage");
 	public By takeAPicture = By.id("com.kisan.samvaad.test:id/textViewOptionOne");
 	public By recordAVideo = By.id("com.kisan.samvaad.test:id/textViewOptionTwo");
-	public By shutterButton = By.id("com.android.camera2:id/shutter_button");
-	public By yesAfterCapturingPhoto = By.id("com.android.camera2:id/done_button");
-	public By writeACaption = By.id("com.kisan.samvaad.test:id/editTextMessageTextWithImage");
+	public By shutterButton1 = By.id("com.android.camera2:id/shutter_button");
+	public By shutterButton = By.xpath("//android.widget.ImageView[@content-desc='Shutter button']");
+	public By yesAfterCapturingPhoto_lenovo = By.id("com.android.camera2:id/done_button");
+	public By yesAfterCapturingPhoto_redmi = By.id("com.android.camera:id/v6_btn_done");
+	public By writeACaption = By.xpath("//android.widget.EditText[@text='Write a Caption (Optional)']");
 	public By allCaptions = By.id("com.kisan.samvaad.test:id/textViewMessage");
 	public By recordAudio = By.id("com.kisan.samvaad.test:id/linearLayoutOptionOne");
 	public By startRecording = By.id("com.kisan.samvaad.test:id/buttonRecordAudioStart");
@@ -58,6 +65,7 @@ public class ChannelChatWindow {
 	public ChannelChatWindow(AndroidDriver<?> driver) {
 		this.driver = driver;
 		waitHelper = new WaitHelper(driver);
+		device = new Devices(driver);
 	}
 	
 	public void sendTextMessageToFollowers() throws Exception {
@@ -84,7 +92,6 @@ public class ChannelChatWindow {
 	
 	public String getLatestMessage() throws Exception {
 		Thread.sleep(5);
-		//waitHelper.waitForElementClickable(driver, 10, allMessages);
 		List<AndroidElement> messages = (List<AndroidElement>) driver.findElements(allMessages);
 		int totalMesasgeCount = messages.size();
 		AndroidElement element = messages.get(totalMesasgeCount-1);
@@ -117,15 +124,33 @@ public class ChannelChatWindow {
 	}
 	
 	public void clickOnShutterButton() {
-		waitHelper.waitForElementVisible(shutterButton, 10);
+		org.openqa.selenium.Capabilities cap = driver.getCapabilities();
+		Map<String, ?> capabilities =  (Map<String, ?>)cap.getCapability("desired");
+		String deviceName = (String) capabilities.get("deviceName");
+		System.out.println(deviceName);
+		device.clickOnShutterButton(deviceName);
+		
+		/*waitHelper.waitForElementVisible(shutterButton, 10);
 		driver.findElement(shutterButton).click();
-		logger.info("Clicked on capture photo");
+		logger.info("Clicked on capture button");*/
 	}
 	
 	public void clickOnYesButtonAfterCapturingMedia() {
-		waitHelper.waitForElementVisible(yesAfterCapturingPhoto, 40);
-		driver.findElement(yesAfterCapturingPhoto).click();
+		org.openqa.selenium.Capabilities cap = driver.getCapabilities();
+		Map<String, ?> capabilities =  (Map<String, ?>)cap.getCapability("desired");
+		String deviceName = (String) capabilities.get("deviceName");
+		System.out.println(deviceName);
+		device.clickOnYesButton(deviceName);
+		/*if(deviceName.equalsIgnoreCase("Redmi")){
+			waitHelper.waitForElementVisible(yesAfterCapturingPhoto_redmi, 40);
+			driver.findElement(yesAfterCapturingPhoto_redmi).click();
+			logger.info("Clicked on yes tickmark after capturing photo");
+		}
+		else if(deviceName.equalsIgnoreCase("pixelV1")){		
+		waitHelper.waitForElementVisible(yesAfterCapturingPhoto_lenovo, 40);
+		driver.findElement(yesAfterCapturingPhoto_lenovo).click();
 		logger.info("Clicked on yes tickmark after capturing photo");
+		}*/
 	}
 	
 	public void writeACaption() throws Exception {
@@ -179,7 +204,7 @@ public class ChannelChatWindow {
 		waitHelper.waitForElementVisible(sendAudio, 10);
 		driver.findElement(sendAudio).click();
 		logger.info("Clicked On Send Audio Button");
-		waitHelper.waitForElementClickable(driver, 30, attachmentPin);
+		//waitHelper.waitForElementClickable(driver, 30, attachmentPin);
 	}
 	
 	public WebElement isAudioDelivered() {

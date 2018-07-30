@@ -3,23 +3,87 @@
 <suite name="Failed suite [Failed suite [Suite]]">
   <test name="Test(failed)(failed)">
     <classes>
+      <class name="com.kisan.kisannet.testscripts.EditSelfProfile">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="editSelfProfile"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.EditSelfProfile -->
+      <class name="com.kisan.kisannet.testscripts.SendAudioToAdmin">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendAudioToAdmin -->
+      <class name="com.kisan.kisannet.testscripts.SendVideoToAdmin">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="sendVideoToAdmin"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendVideoToAdmin -->
+      <class name="com.kisan.kisannet.testscripts.SendImageToFollowers">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="sendImageToFollower"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendImageToFollowers -->
+      <class name="com.kisan.kisannet.testscripts.UnfollowChannel">
+        <methods>
+          <include name="unFollowChannelFromDiscover" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="unFollowChannelFromMyChat" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.UnfollowChannel -->
+      <class name="com.kisan.kisannet.testscripts.SendVideoToFollowers">
+        <methods>
+          <include name="sendVideoToFollower"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.SendVideoToFollowers -->
+      <class name="com.kisan.kisannet.testscripts.CreateChannel">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="createPublicChannel"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.CreateChannel -->
       <class name="com.kisan.kisannet.testscripts.EditChannelProfile">
         <methods>
-          <include name="editChannelProfile"/>
+          <include name="editChannelProfile" invocation-numbers="0"/>
           <include name="beforeMethod"/>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.kisan.kisannet.testscripts.EditChannelProfile -->
-      <class name="com.kisan.kisannet.testscripts.EditSelfProfile">
+      <class name="com.kisan.kisannet.testscripts.SendImageToAdmin">
         <methods>
+          <include name="sendImageToAdmin"/>
           <include name="beforeMethod"/>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.kisan.kisannet.testscripts.EditSelfProfile -->
+      </class> <!-- com.kisan.kisannet.testscripts.SendImageToAdmin -->
       <class name="com.kisan.kisannet.testscripts.ChangeLanguage">
         <methods>
           <include name="beforeMethod"/>

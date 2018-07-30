@@ -17,9 +17,10 @@
 	<class name="com.kisan.kisannet.testscripts.InviteToDownloadApp" />
 	<class name="com.kisan.kisannet.testscripts.InviteToFollowChannel" />
 	<class name="com.kisan.kisannet.testscripts.CreateChannel" />
-	<class name="com.kisan.kisannet.testscripts.ChangeLanguage" />
+	<class name="com.kisan.kisannet.testscripts.UnfollowChannel" />
 	<class name="com.kisan.kisannet.testscripts.EditSelfProfile" />
 	<class name="com.kisan.kisannet.testscripts.EditChannelProfile" />
+	<class name="com.kisan.kisannet.testscripts.ChangeLanguage" />
 	<class name="com.kisan.kisannet.testscripts.Logout" />
     </classes>
   </test> <!-- Test -->

@@ -19,13 +19,15 @@ public class ChannelProfile {
 	By backArrow = By.xpath("//android.widget.ImageButton[@instance='0']");
 	By rightDrawerMenu = By.xpath("//android.widget.ImageView[@content-desc='More options']");
 	By editProfile = By.xpath("//android.widget.LinearLayout[@index='0']");
-	By invite = By.xpath("//android.widget.LinearLayout[@index='1']");
-	By mute = By.xpath("//android.widget.LinearLayout[@index='2']");
+	By invite = By.xpath("//android.widget.TextView[@text='Invite']");
+	By mute = By.xpath("//android.widget.TextView[@text='Mute']");
 	By deleteChannel = By.xpath("//android.widget.LinearLayout[@index='3']");
-	By leaveChannel = By.xpath("//android.widget.LinearLayout[@index='4']");
+	By leaveChannel = By.xpath("//android.widget.TextView[@text='Unfollow Channel']");
 	By showFollowers = By.id("com.kisan.samvaad.test:id/textViewMember");
 	By chatIcon = By.id("com.kisan.samvaad.test:id/floatingActionButton");
 	By followButton = By.id("com.kisan.samvaad.test:id/floatingActionButton");
+	By yesButtonOnUnFollowChannelPopup = By.id("android:id/button1");
+	By noButtonOnUnFollowChannelPopup = By.id("android:id/button2");
 	
 	public ChannelProfile(AndroidDriver<?> driver) {
 		this.driver = driver;
@@ -97,6 +99,18 @@ public class ChannelProfile {
 		driver.findElement(followButton).click();
 		logger.info("Clicked on follow icon");
 		Thread.sleep(10000);
+	}
+	
+	public void clickOnYesOnUnfollow() {
+		waitHelper.waitForElementVisible(yesButtonOnUnFollowChannelPopup, 5);
+		driver.findElement(yesButtonOnUnFollowChannelPopup).click();
+		logger.info("Clicked on Yes button");
+	}
+	
+	public void clickOnNoOnUnfollow() {
+		waitHelper.waitForElementVisible(noButtonOnUnFollowChannelPopup, 5);
+		driver.findElement(noButtonOnUnFollowChannelPopup).click();
+		logger.info("Clicked on No button");
 	}
 	
 }

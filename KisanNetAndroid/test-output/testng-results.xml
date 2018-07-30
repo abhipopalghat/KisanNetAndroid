@@ -1,191 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Kisan_Net_Android_Automation" duration-ms="286157" started-at="2018-07-09T05:48:38Z" finished-at="2018-07-09T05:53:24Z">
+  <suite name="Default suite" duration-ms="196868" started-at="2018-07-30T12:41:53Z" finished-at="2018-07-30T12:45:10Z">
     <groups>
     </groups>
-    <test name="Test aOne" duration-ms="286157" started-at="2018-07-09T05:48:38Z" finished-at="2018-07-09T05:53:24Z">
-      <class name="com.kisan.kisannet.testscripts.SendVideoToFollowers">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToFollowers@aecb35a]" name="beforeSuite" is-config="true" duration-ms="13460" started-at="2018-07-09T11:21:01Z" finished-at="2018-07-09T11:21:14Z">
+    <test name="Default test" duration-ms="196868" started-at="2018-07-30T12:41:53Z" finished-at="2018-07-30T12:45:10Z">
+      <class name="com.kisan.kisannet.testscripts.InviteToFollowChannel">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581]" name="beforeSuite" is-config="true" duration-ms="14324" started-at="2018-07-30T18:11:53Z" finished-at="2018-07-30T18:12:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="sendVideoToFollower()[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToFollowers@aecb35a]" name="sendVideoToFollower" duration-ms="37336" started-at="2018-07-09T11:21:14Z" finished-at="2018-07-09T11:21:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sendVideoToFollower -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToFollowers@aecb35a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-07-09T11:21:14Z" finished-at="2018-07-09T11:21:14Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-07-30T18:12:08Z" finished-at="2018-07-30T18:12:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.kisan.kisannet.testscripts.SendVideoToFollowers.sendVideoToFollower() throws java.lang.Exception]]>
+                <![CDATA[public void com.kisan.kisannet.testscripts.InviteToFollowChannel.inviteToFollowChannelByContactName(java.lang.String) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToFollowers@aecb35a]" name="afterMethod" is-config="true" duration-ms="3816" started-at="2018-07-09T11:21:51Z" finished-at="2018-07-09T11:21:55Z">
+        <test-method status="PASS" signature="initializePages()[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581]" name="initializePages" is-config="true" duration-ms="16" started-at="2018-07-30T18:12:08Z" finished-at="2018-07-30T18:12:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method status="PASS" signature="inviteToFollowChannelByContactName(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581]" name="inviteToFollowChannelByContactName" duration-ms="96540" started-at="2018-07-30T18:12:08Z" data-provider="Contact Invite" finished-at="2018-07-30T18:13:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=sendVideoToFollower status=SUCCESS method=SendVideoToFollowers.sendVideoToFollower()[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToFollowers@aecb35a] output={null}]]]>
+                <![CDATA[27 July]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inviteToFollowChannelByContactName -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581]" name="afterMethod" is-config="true" duration-ms="235" started-at="2018-07-30T18:13:44Z" finished-at="2018-07-30T18:13:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=inviteToFollowChannelByContactName status=SUCCESS method=InviteToFollowChannel.inviteToFollowChannelByContactName(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToFollowers@aecb35a]" name="afterTest" is-config="true" duration-ms="49" started-at="2018-07-09T11:21:55Z" finished-at="2018-07-09T11:21:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.kisan.kisannet.testscripts.SendVideoToFollowers -->
-      <class name="com.kisan.kisannet.testscripts.SendImageToFollowers">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToFollowers@2698dc7]" name="beforeSuite" is-config="true" duration-ms="13748" started-at="2018-07-09T11:20:06Z" finished-at="2018-07-09T11:20:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToFollowers@2698dc7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-07-09T11:20:20Z" finished-at="2018-07-09T11:20:20Z">
+        <test-method status="PASS" signature="inviteToFollowChannelManually(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581]" name="inviteToFollowChannelManually" duration-ms="79997" started-at="2018-07-30T18:13:45Z" data-provider="Manual Invite" finished-at="2018-07-30T18:15:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.kisan.kisannet.testscripts.SendImageToFollowers.sendImageToFollower() throws java.lang.Exception]]>
+                <![CDATA[27 July]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inviteToFollowChannelManually -->
+        <test-method status="PASS" signature="initializePages()[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581]" name="initializePages" is-config="true" duration-ms="0" started-at="2018-07-30T18:13:45Z" finished-at="2018-07-30T18:13:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-07-30T18:13:45Z" finished-at="2018-07-30T18:13:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.InviteToFollowChannel.inviteToFollowChannelManually(java.lang.String) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="sendImageToFollower()[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToFollowers@2698dc7]" name="sendImageToFollower" duration-ms="36656" started-at="2018-07-09T11:20:20Z" finished-at="2018-07-09T11:20:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sendImageToFollower -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToFollowers@2698dc7]" name="afterMethod" is-config="true" duration-ms="4043" started-at="2018-07-09T11:20:57Z" finished-at="2018-07-09T11:21:01Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581]" name="afterMethod" is-config="true" duration-ms="5301" started-at="2018-07-30T18:15:05Z" finished-at="2018-07-30T18:15:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=sendImageToFollower status=SUCCESS method=SendImageToFollowers.sendImageToFollower()[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToFollowers@2698dc7] output={null}]]]>
+                <![CDATA[[TestResult name=inviteToFollowChannelManually status=SUCCESS method=InviteToFollowChannel.inviteToFollowChannelManually(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToFollowers@2698dc7]" name="afterTest" is-config="true" duration-ms="59" started-at="2018-07-09T11:21:01Z" finished-at="2018-07-09T11:21:01Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581]" name="afterTest" is-config="true" duration-ms="408" started-at="2018-07-30T18:15:10Z" finished-at="2018-07-30T18:15:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.kisan.kisannet.testscripts.SendImageToFollowers -->
-      <class name="com.kisan.kisannet.testscripts.SendLocationToFollowers">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToFollowers@43d7741f]" name="beforeSuite" is-config="true" duration-ms="13397" started-at="2018-07-09T11:19:27Z" finished-at="2018-07-09T11:19:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToFollowers@43d7741f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-07-09T11:19:41Z" finished-at="2018-07-09T11:19:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.kisan.kisannet.testscripts.SendLocationToFollowers.sendLocationToFollower() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="sendLocationToFollower()[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToFollowers@43d7741f]" name="sendLocationToFollower" duration-ms="21347" started-at="2018-07-09T11:19:41Z" finished-at="2018-07-09T11:20:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sendLocationToFollower -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToFollowers@43d7741f]" name="afterMethod" is-config="true" duration-ms="3939" started-at="2018-07-09T11:20:02Z" finished-at="2018-07-09T11:20:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=sendLocationToFollower status=SUCCESS method=SendLocationToFollowers.sendLocationToFollower()[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToFollowers@43d7741f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToFollowers@43d7741f]" name="afterTest" is-config="true" duration-ms="65" started-at="2018-07-09T11:20:06Z" finished-at="2018-07-09T11:20:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.kisan.kisannet.testscripts.SendLocationToFollowers -->
-      <class name="com.kisan.kisannet.testscripts.SendAudioToFollowers">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToFollowers@69379752]" name="beforeSuite" is-config="true" duration-ms="13132" started-at="2018-07-09T11:21:55Z" finished-at="2018-07-09T11:22:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="sendAudioToFollower()[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToFollowers@69379752]" name="sendAudioToFollower" duration-ms="72219" started-at="2018-07-09T11:22:08Z" finished-at="2018-07-09T11:23:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sendAudioToFollower -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToFollowers@69379752]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-07-09T11:22:08Z" finished-at="2018-07-09T11:22:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.kisan.kisannet.testscripts.SendAudioToFollowers.sendAudioToFollower() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToFollowers@69379752]" name="afterMethod" is-config="true" duration-ms="3126" started-at="2018-07-09T11:23:21Z" finished-at="2018-07-09T11:23:24Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=sendAudioToFollower status=SUCCESS method=SendAudioToFollowers.sendAudioToFollower()[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToFollowers@69379752] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToFollowers@69379752]" name="afterTest" is-config="true" duration-ms="72" started-at="2018-07-09T11:23:24Z" finished-at="2018-07-09T11:23:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.kisan.kisannet.testscripts.SendAudioToFollowers -->
-      <class name="com.kisan.kisannet.testscripts.SendTextMessageToFollowers">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToFollowers@17baae6e]" name="beforeSuite" is-config="true" duration-ms="16632" started-at="2018-07-09T11:18:38Z" finished-at="2018-07-09T11:18:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToFollowers@17baae6e]" name="beforeMethod" is-config="true" duration-ms="4" started-at="2018-07-09T11:18:54Z" finished-at="2018-07-09T11:18:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.kisan.kisannet.testscripts.SendTextMessageToFollowers.sendTextMessageToFollower() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="sendTextMessageToFollower()[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToFollowers@17baae6e]" name="sendTextMessageToFollower" duration-ms="27191" started-at="2018-07-09T11:18:54Z" finished-at="2018-07-09T11:19:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sendTextMessageToFollower -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToFollowers@17baae6e]" name="afterMethod" is-config="true" duration-ms="5347" started-at="2018-07-09T11:19:22Z" finished-at="2018-07-09T11:19:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=sendTextMessageToFollower status=SUCCESS method=SendTextMessageToFollowers.sendTextMessageToFollower()[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToFollowers@17baae6e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToFollowers@17baae6e]" name="afterTest" is-config="true" duration-ms="466" started-at="2018-07-09T11:19:27Z" finished-at="2018-07-09T11:19:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.kisan.kisannet.testscripts.SendTextMessageToFollowers -->
-    </test> <!-- Test aOne -->
-  </suite> <!-- Kisan_Net_Android_Automation -->
+      </class> <!-- com.kisan.kisannet.testscripts.InviteToFollowChannel -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

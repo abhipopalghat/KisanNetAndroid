@@ -23,6 +23,7 @@ public class MyChat {
 	public AndroidDriver<?> driver;
 	private final Logger logger = LoggerHelper.getLogger(MyChat.class);
 	WaitHelper waitHelper;
+	GenericHelper genericHelper;
 	JavaScriptHelper javaScriptHelper;
 	
 	By leftDrawerButton = By.className("android.widget.ImageButton");
@@ -35,11 +36,13 @@ public class MyChat {
 	By searchChannel = By.xpath("//android.widget.LinearLayout[@index='2']");	
 	By searchBox = By.id("com.kisan.samvaad.test:id/searchTextView");
 	By searchedChannelList = By.xpath("//android.widget.TextView[@resource-id='com.kisan.samvaad.test:id/textViewCommunityName']");
+	By unfollowedText = By.xpath("//android.widget.TextView[@text='Unfollowed']");
 	
 	public MyChat(AndroidDriver<?> driver) {
 		
 		this.driver = driver;
 		waitHelper = new WaitHelper(driver);
+	    genericHelper = new GenericHelper(driver);
 		javaScriptHelper = new JavaScriptHelper(driver);
 	}
 	
@@ -70,7 +73,7 @@ public class MyChat {
 	}
 	
 	public void clickOnRightDrawerMenu() throws Exception {
-		waitHelper.waitForElementVisible(rightDrawerMenu, 5);
+		waitHelper.waitForElementVisible(rightDrawerMenu, 15);
 		logger.info("Clicking on right drawer option menu");
 		driver.findElement(rightDrawerMenu).click();
 	} 
@@ -92,22 +95,12 @@ public class MyChat {
 		driver.findElement(searchChannel).click();
 		logger.info("Clicked on search a channel option from right drawer");
 	} 
-
-	public void searchAdminsChannel() throws Exception {
-		waitHelper.waitForElementVisible(searchBox, 10);
-		driver.findElement(searchBox).click();
-		String channel = TestBase.prop.getProperty("AdminsChannel");
-		GenericHelper.enter_Text(driver, searchBox, channel);
-		//javaScriptHelper.executeScriptCopy("arguments[0].value= 'Automation Channel';", driver.findElement(searchBox));
-		logger.info("Entered Channel Name In Search Box");
-	}
 	
 	public void searchChannelToEdit() throws Exception {
 		waitHelper.waitForElementVisible(searchBox, 10);
 		driver.findElement(searchBox).click();
 		String channel = TestBase.prop.getProperty("ChannelToBeEdited");
 		GenericHelper.enter_Text(driver, searchBox, channel);
-		//javaScriptHelper.executeScriptCopy("arguments[0].value= 'Automation Channel';", driver.findElement(searchBox));
 		logger.info("Entered Channel Name In Search Box");
 	}
 	
@@ -139,12 +132,13 @@ public class MyChat {
 		logger.info("Clicked On Searched Channel");		
 	}
 	
-	public void searchFollowersChannel() throws Exception {
-		waitHelper.waitForElementVisible(searchBox, 10);
-		driver.findElement(searchBox).click();
-		String channel = TestBase.prop.getProperty("FollowersChannel");
-		GenericHelper.enter_Text(driver, searchBox, channel);
-		logger.info("Entered Channel Name In Search Box");
+	public void openSearchedChannel(String channelName) {
+		waitHelper.waitForElementVisible(searchedChannelList, 15);
+		int channelIndex = genericHelper.getSearchedChannelIndex(searchedChannelList, channelName);
+		List<AndroidElement> channels = (List<AndroidElement>)driver.findElements(searchedChannelList);
+		System.out.println(channels.size());
+		channels.get(channelIndex).click();
+		logger.info("Opened Channel");
 	}
 	
 	public void searchChannel(String channelName) throws Exception {
@@ -152,6 +146,11 @@ public class MyChat {
 		driver.findElement(searchBox).click();
 		GenericHelper.enter_Text(driver, searchBox, channelName);
 		logger.info("Entered Channel Name In Search Box");
+	}
+	
+	public boolean isChannelUnfollowed() {
+		waitHelper.waitForElementVisible(unfollowedText, 10);
+		return driver.findElement(unfollowedText).isDisplayed();
 	}
 
 		

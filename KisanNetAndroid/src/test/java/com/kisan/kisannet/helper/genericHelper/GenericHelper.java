@@ -1,9 +1,14 @@
 package com.kisan.kisannet.helper.genericHelper;
 
+import java.time.Duration;
+import java.util.List;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.touch.TouchActions;
 import org.testng.Reporter;
 
 import com.kisan.kisannet.helper.Logger.LoggerHelper;
@@ -12,14 +17,29 @@ import com.kisan.kisannet.pagelibrary.ChannelDashboard;
 import com.kisan.kisannet.pagelibrary.MyChat;
 import com.kisan.kisannet.testBase.TestBase;
 
+import io.appium.java_client.PerformsTouchActions;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
 
 
 
 public class GenericHelper{
 	
+	private AndroidDriver driver;
+	//private Logger Log = LoggerHelper.getLogger(WaitHelper.class);
 	private static final Logger log = LoggerHelper.getLogger(GenericHelper.class);
+	WaitHelper waitHelper;
+	
+	public GenericHelper(AndroidDriver driver) {
+		this.driver = driver;
+		waitHelper = new WaitHelper(driver);
+		log.debug("WaitHelper : " + this.driver.hashCode());
+		
+	}
+
 	
 	public String readValueFromElement(WebElement element) {
 
@@ -116,6 +136,34 @@ public class GenericHelper{
 		action.sendKeys(text).perform();
 		//action.sendKeys(driver.findElement(locator), text);
 		
+	}
+	
+	public void scrollByCount(AndroidDriver<?> driver,int count) throws Exception {
+			Dimension size = driver.manage().window().getSize();
+		    int startX = size.width / 2;
+		    int startY = (int) (size.height * .8);
+		    int endY = (int) (size.height * .2);
+		    int counter = 0;
+		    Thread.sleep(5000);	    
+		        while(counter<count) {
+		        	new TouchAction((PerformsTouchActions) driver).press(PointOption.point(startX, startY)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(2000))).moveTo(PointOption.point(startX, endY)).release().perform();
+		        	Thread.sleep(1000);
+		        	counter++;
+		        }
+		}
+	
+	public int getSearchedChannelIndex(By channelName, String channel) {
+		waitHelper.waitForElementVisible(channelName, 15);
+		List<AndroidElement> channels = (List<AndroidElement>)driver.findElements(channelName);
+		int totalCount = channels.size();
+		int channelIndex = 0;
+		System.out.println(channel.length());
+		System.out.println(channels.get(channelIndex).getText().length());
+		for(channelIndex=0;channelIndex<totalCount;channelIndex++) {
+			if(channels.get(channelIndex).getText().equalsIgnoreCase(channel)) 
+				break;		
+		}
+		return channelIndex;
 	}
 
 }

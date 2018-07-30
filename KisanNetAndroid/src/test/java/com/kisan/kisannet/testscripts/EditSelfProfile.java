@@ -35,7 +35,7 @@ public class EditSelfProfile extends TestBase{
 		editProfilePage.clickonUserProfileImage();
 		editProfilePage.clickTakeAPictureButton();
 		alertHelper.AcceptPermissions();
-		Thread.sleep(5000);
+		//Thread.sleep(2000);
 		editProfilePage.clickShutterButton();
 		editProfilePage.clickOnYesButtonAfterCapturingMedia();
 		editProfilePage.clickOnconfirmUploadProfileImage();

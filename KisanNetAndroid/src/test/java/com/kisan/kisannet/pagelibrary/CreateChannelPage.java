@@ -1,5 +1,6 @@
 package com.kisan.kisannet.pagelibrary;
 
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
@@ -8,6 +9,7 @@ import org.openqa.selenium.By;
 import com.kisan.kisannet.helper.Logger.LoggerHelper;
 import com.kisan.kisannet.helper.Wait.WaitHelper;
 import com.kisan.kisannet.helper.genericHelper.GenericHelper;
+import com.kisan.kisannet.testBase.Devices;
 import com.kisan.kisannet.testBase.TestBase;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -17,6 +19,7 @@ public class CreateChannelPage {
 	public AndroidDriver<?> driver;
 	private final Logger logger = LoggerHelper.getLogger(CreateChannelPage.class);
 	WaitHelper waitHelper;
+	public Devices device;
 	
 	public By backArrow = By.className("android.widget.ImageButton");
 	public By nextButton = By.id("com.kisan.samvaad.test:id/action_next");
@@ -28,8 +31,9 @@ public class CreateChannelPage {
 	public By colorBucketOkBtn = By.id("android:id/button1");
 	public By colrBucketCancelBtn = By.id("android:id/button2");
 	public By takeAPicture = By.id("com.kisan.samvaad.test:id/textViewOptionOne");
-	By shutter = By.id("com.android.camera2:id/shutter_button");
-	By yesAfterCapturingPhoto = By.id("com.android.camera2:id/done_button");
+	By shutter = By.xpath("//android.widget.ImageView[@content-desc='Shutter button']");
+	public By yesAfterCapturingPhoto_lenovo = By.id("com.android.camera2:id/done_button");
+	public By yesAfterCapturingPhoto_redmi = By.id("com.android.camera:id/v6_btn_done");
 	By confirmUploadProfileImage = By.id("com.kisan.samvaad.test:id/imageButtonCrop");
 	public By chooseFromGallery = By.id("com.kisan.samvaad.test:id/textViewOptionTwo");
 	public By cancelImage = By.xpath("//android.widget.TextView[@text='Cancel']");
@@ -37,6 +41,7 @@ public class CreateChannelPage {
 	public CreateChannelPage(AndroidDriver<?> driver) {
 		this.driver=driver;
 		waitHelper = new WaitHelper(driver);
+		device = new Devices(driver);
 	}
 		
 	public void clickNext() {
@@ -114,16 +119,34 @@ public class CreateChannelPage {
 	}
 	
 	public void clickShutterButton() throws Exception {
-		Thread.sleep(2000);
+		org.openqa.selenium.Capabilities cap = driver.getCapabilities();
+		Map<String, ?> capabilities =  (Map<String, ?>)cap.getCapability("desired");
+		String deviceName = (String) capabilities.get("deviceName");
+		System.out.println(deviceName);
+		device.clickOnShutterButton(deviceName);
+		
+		/*Thread.sleep(2000);
 		waitHelper.waitForElementVisible(shutter, 15);
 		driver.findElement(shutter).click();
-		logger.info("Captured profile photo");
+		logger.info("Captured profile photo");*/
 	}
 	
 	public void clickOnYesButtonAfterCapturingMedia() {
-		waitHelper.waitForElementVisible(yesAfterCapturingPhoto, 40);
-		driver.findElement(yesAfterCapturingPhoto).click();
+		org.openqa.selenium.Capabilities cap = driver.getCapabilities();
+		Map<String, ?> capabilities =  (Map<String, ?>)cap.getCapability("desired");
+		String deviceName = (String) capabilities.get("deviceName");
+		System.out.println(deviceName);
+		device.clickOnYesButton(deviceName);
+		/*if(deviceName.equalsIgnoreCase("Redmi")){
+			waitHelper.waitForElementVisible(yesAfterCapturingPhoto_redmi, 40);
+			driver.findElement(yesAfterCapturingPhoto_redmi).click();
+			logger.info("Clicked on yes tickmark after capturing photo");
+		}
+		else if(deviceName.equalsIgnoreCase("pixelV1")){		
+		waitHelper.waitForElementVisible(yesAfterCapturingPhoto_lenovo, 40);
+		driver.findElement(yesAfterCapturingPhoto_lenovo).click();
 		logger.info("Clicked on yes tickmark after capturing photo");
+		}*/
 	}
 	
 	public void clickOnconfirmUploadProfileImage() {

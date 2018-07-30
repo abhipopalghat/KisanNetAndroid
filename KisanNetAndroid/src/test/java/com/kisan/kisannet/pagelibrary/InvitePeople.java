@@ -4,7 +4,10 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Reporter;
 
+import com.kisan.kisannet.helper.Alert.AlertHelper;
 import com.kisan.kisannet.helper.Logger.LoggerHelper;
 import com.kisan.kisannet.helper.Wait.WaitHelper;
 import com.kisan.kisannet.helper.genericHelper.GenericHelper;
@@ -18,20 +21,23 @@ public class InvitePeople {
 	public AndroidDriver<?> driver;
 	public WaitHelper waitHelper;
 	public GenericHelper genericHelper;
+	public AlertHelper alertHelper;
 	private final Logger logger = LoggerHelper.getLogger(InvitePeople.class);
 	
 	By backArrow = By.xpath("//android.widget.ImageButton[@instance='0']");
 	By inviteButton = By.id("com.kisan.samvaad.test:id/action_invite");
 	By searchContact = By.id("com.kisan.samvaad.test:id/searchTextView");
 	By enterNumber = By.id("com.kisan.samvaad.test:id/linear_layout_enternumber");
-	By contactListToInviteToApp = By.id("com.kisan.samvaad.test:id/listViewContacts");
+	By contactListToInviteToApp = By.className("android.widget.CheckBox");
 	By doneButton = By.id("com.kisan.samvaad.test:id/action_done");
 	By contactListToInviteToChannel = By.id("com.kisan.samvaad.test:id/recyclerViewContactList");
+	By getContacts = By.id("com.kisan.samvaad.test:id/textViewGetContacts");
 	
 	public InvitePeople(AndroidDriver<?> driver) {
 		this.driver = driver;
 		waitHelper = new WaitHelper(driver);
-		genericHelper = new GenericHelper();
+		genericHelper = new GenericHelper(driver);
+		alertHelper = new AlertHelper(driver);
 	}
 	
 	public void clickBackArrow() {
@@ -53,11 +59,24 @@ public class InvitePeople {
 	}
 	
 	public void enterContactName() throws Exception {
+		boolean flag = isContactPermissionGiven();
+		if(flag) {
+			driver.findElement(getContacts).click();
+			alertHelper.AcceptPermissions();
+			//Thread.sleep(3000);
+			waitHelper.waitForElementVisible(searchContact, 30);
+			driver.findElement(searchContact).click();
+			String contactName = TestBase.prop.getProperty("InviteContact");
+			genericHelper.enter_Text(driver, searchContact, contactName );
+			logger.info("Entered contact to search");
+		}
+		else {
 		waitHelper.waitForElementVisible(searchContact, 5);
 		driver.findElement(searchContact).click();
 		String contactName = TestBase.prop.getProperty("InviteContact");
 		genericHelper.enter_Text(driver, searchContact, contactName );
 		logger.info("Entered contact to search");
+		}
 	}
 	
 	public void selectSearchedContactToDownloadApp() {
@@ -80,5 +99,21 @@ public class InvitePeople {
 		logger.info("Clicked in enter a number manually field");
 	}
 	
+	public void clickOnGetContacts() {
+		waitHelper.waitForElementVisible(getContacts, 5);
+		driver.findElement(getContacts).click();
+		logger.info("Clicked on Get Contacts button");
+	}
+	
+	
+	public boolean isContactPermissionGiven() {
+		try {
+			driver.findElement(getContacts);
+			return true;
+			
+		} catch (Exception e) {
+			return false;
+		}
+	}
 	
 }

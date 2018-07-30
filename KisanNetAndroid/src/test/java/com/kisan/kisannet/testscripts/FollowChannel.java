@@ -1,5 +1,6 @@
 package com.kisan.kisannet.testscripts;
 
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -26,9 +27,9 @@ public class FollowChannel extends TestBase{
 		discover.searchChannel(channelName);
 		driver.navigate().back();
 		discover.followChannel();
-		navigateToMyChat();
+		/*navigateToMyChat();
 		myChat.clickOnRightDrawerMenu();
-		myChat.clickOnSearchChannelOption();
+		myChat.clickOnSearchChannelOption();*/
 		
 	}
 	
@@ -47,9 +48,11 @@ public class FollowChannel extends TestBase{
 		channelProfile.clickOnFollowButton();
 		String channelFollowed = channelChatWindow.getChannelName();
 		if(channelFollowed.equalsIgnoreCase(channelName)) {
+			logger.info("Channel followed successfully");
 			System.out.println("Channel followed successfully");
 		}
 		else {
+			Assert.assertTrue(false, "Channel is not followed");
 			System.out.println("Channel not followed");
 		}
 	}
