@@ -19,10 +19,10 @@ public class SelfProfile {
 	GenericHelper genericHelper;
 	
 	public By backArrow = By.className("android.widget.ImageButton");
-	public By userImage = By.id("com.kisan.samvaad.test:id/imageViewUserImage");
-	public By editProfileButton = By.id("com.kisan.samvaad.test:id/floatingActionButtonEditUserProfile");
-	public By viewAllButton = By.id("com.kisan.samvaad.test:id/textViewShowAllChannels");
-	public By channelList = By.xpath("//android.widget.TextView[@resource-id='com.kisan.samvaad.test:id/textViewCommunityName']");
+	public By userImage = By.id("com.kisan.samvaad.dev:id/imageViewUserImage");
+	public By editProfileButton = By.id("com.kisan.samvaad.dev:id/floatingActionButtonEditUserProfile");
+	public By viewAllButton = By.id("com.kisan.samvaad.dev:id/textViewShowAllChannels");
+	public By channelList = By.xpath("//android.widget.TextView[@resource-id='com.kisan.samvaad.dev:id/textViewCommunityName']");
 	
 	public SelfProfile(AndroidDriver<?> driver) {
 		this.driver = driver;

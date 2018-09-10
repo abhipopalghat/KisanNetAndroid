@@ -32,7 +32,7 @@ public class Categories {
 	public By alternateEnergyCategory = By.xpath("//android.widget.TextView[@text='Alternate Energy']");
 	
 	
-	public By nextBtn = By.id("com.kisan.samvaad.test:id/action_next");
+	public By nextBtn = By.id("com.kisan.samvaad.dev:id/action_next");
 	public By backArrow = By.className("android.widget.ImageButton");
 	
 	public Categories(AndroidDriver<?> driver) {

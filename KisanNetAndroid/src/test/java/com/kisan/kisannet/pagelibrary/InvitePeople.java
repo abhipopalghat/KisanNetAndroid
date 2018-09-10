@@ -25,13 +25,13 @@ public class InvitePeople {
 	private final Logger logger = LoggerHelper.getLogger(InvitePeople.class);
 	
 	By backArrow = By.xpath("//android.widget.ImageButton[@instance='0']");
-	By inviteButton = By.id("com.kisan.samvaad.test:id/action_invite");
-	By searchContact = By.id("com.kisan.samvaad.test:id/searchTextView");
-	By enterNumber = By.id("com.kisan.samvaad.test:id/linear_layout_enternumber");
+	By inviteButton = By.id("com.kisan.samvaad.dev:id/action_invite");
+	By searchContact = By.id("com.kisan.samvaad.dev:id/searchTextView");
+	By enterNumber = By.id("com.kisan.samvaad.dev:id/linear_layout_enternumber");
 	By contactListToInviteToApp = By.className("android.widget.CheckBox");
-	By doneButton = By.id("com.kisan.samvaad.test:id/action_done");
-	By contactListToInviteToChannel = By.id("com.kisan.samvaad.test:id/recyclerViewContactList");
-	By getContacts = By.id("com.kisan.samvaad.test:id/textViewGetContacts");
+	By doneButton = By.id("com.kisan.samvaad.dev:id/action_done");
+	By contactListToInviteToChannel = By.id("com.kisan.samvaad.dev:id/recyclerViewContactList");
+	By getContacts = By.id("com.kisan.samvaad.dev:id/textViewGetContacts");
 	
 	public InvitePeople(AndroidDriver<?> driver) {
 		this.driver = driver;

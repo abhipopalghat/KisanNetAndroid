@@ -22,18 +22,18 @@ public class EditChannelProfilePage {
 	private final Logger logger = LoggerHelper.getLogger(ChannelProfile.class);
 	public Devices device;
 	
-	By channelName = By.id("com.kisan.samvaad.test:id/editTextCommunityName");
-	By channelProfileImage = By.id("com.kisan.samvaad.test:id/imageViewProfilePicture");
-	By aboutThisChannel = By.id("com.kisan.samvaad.test:id/editTextCommunityDesc");
-	By addMore = By.id("com.kisan.samvaad.test:id/textViewAddMore");
-	By takeAPicture = By.id("com.kisan.samvaad.test:id/textViewOptionOne");
-	By chooseFromGallery = By.id("com.kisan.samvaad.test:id/textViewOptionTwo");
+	By channelName = By.id("com.kisan.samvaad.dev:id/editTextCommunityName");
+	By channelProfileImage = By.id("com.kisan.samvaad.dev:id/imageViewProfilePicture");
+	By aboutThisChannel = By.id("com.kisan.samvaad.dev:id/editTextCommunityDesc");
+	By addMore = By.id("com.kisan.samvaad.dev:id/textViewAddMore");
+	By takeAPicture = By.id("com.kisan.samvaad.dev:id/textViewOptionOne");
+	By chooseFromGallery = By.id("com.kisan.samvaad.dev:id/textViewOptionTwo");
 	By cancelImage = By.xpath("//android.widget.TextView[@text='Cancel']");
 	By shutter = By.xpath("//android.widget.ImageView[@content-desc='Shutter button']");
 	public By yesAfterCapturingPhoto_lenovo = By.id("com.android.camera2:id/done_button");
 	public By yesAfterCapturingPhoto_redmi = By.id("com.android.camera:id/v6_btn_done");
-	By confirmUploadProfileImage = By.id("com.kisan.samvaad.test:id/imageButtonCrop");
-	By doneButton = By.id("com.kisan.samvaad.test:id/action_done");
+	By confirmUploadProfileImage = By.id("com.kisan.samvaad.dev:id/imageButtonCrop");
+	By doneButton = By.id("com.kisan.samvaad.dev:id/action_done");
 	By backArrow = By.xpath("//android.widget.ImageButton[@instance='0']");
 	
 	public EditChannelProfilePage(AndroidDriver<?> driver) {

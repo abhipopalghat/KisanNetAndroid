@@ -1,17 +1,1150 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="13" total="34" passed="21">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="196868" started-at="2018-07-30T12:41:53Z" finished-at="2018-07-30T12:45:10Z">
+  <suite name="Suite" duration-ms="1475494" started-at="2018-09-10T10:54:48Z" finished-at="2018-09-10T11:19:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="196868" started-at="2018-07-30T12:41:53Z" finished-at="2018-07-30T12:45:10Z">
-      <class name="com.kisan.kisannet.testscripts.InviteToFollowChannel">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581]" name="beforeSuite" is-config="true" duration-ms="14324" started-at="2018-07-30T18:11:53Z" finished-at="2018-07-30T18:12:08Z">
+    <test name="Test" duration-ms="1475494" started-at="2018-09-10T10:54:48Z" finished-at="2018-09-10T11:19:23Z">
+      <class name="com.kisan.kisannet.testscripts.SendVideoToAdmin">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToAdmin@de3a06f]" name="beforeSuite" is-config="true" duration-ms="8231" started-at="2018-09-10T16:33:42Z" finished-at="2018-09-10T16:33:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-07-30T18:12:08Z" finished-at="2018-07-30T18:12:08Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToAdmin@de3a06f]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-09-10T16:33:51Z" finished-at="2018-09-10T16:33:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.SendVideoToAdmin.sendVideoToAdmin(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="sendVideoToAdmin(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToAdmin@de3a06f]" name="sendVideoToAdmin" duration-ms="32579" started-at="2018-09-10T16:33:51Z" data-provider="Followers channel" finished-at="2018-09-10T16:34:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grrg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendVideoToAdmin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToAdmin@de3a06f]" name="afterMethod" is-config="true" duration-ms="4518" started-at="2018-09-10T16:34:23Z" finished-at="2018-09-10T16:34:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sendVideoToAdmin status=SUCCESS method=SendVideoToAdmin.sendVideoToAdmin(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToAdmin@de3a06f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToAdmin@de3a06f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:34:28Z" finished-at="2018-09-10T16:34:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.SendVideoToAdmin.sendVideoToAdminFromUserProfile(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="sendVideoToAdminFromUserProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToAdmin@de3a06f]" name="sendVideoToAdminFromUserProfile" duration-ms="17942" started-at="2018-09-10T16:34:28Z" data-provider="Followers channel" finished-at="2018-09-10T16:34:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grrg]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KISANABHI-PC', ip: '192.168.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, deviceName: Redmi, newCommandTimeout: 1840, noReset: true, platformName: Android, platformVersion: 6.0.1, testobject_api_key: 92F914B9D96C44B0947BD853191...}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 26b4b289, deviceScreenSize: 1080x1920, deviceUDID: 26b4b289, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1840, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 6.0.1, takesScreenshot: true, testobject_api_key: 92F914B9D96C44B0947BD853191..., warnings: {}, webStorageEnabled: false}
+Session ID: 210b2222-db16-47b8-861d-ec005bb9b92a
+*** Element info: {Using=id, value=com.kisan.samvaad.dev:id/floatingButtonChannelFollowerChat}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KISANABHI-PC', ip: '192.168.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, deviceName: Redmi, newCommandTimeout: 1840, noReset: true, platformName: Android, platformVersion: 6.0.1, testobject_api_key: 92F914B9D96C44B0947BD853191...}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 26b4b289, deviceScreenSize: 1080x1920, deviceUDID: 26b4b289, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1840, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 6.0.1, takesScreenshot: true, testobject_api_key: 92F914B9D96C44B0947BD853191..., warnings: {}, webStorageEnabled: false}
+Session ID: 210b2222-db16-47b8-861d-ec005bb9b92a
+*** Element info: {Using=id, value=com.kisan.samvaad.dev:id/floatingButtonChannelFollowerChat}
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.kisan.kisannet.helper.Wait.WaitHelper.waitForElementClickable(WaitHelper.java:71)
+	at com.kisan.kisannet.pagelibrary.ChannelDashboard.clickOnNewMessageButtonForFollower(ChannelDashboard.java:57)
+	at com.kisan.kisannet.testscripts.SendVideoToAdmin.sendVideoToAdminFromUserProfile(SendVideoToAdmin.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendVideoToAdminFromUserProfile -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToAdmin@de3a06f]" name="afterMethod" is-config="true" duration-ms="7086" started-at="2018-09-10T16:34:46Z" finished-at="2018-09-10T16:34:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sendVideoToAdminFromUserProfile status=FAILURE method=SendVideoToAdmin.sendVideoToAdminFromUserProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToAdmin@de3a06f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToAdmin@de3a06f]" name="afterTest" is-config="true" duration-ms="48" started-at="2018-09-10T16:34:53Z" finished-at="2018-09-10T16:34:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.kisan.kisannet.testscripts.SendVideoToAdmin -->
+      <class name="com.kisan.kisannet.testscripts.CreateChannel">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.CreateChannel@17695df3]" name="beforeSuite" is-config="true" duration-ms="8299" started-at="2018-09-10T16:42:33Z" finished-at="2018-09-10T16:42:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.CreateChannel@17695df3]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-09-10T16:42:41Z" finished-at="2018-09-10T16:42:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.CreateChannel.createPublicChannel() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="createPublicChannel()[pri:0, instance:com.kisan.kisannet.testscripts.CreateChannel@17695df3]" name="createPublicChannel" duration-ms="54508" started-at="2018-09-10T16:42:41Z" finished-at="2018-09-10T16:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPublicChannel -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.CreateChannel@17695df3]" name="afterMethod" is-config="true" duration-ms="1892" started-at="2018-09-10T16:43:35Z" finished-at="2018-09-10T16:43:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createPublicChannel status=SUCCESS method=CreateChannel.createPublicChannel()[pri:0, instance:com.kisan.kisannet.testscripts.CreateChannel@17695df3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.CreateChannel@17695df3]" name="afterTest" is-config="true" duration-ms="81" started-at="2018-09-10T16:43:37Z" finished-at="2018-09-10T16:43:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.kisan.kisannet.testscripts.CreateChannel -->
+      <class name="com.kisan.kisannet.testscripts.SendLocationToAdmin">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToAdmin@2bea5ab4]" name="beforeSuite" is-config="true" duration-ms="8812" started-at="2018-09-10T16:37:53Z" finished-at="2018-09-10T16:38:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToAdmin@2bea5ab4]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2018-09-10T16:38:02Z" finished-at="2018-09-10T16:38:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.SendLocationToAdmin.sendLocationToFollower(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="sendLocationToFollower(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToAdmin@2bea5ab4]" name="sendLocationToFollower" duration-ms="20056" started-at="2018-09-10T16:38:02Z" data-provider="Followers channel" finished-at="2018-09-10T16:38:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grrg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendLocationToFollower -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToAdmin@2bea5ab4]" name="afterMethod" is-config="true" duration-ms="3135" started-at="2018-09-10T16:38:22Z" finished-at="2018-09-10T16:38:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sendLocationToFollower status=SUCCESS method=SendLocationToAdmin.sendLocationToFollower(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToAdmin@2bea5ab4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToAdmin@2bea5ab4]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:38:25Z" finished-at="2018-09-10T16:38:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.SendLocationToAdmin.sendVideoFromUserProfile(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="sendVideoFromUserProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToAdmin@2bea5ab4]" name="sendVideoFromUserProfile" duration-ms="17424" started-at="2018-09-10T16:38:25Z" data-provider="Followers channel" finished-at="2018-09-10T16:38:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grrg]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KISANABHI-PC', ip: '192.168.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, deviceName: Redmi, newCommandTimeout: 1840, noReset: true, platformName: Android, platformVersion: 6.0.1, testobject_api_key: 92F914B9D96C44B0947BD853191...}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 26b4b289, deviceScreenSize: 1080x1920, deviceUDID: 26b4b289, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1840, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 6.0.1, takesScreenshot: true, testobject_api_key: 92F914B9D96C44B0947BD853191..., warnings: {}, webStorageEnabled: false}
+Session ID: c16a3e3f-f28b-4f73-b23b-277047db5464
+*** Element info: {Using=id, value=com.kisan.samvaad.dev:id/floatingButtonChannelFollowerChat}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KISANABHI-PC', ip: '192.168.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, deviceName: Redmi, newCommandTimeout: 1840, noReset: true, platformName: Android, platformVersion: 6.0.1, testobject_api_key: 92F914B9D96C44B0947BD853191...}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 26b4b289, deviceScreenSize: 1080x1920, deviceUDID: 26b4b289, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1840, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 6.0.1, takesScreenshot: true, testobject_api_key: 92F914B9D96C44B0947BD853191..., warnings: {}, webStorageEnabled: false}
+Session ID: c16a3e3f-f28b-4f73-b23b-277047db5464
+*** Element info: {Using=id, value=com.kisan.samvaad.dev:id/floatingButtonChannelFollowerChat}
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.kisan.kisannet.helper.Wait.WaitHelper.waitForElementClickable(WaitHelper.java:71)
+	at com.kisan.kisannet.pagelibrary.ChannelDashboard.clickOnNewMessageButtonForFollower(ChannelDashboard.java:57)
+	at com.kisan.kisannet.testscripts.SendLocationToAdmin.sendVideoFromUserProfile(SendLocationToAdmin.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendVideoFromUserProfile -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToAdmin@2bea5ab4]" name="afterMethod" is-config="true" duration-ms="6530" started-at="2018-09-10T16:38:42Z" finished-at="2018-09-10T16:38:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sendVideoFromUserProfile status=FAILURE method=SendLocationToAdmin.sendVideoFromUserProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToAdmin@2bea5ab4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToAdmin@2bea5ab4]" name="afterTest" is-config="true" duration-ms="24" started-at="2018-09-10T16:38:49Z" finished-at="2018-09-10T16:38:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.kisan.kisannet.testscripts.SendLocationToAdmin -->
+      <class name="com.kisan.kisannet.testscripts.ChangeLanguage">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.ChangeLanguage@71d15f18]" name="beforeSuite" is-config="true" duration-ms="11182" started-at="2018-09-10T16:48:43Z" finished-at="2018-09-10T16:48:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="FAIL" signature="changeLanguage()[pri:0, instance:com.kisan.kisannet.testscripts.ChangeLanguage@71d15f18]" name="changeLanguage" duration-ms="5222" started-at="2018-09-10T16:48:54Z" finished-at="2018-09-10T16:49:00Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KISANABHI-PC', ip: '192.168.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, deviceName: Redmi, newCommandTimeout: 1840, noReset: true, platformName: Android, platformVersion: 6.0.1, testobject_api_key: 92F914B9D96C44B0947BD853191...}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 26b4b289, deviceScreenSize: 1080x1920, deviceUDID: 26b4b289, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1840, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 6.0.1, takesScreenshot: true, testobject_api_key: 92F914B9D96C44B0947BD853191..., warnings: {}, webStorageEnabled: false}
+Session ID: 8bed8212-592f-4e19-ac8f-a325b2c68869
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text='मराठी']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KISANABHI-PC', ip: '192.168.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, deviceName: Redmi, newCommandTimeout: 1840, noReset: true, platformName: Android, platformVersion: 6.0.1, testobject_api_key: 92F914B9D96C44B0947BD853191...}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 26b4b289, deviceScreenSize: 1080x1920, deviceUDID: 26b4b289, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1840, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 6.0.1, takesScreenshot: true, testobject_api_key: 92F914B9D96C44B0947BD853191..., warnings: {}, webStorageEnabled: false}
+Session ID: 8bed8212-592f-4e19-ac8f-a325b2c68869
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text='मराठी']}
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.kisan.kisannet.helper.Wait.WaitHelper.waitForElementClickable(WaitHelper.java:71)
+	at com.kisan.kisannet.pagelibrary.SelectLanguage.clickMarathi(SelectLanguage.java:42)
+	at com.kisan.kisannet.testscripts.ChangeLanguage.changeLanguage(ChangeLanguage.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeLanguage -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.ChangeLanguage@71d15f18]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:48:54Z" finished-at="2018-09-10T16:48:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.ChangeLanguage.changeLanguage() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.ChangeLanguage@71d15f18]" name="afterMethod" is-config="true" duration-ms="4762" started-at="2018-09-10T16:49:00Z" finished-at="2018-09-10T16:49:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=changeLanguage status=FAILURE method=ChangeLanguage.changeLanguage()[pri:0, instance:com.kisan.kisannet.testscripts.ChangeLanguage@71d15f18] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.ChangeLanguage@71d15f18]" name="afterTest" is-config="true" duration-ms="23" started-at="2018-09-10T16:49:04Z" finished-at="2018-09-10T16:49:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.kisan.kisannet.testscripts.ChangeLanguage -->
+      <class name="com.kisan.kisannet.testscripts.Logout">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.Logout@6c9f5c0d]" name="beforeSuite" is-config="true" duration-ms="8450" started-at="2018-09-10T16:49:04Z" finished-at="2018-09-10T16:49:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="FAIL" signature="logout()[pri:0, instance:com.kisan.kisannet.testscripts.Logout@6c9f5c0d]" name="logout" duration-ms="5625" started-at="2018-09-10T16:49:13Z" finished-at="2018-09-10T16:49:19Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KISANABHI-PC', ip: '192.168.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, deviceName: Redmi, newCommandTimeout: 1840, noReset: true, platformName: Android, platformVersion: 6.0.1, testobject_api_key: 92F914B9D96C44B0947BD853191...}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 26b4b289, deviceScreenSize: 1080x1920, deviceUDID: 26b4b289, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1840, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 6.0.1, takesScreenshot: true, testobject_api_key: 92F914B9D96C44B0947BD853191..., warnings: {}, webStorageEnabled: false}
+Session ID: d9a17bf4-f609-4a96-adee-6d792f5ec13b
+*** Element info: {Using=id, value=android:id/button2}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KISANABHI-PC', ip: '192.168.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, deviceName: Redmi, newCommandTimeout: 1840, noReset: true, platformName: Android, platformVersion: 6.0.1, testobject_api_key: 92F914B9D96C44B0947BD853191...}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 26b4b289, deviceScreenSize: 1080x1920, deviceUDID: 26b4b289, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1840, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 6.0.1, takesScreenshot: true, testobject_api_key: 92F914B9D96C44B0947BD853191..., warnings: {}, webStorageEnabled: false}
+Session ID: d9a17bf4-f609-4a96-adee-6d792f5ec13b
+*** Element info: {Using=id, value=android:id/button2}
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.kisan.kisannet.helper.Wait.WaitHelper.waitForElementClickable(WaitHelper.java:71)
+	at com.kisan.kisannet.pagelibrary.LeftDrawer.clickonLogoutNoButton(LeftDrawer.java:101)
+	at com.kisan.kisannet.testscripts.Logout.logout(Logout.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.Logout@6c9f5c0d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:49:13Z" finished-at="2018-09-10T16:49:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.Logout.logout() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.Logout@6c9f5c0d]" name="afterMethod" is-config="true" duration-ms="4653" started-at="2018-09-10T16:49:19Z" finished-at="2018-09-10T16:49:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logout status=FAILURE method=Logout.logout()[pri:0, instance:com.kisan.kisannet.testscripts.Logout@6c9f5c0d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.Logout@6c9f5c0d]" name="afterTest" is-config="true" duration-ms="63" started-at="2018-09-10T16:49:23Z" finished-at="2018-09-10T16:49:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.kisan.kisannet.testscripts.Logout -->
+      <class name="com.kisan.kisannet.testscripts.UnfollowChannel">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.UnfollowChannel@27fe3806]" name="beforeSuite" is-config="true" duration-ms="9332" started-at="2018-09-10T16:43:37Z" finished-at="2018-09-10T16:43:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.UnfollowChannel@27fe3806]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:43:47Z" finished-at="2018-09-10T16:43:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.UnfollowChannel.unFollowChannelFromDiscover(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="unFollowChannelFromDiscover(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.UnfollowChannel@27fe3806]" name="unFollowChannelFromDiscover" duration-ms="40248" started-at="2018-09-10T16:43:47Z" data-provider="ChannelToBeUnFollowedFromDiscover" finished-at="2018-09-10T16:44:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Check 2]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: com.kisan.samvaad.dev:id/textViewCommunityName (tried for 15 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.kisan.samvaad.dev:id/textViewCommunityName (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at com.kisan.kisannet.helper.Wait.WaitHelper.waitForElementVisible(WaitHelper.java:55)
+	at com.kisan.kisannet.pagelibrary.DiscoverPage.openChannelProfileToUnfollow(DiscoverPage.java:153)
+	at com.kisan.kisannet.testscripts.UnfollowChannel.unFollowChannelFromDiscover(UnfollowChannel.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: com.kisan.samvaad.dev:id/textViewCommunityName
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KISANABHI-PC', ip: '192.168.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unFollowChannelFromDiscover -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.UnfollowChannel@27fe3806]" name="afterMethod" is-config="true" duration-ms="4621" started-at="2018-09-10T16:44:27Z" finished-at="2018-09-10T16:44:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=unFollowChannelFromDiscover status=FAILURE method=UnfollowChannel.unFollowChannelFromDiscover(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.UnfollowChannel@27fe3806] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.UnfollowChannel@27fe3806]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2018-09-10T16:44:32Z" finished-at="2018-09-10T16:44:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.UnfollowChannel.unFollowChannelFromMyChat(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="unFollowChannelFromMyChat(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.UnfollowChannel@27fe3806]" name="unFollowChannelFromMyChat" duration-ms="32775" started-at="2018-09-10T16:44:32Z" data-provider="ChannelToBeUnFollowedFromMyChat" finished-at="2018-09-10T16:45:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Check 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unFollowChannelFromMyChat -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.UnfollowChannel@27fe3806]" name="afterMethod" is-config="true" duration-ms="1002" started-at="2018-09-10T16:45:04Z" finished-at="2018-09-10T16:45:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=unFollowChannelFromMyChat status=SUCCESS method=UnfollowChannel.unFollowChannelFromMyChat(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.UnfollowChannel@27fe3806] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="unFollowChannelFromUserProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.UnfollowChannel@27fe3806]" name="unFollowChannelFromUserProfile" duration-ms="7722" started-at="2018-09-10T16:45:05Z" data-provider="ChannelToBeUnFollowedFromUserProfile" finished-at="2018-09-10T16:45:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jio nee]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[java.net.SocketException: Software caused connection abort: recv failed
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KISANABHI-PC', ip: '192.168.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: driver.version: AndroidDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: java.net.SocketException: Software caused connection abort: recv failed
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KISANABHI-PC', ip: '192.168.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:233)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at io.appium.java_client.PerformsTouchActions.performTouchAction(PerformsTouchActions.java:41)
+	at io.appium.java_client.TouchAction.perform(TouchAction.java:187)
+	at com.kisan.kisannet.helper.genericHelper.GenericHelper.scrollByCount(GenericHelper.java:149)
+	at com.kisan.kisannet.testscripts.UnfollowChannel.unFollowChannelFromUserProfile(UnfollowChannel.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at okio.Okio$2.read(Okio.java:139)
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.java:345)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:217)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:212)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unFollowChannelFromUserProfile -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.UnfollowChannel@27fe3806]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:45:05Z" finished-at="2018-09-10T16:45:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.UnfollowChannel.unFollowChannelFromUserProfile(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.UnfollowChannel@27fe3806]" name="afterMethod" is-config="true" duration-ms="4092" started-at="2018-09-10T16:45:13Z" finished-at="2018-09-10T16:45:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=unFollowChannelFromUserProfile status=FAILURE method=UnfollowChannel.unFollowChannelFromUserProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.UnfollowChannel@27fe3806] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.UnfollowChannel@27fe3806]" name="afterTest" is-config="true" duration-ms="31" started-at="2018-09-10T16:45:17Z" finished-at="2018-09-10T16:45:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.kisan.kisannet.testscripts.UnfollowChannel -->
+      <class name="com.kisan.kisannet.testscripts.FollowChannel">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.FollowChannel@f4168b8]" name="beforeSuite" is-config="true" duration-ms="8391" started-at="2018-09-10T16:39:33Z" finished-at="2018-09-10T16:39:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.FollowChannel@f4168b8]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:39:42Z" finished-at="2018-09-10T16:39:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.FollowChannel.followChannelFormChannelProfile(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="followChannelFormChannelProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.FollowChannel@f4168b8]" name="followChannelFormChannelProfile" duration-ms="35761" started-at="2018-09-10T16:39:42Z" data-provider="ChannelToBeFollowedFromProfile" finished-at="2018-09-10T16:40:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[raj]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- followChannelFormChannelProfile -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.FollowChannel@f4168b8]" name="afterMethod" is-config="true" duration-ms="4550" started-at="2018-09-10T16:40:17Z" finished-at="2018-09-10T16:40:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=followChannelFormChannelProfile status=SUCCESS method=FollowChannel.followChannelFormChannelProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.FollowChannel@f4168b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.FollowChannel@f4168b8]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:40:22Z" finished-at="2018-09-10T16:40:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.FollowChannel.followChannelFormDiscover(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="followChannelFormDiscover(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.FollowChannel@f4168b8]" name="followChannelFormDiscover" duration-ms="23744" started-at="2018-09-10T16:40:22Z" data-provider="ChannelToBeFollowedFromDiscover" finished-at="2018-09-10T16:40:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[XYZ]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: com.kisan.samvaad.dev:id/imageButtonJoin (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.kisan.samvaad.dev:id/imageButtonJoin (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at com.kisan.kisannet.helper.Wait.WaitHelper.waitForElementVisible(WaitHelper.java:55)
+	at com.kisan.kisannet.pagelibrary.DiscoverPage.followChannel(DiscoverPage.java:124)
+	at com.kisan.kisannet.testscripts.FollowChannel.followChannelFormDiscover(FollowChannel.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: com.kisan.samvaad.dev:id/imageButtonJoin
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KISANABHI-PC', ip: '192.168.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- followChannelFormDiscover -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.FollowChannel@f4168b8]" name="afterMethod" is-config="true" duration-ms="5816" started-at="2018-09-10T16:40:46Z" finished-at="2018-09-10T16:40:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=followChannelFormDiscover status=FAILURE method=FollowChannel.followChannelFormDiscover(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.FollowChannel@f4168b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.FollowChannel@f4168b8]" name="afterTest" is-config="true" duration-ms="27" started-at="2018-09-10T16:40:51Z" finished-at="2018-09-10T16:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.kisan.kisannet.testscripts.FollowChannel -->
+      <class name="com.kisan.kisannet.testscripts.SendAudioToAdmin">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToAdmin@58a90037]" name="beforeSuite" is-config="true" duration-ms="8799" started-at="2018-09-10T16:36:04Z" finished-at="2018-09-10T16:36:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToAdmin@58a90037]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-09-10T16:36:13Z" finished-at="2018-09-10T16:36:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.SendAudioToAdmin.sendAudioToAdmin(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="sendAudioToAdmin(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToAdmin@58a90037]" name="sendAudioToAdmin" duration-ms="71000" started-at="2018-09-10T16:36:13Z" data-provider="Followers channel" finished-at="2018-09-10T16:37:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grrg]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[-1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:418)
+	at java.util.ArrayList.get(ArrayList.java:431)
+	at com.kisan.kisannet.pagelibrary.ChannelChatWindow.isAudioDelivered(ChannelChatWindow.java:213)
+	at com.kisan.kisannet.testscripts.SendAudioToAdmin.sendAudioToAdmin(SendAudioToAdmin.java:149)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendAudioToAdmin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToAdmin@58a90037]" name="afterMethod" is-config="true" duration-ms="5313" started-at="2018-09-10T16:37:24Z" finished-at="2018-09-10T16:37:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sendAudioToAdmin status=FAILURE method=SendAudioToAdmin.sendAudioToAdmin(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToAdmin@58a90037] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToAdmin@58a90037]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:37:29Z" finished-at="2018-09-10T16:37:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.SendAudioToAdmin.sendVideoFromUserProfile(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="sendVideoFromUserProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToAdmin@58a90037]" name="sendVideoFromUserProfile" duration-ms="18247" started-at="2018-09-10T16:37:29Z" data-provider="Followers channel" finished-at="2018-09-10T16:37:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grrg]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KISANABHI-PC', ip: '192.168.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, deviceName: Redmi, newCommandTimeout: 1840, noReset: true, platformName: Android, platformVersion: 6.0.1, testobject_api_key: 92F914B9D96C44B0947BD853191...}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 26b4b289, deviceScreenSize: 1080x1920, deviceUDID: 26b4b289, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1840, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 6.0.1, takesScreenshot: true, testobject_api_key: 92F914B9D96C44B0947BD853191..., warnings: {}, webStorageEnabled: false}
+Session ID: 46c75174-44e6-4c7c-9168-4d279aff90e3
+*** Element info: {Using=id, value=com.kisan.samvaad.dev:id/floatingButtonChannelFollowerChat}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KISANABHI-PC', ip: '192.168.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, deviceName: Redmi, newCommandTimeout: 1840, noReset: true, platformName: Android, platformVersion: 6.0.1, testobject_api_key: 92F914B9D96C44B0947BD853191...}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 26b4b289, deviceScreenSize: 1080x1920, deviceUDID: 26b4b289, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1840, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 6.0.1, takesScreenshot: true, testobject_api_key: 92F914B9D96C44B0947BD853191..., warnings: {}, webStorageEnabled: false}
+Session ID: 46c75174-44e6-4c7c-9168-4d279aff90e3
+*** Element info: {Using=id, value=com.kisan.samvaad.dev:id/floatingButtonChannelFollowerChat}
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.kisan.kisannet.helper.Wait.WaitHelper.waitForElementClickable(WaitHelper.java:71)
+	at com.kisan.kisannet.pagelibrary.ChannelDashboard.clickOnNewMessageButtonForFollower(ChannelDashboard.java:57)
+	at com.kisan.kisannet.testscripts.SendAudioToAdmin.sendVideoFromUserProfile(SendAudioToAdmin.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendVideoFromUserProfile -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToAdmin@58a90037]" name="afterMethod" is-config="true" duration-ms="5505" started-at="2018-09-10T16:37:48Z" finished-at="2018-09-10T16:37:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sendVideoFromUserProfile status=FAILURE method=SendAudioToAdmin.sendVideoFromUserProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToAdmin@58a90037] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToAdmin@58a90037]" name="afterTest" is-config="true" duration-ms="49" started-at="2018-09-10T16:37:53Z" finished-at="2018-09-10T16:37:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.kisan.kisannet.testscripts.SendAudioToAdmin -->
+      <class name="com.kisan.kisannet.testscripts.InviteToFollowChannel">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@2df32bf7]" name="beforeSuite" is-config="true" duration-ms="8453" started-at="2018-09-10T16:41:30Z" finished-at="2018-09-10T16:41:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@2df32bf7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:41:38Z" finished-at="2018-09-10T16:41:38Z">
           <params>
             <param index="0">
               <value>
@@ -22,48 +1155,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="initializePages()[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581]" name="initializePages" is-config="true" duration-ms="16" started-at="2018-07-30T18:12:08Z" finished-at="2018-07-30T18:12:08Z">
+        <test-method status="PASS" signature="initializePages()[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@2df32bf7]" name="initializePages" is-config="true" duration-ms="0" started-at="2018-09-10T16:41:38Z" finished-at="2018-09-10T16:41:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializePages -->
-        <test-method status="PASS" signature="inviteToFollowChannelByContactName(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581]" name="inviteToFollowChannelByContactName" duration-ms="96540" started-at="2018-07-30T18:12:08Z" data-provider="Contact Invite" finished-at="2018-07-30T18:13:44Z">
+        <test-method status="PASS" signature="inviteToFollowChannelByContactName(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@2df32bf7]" name="inviteToFollowChannelByContactName" duration-ms="24269" started-at="2018-09-10T16:41:38Z" data-provider="Contact Invite" finished-at="2018-09-10T16:42:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[27 July]]>
+                <![CDATA[Need to]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inviteToFollowChannelByContactName -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581]" name="afterMethod" is-config="true" duration-ms="235" started-at="2018-07-30T18:13:44Z" finished-at="2018-07-30T18:13:45Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@2df32bf7]" name="afterMethod" is-config="true" duration-ms="3952" started-at="2018-09-10T16:42:03Z" finished-at="2018-09-10T16:42:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=inviteToFollowChannelByContactName status=SUCCESS method=InviteToFollowChannel.inviteToFollowChannelByContactName(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581] output={null}]]]>
+                <![CDATA[[TestResult name=inviteToFollowChannelByContactName status=SUCCESS method=InviteToFollowChannel.inviteToFollowChannelByContactName(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@2df32bf7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="inviteToFollowChannelManually(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581]" name="inviteToFollowChannelManually" duration-ms="79997" started-at="2018-07-30T18:13:45Z" data-provider="Manual Invite" finished-at="2018-07-30T18:15:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[27 July]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inviteToFollowChannelManually -->
-        <test-method status="PASS" signature="initializePages()[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581]" name="initializePages" is-config="true" duration-ms="0" started-at="2018-07-30T18:13:45Z" finished-at="2018-07-30T18:13:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializePages -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-07-30T18:13:45Z" finished-at="2018-07-30T18:13:45Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@2df32bf7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:42:06Z" finished-at="2018-09-10T16:42:06Z">
           <params>
             <param index="0">
               <value>
@@ -74,22 +1192,951 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581]" name="afterMethod" is-config="true" duration-ms="5301" started-at="2018-07-30T18:15:05Z" finished-at="2018-07-30T18:15:10Z">
+        <test-method status="PASS" signature="initializePages()[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@2df32bf7]" name="initializePages" is-config="true" duration-ms="1" started-at="2018-09-10T16:42:06Z" finished-at="2018-09-10T16:42:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method status="PASS" signature="inviteToFollowChannelManually(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@2df32bf7]" name="inviteToFollowChannelManually" duration-ms="20192" started-at="2018-09-10T16:42:06Z" data-provider="Manual Invite" finished-at="2018-09-10T16:42:27Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=inviteToFollowChannelManually status=SUCCESS method=InviteToFollowChannel.inviteToFollowChannelManually(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581] output={null}]]]>
+                <![CDATA[Need to]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inviteToFollowChannelManually -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@2df32bf7]" name="afterMethod" is-config="true" duration-ms="5877" started-at="2018-09-10T16:42:27Z" finished-at="2018-09-10T16:42:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=inviteToFollowChannelManually status=SUCCESS method=InviteToFollowChannel.inviteToFollowChannelManually(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@2df32bf7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@31ea9581]" name="afterTest" is-config="true" duration-ms="408" started-at="2018-07-30T18:15:10Z" finished-at="2018-07-30T18:15:10Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.InviteToFollowChannel@2df32bf7]" name="afterTest" is-config="true" duration-ms="62" started-at="2018-09-10T16:42:33Z" finished-at="2018-09-10T16:42:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.kisan.kisannet.testscripts.InviteToFollowChannel -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.kisan.kisannet.testscripts.SendVideoToFollowers">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToFollowers@3439f68d]" name="beforeSuite" is-config="true" duration-ms="13125" started-at="2018-09-10T16:24:48Z" finished-at="2018-09-10T16:25:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="sendVideoToFollower(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToFollowers@3439f68d]" name="sendVideoToFollower" duration-ms="37419" started-at="2018-09-10T16:25:01Z" data-provider="Admins channel" finished-at="2018-09-10T16:25:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Need to]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendVideoToFollower -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToFollowers@3439f68d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:25:01Z" finished-at="2018-09-10T16:25:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.SendVideoToFollowers.sendVideoToFollower(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToFollowers@3439f68d]" name="afterMethod" is-config="true" duration-ms="2966" started-at="2018-09-10T16:25:38Z" finished-at="2018-09-10T16:25:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sendVideoToFollower status=SUCCESS method=SendVideoToFollowers.sendVideoToFollower(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToFollowers@3439f68d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToFollowers@3439f68d]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-09-10T16:25:41Z" finished-at="2018-09-10T16:25:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.SendVideoToFollowers.sendVideoToFollowerFromUserProfile(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="sendVideoToFollowerFromUserProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToFollowers@3439f68d]" name="sendVideoToFollowerFromUserProfile" duration-ms="38840" started-at="2018-09-10T16:25:41Z" data-provider="Admins channel" finished-at="2018-09-10T16:26:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Need to]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendVideoToFollowerFromUserProfile -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToFollowers@3439f68d]" name="afterMethod" is-config="true" duration-ms="5339" started-at="2018-09-10T16:26:20Z" finished-at="2018-09-10T16:26:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sendVideoToFollowerFromUserProfile status=SUCCESS method=SendVideoToFollowers.sendVideoToFollowerFromUserProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToFollowers@3439f68d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.SendVideoToFollowers@3439f68d]" name="afterTest" is-config="true" duration-ms="454" started-at="2018-09-10T16:26:25Z" finished-at="2018-09-10T16:26:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.kisan.kisannet.testscripts.SendVideoToFollowers -->
+      <class name="com.kisan.kisannet.testscripts.SendImageToAdmin">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToAdmin@2473b9ce]" name="beforeSuite" is-config="true" duration-ms="8517" started-at="2018-09-10T16:34:53Z" finished-at="2018-09-10T16:35:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToAdmin@2473b9ce]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-09-10T16:35:01Z" finished-at="2018-09-10T16:35:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.SendImageToAdmin.sendImageFromUserProfile(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="sendImageFromUserProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToAdmin@2473b9ce]" name="sendImageFromUserProfile" duration-ms="20624" started-at="2018-09-10T16:35:01Z" data-provider="Followers channel" finished-at="2018-09-10T16:35:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grrg]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KISANABHI-PC', ip: '192.168.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, deviceName: Redmi, newCommandTimeout: 1840, noReset: true, platformName: Android, platformVersion: 6.0.1, testobject_api_key: 92F914B9D96C44B0947BD853191...}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 26b4b289, deviceScreenSize: 1080x1920, deviceUDID: 26b4b289, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1840, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 6.0.1, takesScreenshot: true, testobject_api_key: 92F914B9D96C44B0947BD853191..., warnings: {}, webStorageEnabled: false}
+Session ID: d2c9a54a-c58e-4b00-9d67-a46f88648344
+*** Element info: {Using=id, value=com.kisan.samvaad.dev:id/floatingButtonChannelFollowerChat}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KISANABHI-PC', ip: '192.168.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, deviceName: Redmi, newCommandTimeout: 1840, noReset: true, platformName: Android, platformVersion: 6.0.1, testobject_api_key: 92F914B9D96C44B0947BD853191...}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 26b4b289, deviceScreenSize: 1080x1920, deviceUDID: 26b4b289, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1840, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 6.0.1, takesScreenshot: true, testobject_api_key: 92F914B9D96C44B0947BD853191..., warnings: {}, webStorageEnabled: false}
+Session ID: d2c9a54a-c58e-4b00-9d67-a46f88648344
+*** Element info: {Using=id, value=com.kisan.samvaad.dev:id/floatingButtonChannelFollowerChat}
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.kisan.kisannet.helper.Wait.WaitHelper.waitForElementClickable(WaitHelper.java:71)
+	at com.kisan.kisannet.pagelibrary.ChannelDashboard.clickOnNewMessageButtonForFollower(ChannelDashboard.java:57)
+	at com.kisan.kisannet.testscripts.SendImageToAdmin.sendImageFromUserProfile(SendImageToAdmin.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendImageFromUserProfile -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToAdmin@2473b9ce]" name="afterMethod" is-config="true" duration-ms="6672" started-at="2018-09-10T16:35:22Z" finished-at="2018-09-10T16:35:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sendImageFromUserProfile status=FAILURE method=SendImageToAdmin.sendImageFromUserProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToAdmin@2473b9ce] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToAdmin@2473b9ce]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-09-10T16:35:29Z" finished-at="2018-09-10T16:35:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.SendImageToAdmin.sendImageToAdmin(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="sendImageToAdmin(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToAdmin@2473b9ce]" name="sendImageToAdmin" duration-ms="32303" started-at="2018-09-10T16:35:29Z" data-provider="Followers channel" finished-at="2018-09-10T16:36:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grrg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendImageToAdmin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToAdmin@2473b9ce]" name="afterMethod" is-config="true" duration-ms="3159" started-at="2018-09-10T16:36:01Z" finished-at="2018-09-10T16:36:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sendImageToAdmin status=SUCCESS method=SendImageToAdmin.sendImageToAdmin(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToAdmin@2473b9ce] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToAdmin@2473b9ce]" name="afterTest" is-config="true" duration-ms="57" started-at="2018-09-10T16:36:04Z" finished-at="2018-09-10T16:36:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.kisan.kisannet.testscripts.SendImageToAdmin -->
+      <class name="com.kisan.kisannet.testscripts.SendLocationToFollowers">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToFollowers@74294adb]" name="beforeSuite" is-config="true" duration-ms="9836" started-at="2018-09-10T16:31:55Z" finished-at="2018-09-10T16:32:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="sendLocationFromUserProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToFollowers@74294adb]" name="sendLocationFromUserProfile" duration-ms="29255" started-at="2018-09-10T16:32:05Z" data-provider="Admins channel" finished-at="2018-09-10T16:32:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Need to]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendLocationFromUserProfile -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToFollowers@74294adb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:32:05Z" finished-at="2018-09-10T16:32:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.SendLocationToFollowers.sendLocationFromUserProfile(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToFollowers@74294adb]" name="afterMethod" is-config="true" duration-ms="5081" started-at="2018-09-10T16:32:34Z" finished-at="2018-09-10T16:32:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sendLocationFromUserProfile status=SUCCESS method=SendLocationToFollowers.sendLocationFromUserProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToFollowers@74294adb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="sendLocationToFollower(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToFollowers@74294adb]" name="sendLocationToFollower" duration-ms="17154" started-at="2018-09-10T16:32:39Z" data-provider="Admins channel" finished-at="2018-09-10T16:32:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Need to]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendLocationToFollower -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToFollowers@74294adb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:32:39Z" finished-at="2018-09-10T16:32:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.SendLocationToFollowers.sendLocationToFollower(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToFollowers@74294adb]" name="afterMethod" is-config="true" duration-ms="2815" started-at="2018-09-10T16:32:56Z" finished-at="2018-09-10T16:32:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sendLocationToFollower status=SUCCESS method=SendLocationToFollowers.sendLocationToFollower(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToFollowers@74294adb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.SendLocationToFollowers@74294adb]" name="afterTest" is-config="true" duration-ms="41" started-at="2018-09-10T16:32:59Z" finished-at="2018-09-10T16:32:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.kisan.kisannet.testscripts.SendLocationToFollowers -->
+      <class name="com.kisan.kisannet.testscripts.EditSelfProfile">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.EditSelfProfile@dbd940d]" name="beforeSuite" is-config="true" duration-ms="8677" started-at="2018-09-10T16:45:17Z" finished-at="2018-09-10T16:45:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="FAIL" signature="editSelfProfile()[pri:0, instance:com.kisan.kisannet.testscripts.EditSelfProfile@dbd940d]" name="editSelfProfile" duration-ms="51730" started-at="2018-09-10T16:45:26Z" finished-at="2018-09-10T16:46:18Z">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index: 0, Size: 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at com.kisan.kisannet.pagelibrary.MyInterests.selectCategories(MyInterests.java:53)
+	at com.kisan.kisannet.testscripts.EditSelfProfile.editSelfProfile(EditSelfProfile.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editSelfProfile -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.EditSelfProfile@dbd940d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:45:26Z" finished-at="2018-09-10T16:45:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.EditSelfProfile.editSelfProfile() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.EditSelfProfile@dbd940d]" name="afterMethod" is-config="true" duration-ms="6355" started-at="2018-09-10T16:46:18Z" finished-at="2018-09-10T16:46:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editSelfProfile status=FAILURE method=EditSelfProfile.editSelfProfile()[pri:0, instance:com.kisan.kisannet.testscripts.EditSelfProfile@dbd940d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.EditSelfProfile@dbd940d]" name="afterTest" is-config="true" duration-ms="44" started-at="2018-09-10T16:46:24Z" finished-at="2018-09-10T16:46:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.kisan.kisannet.testscripts.EditSelfProfile -->
+      <class name="com.kisan.kisannet.testscripts.SendImageToFollowers">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToFollowers@530612ba]" name="beforeSuite" is-config="true" duration-ms="10619" started-at="2018-09-10T16:26:26Z" finished-at="2018-09-10T16:26:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToFollowers@530612ba]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:26:37Z" finished-at="2018-09-10T16:26:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.SendImageToFollowers.sendImageFromUserProfile(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="sendImageFromUserProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToFollowers@530612ba]" name="sendImageFromUserProfile" duration-ms="38330" started-at="2018-09-10T16:26:37Z" data-provider="Admins channel" finished-at="2018-09-10T16:27:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Need to]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendImageFromUserProfile -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToFollowers@530612ba]" name="afterMethod" is-config="true" duration-ms="5705" started-at="2018-09-10T16:27:15Z" finished-at="2018-09-10T16:27:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sendImageFromUserProfile status=SUCCESS method=SendImageToFollowers.sendImageFromUserProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToFollowers@530612ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="sendImageToFollower(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToFollowers@530612ba]" name="sendImageToFollower" duration-ms="27747" started-at="2018-09-10T16:27:21Z" data-provider="Admins channel" finished-at="2018-09-10T16:27:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Need to]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendImageToFollower -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToFollowers@530612ba]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:27:21Z" finished-at="2018-09-10T16:27:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.SendImageToFollowers.sendImageToFollower(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToFollowers@530612ba]" name="afterMethod" is-config="true" duration-ms="4064" started-at="2018-09-10T16:27:48Z" finished-at="2018-09-10T16:27:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sendImageToFollower status=SUCCESS method=SendImageToFollowers.sendImageToFollower(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToFollowers@530612ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.SendImageToFollowers@530612ba]" name="afterTest" is-config="true" duration-ms="122" started-at="2018-09-10T16:27:52Z" finished-at="2018-09-10T16:27:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.kisan.kisannet.testscripts.SendImageToFollowers -->
+      <class name="com.kisan.kisannet.testscripts.SendAudioToFollowers">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToFollowers@76b10754]" name="beforeSuite" is-config="true" duration-ms="10497" started-at="2018-09-10T16:27:53Z" finished-at="2018-09-10T16:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="sendAudioToFollower(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToFollowers@76b10754]" name="sendAudioToFollower" duration-ms="110127" started-at="2018-09-10T16:28:03Z" data-provider="Admins channel" finished-at="2018-09-10T16:29:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Need to]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendAudioToFollower -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToFollowers@76b10754]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:28:03Z" finished-at="2018-09-10T16:28:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.SendAudioToFollowers.sendAudioToFollower(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToFollowers@76b10754]" name="afterMethod" is-config="true" duration-ms="3648" started-at="2018-09-10T16:29:53Z" finished-at="2018-09-10T16:29:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sendAudioToFollower status=SUCCESS method=SendAudioToFollowers.sendAudioToFollower(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToFollowers@76b10754] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToFollowers@76b10754]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:29:57Z" finished-at="2018-09-10T16:29:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.SendAudioToFollowers.sendAudioUserProfile(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="sendAudioUserProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToFollowers@76b10754]" name="sendAudioUserProfile" duration-ms="113241" started-at="2018-09-10T16:29:57Z" data-provider="Admins channel" finished-at="2018-09-10T16:31:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Need to]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendAudioUserProfile -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToFollowers@76b10754]" name="afterMethod" is-config="true" duration-ms="4607" started-at="2018-09-10T16:31:50Z" finished-at="2018-09-10T16:31:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sendAudioUserProfile status=SUCCESS method=SendAudioToFollowers.sendAudioUserProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToFollowers@76b10754] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.SendAudioToFollowers@76b10754]" name="afterTest" is-config="true" duration-ms="27" started-at="2018-09-10T16:31:55Z" finished-at="2018-09-10T16:31:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.kisan.kisannet.testscripts.SendAudioToFollowers -->
+      <class name="com.kisan.kisannet.testscripts.SendTextMessageToFollowers">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToFollowers@2a40cd94]" name="beforeSuite" is-config="true" duration-ms="9317" started-at="2018-09-10T16:32:59Z" finished-at="2018-09-10T16:33:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="sendTextMessageFromUserProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToFollowers@2a40cd94]" name="sendTextMessageFromUserProfile" duration-ms="28300" started-at="2018-09-10T16:33:08Z" data-provider="Admins channel" finished-at="2018-09-10T16:33:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Need to]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendTextMessageFromUserProfile -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToFollowers@2a40cd94]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:33:08Z" finished-at="2018-09-10T16:33:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.SendTextMessageToFollowers.sendTextMessageFromUserProfile(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToFollowers@2a40cd94]" name="afterMethod" is-config="true" duration-ms="5830" started-at="2018-09-10T16:33:36Z" finished-at="2018-09-10T16:33:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sendTextMessageFromUserProfile status=SUCCESS method=SendTextMessageToFollowers.sendTextMessageFromUserProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToFollowers@2a40cd94] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToFollowers@2a40cd94]" name="afterTest" is-config="true" duration-ms="69" started-at="2018-09-10T16:33:42Z" finished-at="2018-09-10T16:33:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.kisan.kisannet.testscripts.SendTextMessageToFollowers -->
+      <class name="com.kisan.kisannet.testscripts.BlockFollower">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.BlockFollower@60438a68]" name="beforeSuite" is-config="true" duration-ms="8831" started-at="2018-09-10T16:48:13Z" finished-at="2018-09-10T16:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.BlockFollower@60438a68]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-09-10T16:48:21Z" finished-at="2018-09-10T16:48:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.BlockFollower.blockFollower(java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="blockFollower(java.lang.String, java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.BlockFollower@60438a68]" name="blockFollower" duration-ms="15007" started-at="2018-09-10T16:48:21Z" data-provider="DataToBlockFollower" finished-at="2018-09-10T16:48:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Need to]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Abhijeet Popalghat]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[io.appium.java_client.android.AndroidDriver cannot be cast to org.openqa.selenium.interactions.HasTouchScreen]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: io.appium.java_client.android.AndroidDriver cannot be cast to org.openqa.selenium.interactions.HasTouchScreen
+	at org.openqa.selenium.interactions.touch.TouchActions.<init>(TouchActions.java:38)
+	at com.kisan.kisannet.pagelibrary.FollowerList.longTapOnFollowerName(FollowerList.java:47)
+	at com.kisan.kisannet.testscripts.BlockFollower.blockFollower(BlockFollower.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blockFollower -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.BlockFollower@60438a68]" name="afterMethod" is-config="true" duration-ms="6822" started-at="2018-09-10T16:48:36Z" finished-at="2018-09-10T16:48:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=blockFollower status=FAILURE method=BlockFollower.blockFollower(java.lang.String, java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.BlockFollower@60438a68] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.BlockFollower@60438a68]" name="afterTest" is-config="true" duration-ms="31" started-at="2018-09-10T16:48:43Z" finished-at="2018-09-10T16:48:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.kisan.kisannet.testscripts.BlockFollower -->
+      <class name="com.kisan.kisannet.testscripts.SendTextMessageToAdmin">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToAdmin@3d8314f0]" name="beforeSuite" is-config="true" duration-ms="8375" started-at="2018-09-10T16:38:49Z" finished-at="2018-09-10T16:38:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="SendTextMessageToAdmin(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToAdmin@3d8314f0]" name="SendTextMessageToAdmin" duration-ms="20219" started-at="2018-09-10T16:38:57Z" data-provider="Followers channel" finished-at="2018-09-10T16:39:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grrg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SendTextMessageToAdmin -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToAdmin@3d8314f0]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:38:57Z" finished-at="2018-09-10T16:38:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.SendTextMessageToAdmin.SendTextMessageToAdmin(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToAdmin@3d8314f0]" name="afterMethod" is-config="true" duration-ms="4108" started-at="2018-09-10T16:39:18Z" finished-at="2018-09-10T16:39:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SendTextMessageToAdmin status=SUCCESS method=SendTextMessageToAdmin.SendTextMessageToAdmin(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToAdmin@3d8314f0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToAdmin@3d8314f0]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:39:22Z" finished-at="2018-09-10T16:39:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.SendTextMessageToAdmin.sendTextMessageFromUserProfile(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="sendTextMessageFromUserProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToAdmin@3d8314f0]" name="sendTextMessageFromUserProfile" duration-ms="7243" started-at="2018-09-10T16:39:22Z" data-provider="Followers channel" finished-at="2018-09-10T16:39:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grrg]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[java.io.IOException: unexpected end of stream on Connection{127.0.0.1:4723, proxy=DIRECT hostAddress=/127.0.0.1:4723 cipherSuite=none protocol=http/1.1}
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KISANABHI-PC', ip: '192.168.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: driver.version: AndroidDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: java.io.IOException: unexpected end of stream on Connection{127.0.0.1:4723, proxy=DIRECT hostAddress=/127.0.0.1:4723 cipherSuite=none protocol=http/1.1}
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KISANABHI-PC', ip: '192.168.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:233)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at io.appium.java_client.PerformsTouchActions.performTouchAction(PerformsTouchActions.java:41)
+	at io.appium.java_client.TouchAction.perform(TouchAction.java:187)
+	at com.kisan.kisannet.helper.genericHelper.GenericHelper.scrollByCount(GenericHelper.java:149)
+	at com.kisan.kisannet.testscripts.SendTextMessageToAdmin.sendTextMessageFromUserProfile(SendTextMessageToAdmin.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.IOException: unexpected end of stream on Connection{127.0.0.1:4723, proxy=DIRECT hostAddress=/127.0.0.1:4723 cipherSuite=none protocol=http/1.1}
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:205)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	... 32 more
+Caused by: java.io.EOFException: \n not found: limit=0 content=…
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:212)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	... 50 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendTextMessageFromUserProfile -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToAdmin@3d8314f0]" name="afterMethod" is-config="true" duration-ms="4177" started-at="2018-09-10T16:39:29Z" finished-at="2018-09-10T16:39:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sendTextMessageFromUserProfile status=FAILURE method=SendTextMessageToAdmin.sendTextMessageFromUserProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToAdmin@3d8314f0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.SendTextMessageToAdmin@3d8314f0]" name="afterTest" is-config="true" duration-ms="33" started-at="2018-09-10T16:39:33Z" finished-at="2018-09-10T16:39:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.kisan.kisannet.testscripts.SendTextMessageToAdmin -->
+      <class name="com.kisan.kisannet.testscripts.InviteToDownloadApp">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.InviteToDownloadApp@140e5a13]" name="beforeSuite" is-config="true" duration-ms="9965" started-at="2018-09-10T16:40:52Z" finished-at="2018-09-10T16:41:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="inviteToDownloadAppByContactName()[pri:0, instance:com.kisan.kisannet.testscripts.InviteToDownloadApp@140e5a13]" name="inviteToDownloadAppByContactName" duration-ms="12606" started-at="2018-09-10T16:41:01Z" finished-at="2018-09-10T16:41:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inviteToDownloadAppByContactName -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToDownloadApp@140e5a13]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:41:01Z" finished-at="2018-09-10T16:41:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.InviteToDownloadApp.inviteToDownloadAppByContactName() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToDownloadApp@140e5a13]" name="afterMethod" is-config="true" duration-ms="2289" started-at="2018-09-10T16:41:14Z" finished-at="2018-09-10T16:41:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=inviteToDownloadAppByContactName status=SUCCESS method=InviteToDownloadApp.inviteToDownloadAppByContactName()[pri:0, instance:com.kisan.kisannet.testscripts.InviteToDownloadApp@140e5a13] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="inviteToDownloadAppManually()[pri:0, instance:com.kisan.kisannet.testscripts.InviteToDownloadApp@140e5a13]" name="inviteToDownloadAppManually" duration-ms="10100" started-at="2018-09-10T16:41:16Z" finished-at="2018-09-10T16:41:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inviteToDownloadAppManually -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToDownloadApp@140e5a13]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:41:16Z" finished-at="2018-09-10T16:41:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.InviteToDownloadApp.inviteToDownloadAppManually() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.InviteToDownloadApp@140e5a13]" name="afterMethod" is-config="true" duration-ms="3279" started-at="2018-09-10T16:41:26Z" finished-at="2018-09-10T16:41:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=inviteToDownloadAppManually status=SUCCESS method=InviteToDownloadApp.inviteToDownloadAppManually()[pri:0, instance:com.kisan.kisannet.testscripts.InviteToDownloadApp@140e5a13] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.InviteToDownloadApp@140e5a13]" name="afterTest" is-config="true" duration-ms="47" started-at="2018-09-10T16:41:30Z" finished-at="2018-09-10T16:41:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.kisan.kisannet.testscripts.InviteToDownloadApp -->
+      <class name="com.kisan.kisannet.testscripts.EditChannelProfile">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.kisan.kisannet.testscripts.EditChannelProfile@3bd94634]" name="beforeSuite" is-config="true" duration-ms="8350" started-at="2018-09-10T16:46:24Z" finished-at="2018-09-10T16:46:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="editChannelProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.EditChannelProfile@3bd94634]" name="editChannelProfile" duration-ms="99405" started-at="2018-09-10T16:46:32Z" data-provider="ChannelToBeEdited" finished-at="2018-09-10T16:48:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Automation Channel]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editChannelProfile -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.kisan.kisannet.testscripts.EditChannelProfile@3bd94634]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-10T16:46:32Z" finished-at="2018-09-10T16:46:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.kisan.kisannet.testscripts.EditChannelProfile.editChannelProfile(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.kisan.kisannet.testscripts.EditChannelProfile@3bd94634]" name="afterMethod" is-config="true" duration-ms="746" started-at="2018-09-10T16:48:12Z" finished-at="2018-09-10T16:48:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editChannelProfile status=SUCCESS method=EditChannelProfile.editChannelProfile(java.lang.String)[pri:0, instance:com.kisan.kisannet.testscripts.EditChannelProfile@3bd94634] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.kisan.kisannet.testscripts.EditChannelProfile@3bd94634]" name="afterTest" is-config="true" duration-ms="38" started-at="2018-09-10T16:48:13Z" finished-at="2018-09-10T16:48:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.kisan.kisannet.testscripts.EditChannelProfile -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

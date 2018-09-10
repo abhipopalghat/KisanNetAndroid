@@ -51,7 +51,7 @@ public class SendAudioToFollowers extends TestBase {
 		channelChatWindow.clickOnRecordAudio();
 		alertHelper.AcceptPermissions();
 		channelChatWindow.clickOnStartRecording();
-		Thread.sleep(5);
+		Thread.sleep(2);
 		channelChatWindow.clickOnStopRecording();
 		channelChatWindow.clickOnSendAudio();	
 		

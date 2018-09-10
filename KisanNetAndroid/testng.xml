@@ -20,6 +20,7 @@
 	<class name="com.kisan.kisannet.testscripts.UnfollowChannel" />
 	<class name="com.kisan.kisannet.testscripts.EditSelfProfile" />
 	<class name="com.kisan.kisannet.testscripts.EditChannelProfile" />
+	<class name="com.kisan.kisannet.testscripts.BlockFollower" />
 	<class name="com.kisan.kisannet.testscripts.ChangeLanguage" />
 	<class name="com.kisan.kisannet.testscripts.Logout" />
     </classes>

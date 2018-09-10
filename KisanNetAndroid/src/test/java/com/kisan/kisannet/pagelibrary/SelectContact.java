@@ -19,9 +19,9 @@ public class SelectContact {
 	WaitHelper waitHelper;
 	
 	public By backArrow = By.xpath("//android.widget.ImageButton[@inded='0']");
-	public By doneButton = By.id("com.kisan.samvaad.test:id/action_done");
-	public By searchBox = By.id("com.kisan.samvaad.test:id/searchTextView");
-	public By enterNumber = By.id("com.kisan.samvaad.test:id/textViewEnterNo");
+	public By doneButton = By.id("com.kisan.samvaad.dev:id/action_done");
+	public By searchBox = By.id("com.kisan.samvaad.dev:id/searchTextView");
+	public By enterNumber = By.id("com.kisan.samvaad.dev:id/textViewEnterNo");
 	public By checkBox = By.className("android.widget.CheckBox");
 	
 	public SelectContact(AndroidDriver<?> driver) {

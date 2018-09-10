@@ -31,25 +31,703 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">196.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">21</td><td class="numi">21</td><td class="numi">0</td><td class="numi_attn">13</td><td class="numi">1,475.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="2">com.kisan.kisannet.testscripts.InviteToFollowChannel</td><td><a href="#m1"><b>inviteToFollowChannelByContactName</b>  </a></td><td class="numi">1</td><td>1532954528237</td><td class="numi">96540</td></tr><tr class="passedodd"><td><a href="#m2"><b>inviteToFollowChannelManually</b>  </a></td><td class="numi">1</td><td>1532954625012</td><td class="numi">79997</td></tr>
+<tr><th colspan="4">Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.kisan.kisannet.testscripts.BlockFollower</td><td><a href="#m1"><b>blockFollower</b>  </a></td><td class="numi">1</td><td>1536578301893</td><td class="numi">15007</td></tr>
+<tr class="failedeven"><td rowspan="1">com.kisan.kisannet.testscripts.ChangeLanguage</td><td><a href="#m2"><b>changeLanguage</b>  </a></td><td class="numi">1</td><td>1536578334937</td><td class="numi">5222</td></tr>
+<tr class="failedodd"><td rowspan="1">com.kisan.kisannet.testscripts.EditSelfProfile</td><td><a href="#m3"><b>editSelfProfile</b>  </a></td><td class="numi">1</td><td>1536578126389</td><td class="numi">51730</td></tr>
+<tr class="failedeven"><td rowspan="1">com.kisan.kisannet.testscripts.FollowChannel</td><td><a href="#m4"><b>followChannelFormDiscover</b>  </a></td><td class="numi">1</td><td>1536577822411</td><td class="numi">23744</td></tr>
+<tr class="failedodd"><td rowspan="1">com.kisan.kisannet.testscripts.Logout</td><td><a href="#m5"><b>logout</b>  </a></td><td class="numi">1</td><td>1536578353414</td><td class="numi">5625</td></tr>
+<tr class="failedeven"><td rowspan="1">com.kisan.kisannet.testscripts.SendAudioToAdmin</td><td><a href="#m6"><b>sendAudioToAdmin</b>  </a></td><td class="numi">1</td><td>1536577573439</td><td class="numi">71000</td></tr>
+<tr class="failedodd"><td rowspan="1">com.kisan.kisannet.testscripts.SendImageToAdmin</td><td><a href="#m7"><b>sendImageFromUserProfile</b>  </a></td><td class="numi">1</td><td>1536577501818</td><td class="numi">20624</td></tr>
+<tr class="failedeven"><td rowspan="1">com.kisan.kisannet.testscripts.SendTextMessageToAdmin</td><td><a href="#m8"><b>sendTextMessageFromUserProfile</b>  </a></td><td class="numi">1</td><td>1536577762252</td><td class="numi">7243</td></tr>
+<tr class="failedodd"><td rowspan="1">com.kisan.kisannet.testscripts.SendAudioToAdmin</td><td><a href="#m9"><b>sendVideoFromUserProfile</b>  </a></td><td class="numi">1</td><td>1536577649754</td><td class="numi">18247</td></tr>
+<tr class="failedeven"><td rowspan="1">com.kisan.kisannet.testscripts.SendLocationToAdmin</td><td><a href="#m10"><b>sendVideoFromUserProfile</b>  </a></td><td class="numi">1</td><td>1536577705566</td><td class="numi">17424</td></tr>
+<tr class="failedodd"><td rowspan="1">com.kisan.kisannet.testscripts.SendVideoToAdmin</td><td><a href="#m11"><b>sendVideoToAdminFromUserProfile</b>  </a></td><td class="numi">1</td><td>1536577468221</td><td class="numi">17942</td></tr>
+<tr class="failedeven"><td rowspan="2">com.kisan.kisannet.testscripts.UnfollowChannel</td><td><a href="#m12"><b>unFollowChannelFromDiscover</b>  </a></td><td class="numi">1</td><td>1536578027211</td><td class="numi">40248</td></tr><tr class="failedeven"><td><a href="#m13"><b>unFollowChannelFromUserProfile</b>  </a></td><td class="numi">1</td><td>1536578105864</td><td class="numi">7722</td></tr>
+<tr><th colspan="4">Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.kisan.kisannet.testscripts.SendTextMessageToAdmin</td><td><a href="#m14"><b>SendTextMessageToAdmin</b>  </a></td><td class="numi">1</td><td>1536577737923</td><td class="numi">20219</td></tr>
+<tr class="passedeven"><td rowspan="1">com.kisan.kisannet.testscripts.CreateChannel</td><td><a href="#m15"><b>createPublicChannel</b>  </a></td><td class="numi">1</td><td>1536577961396</td><td class="numi">54508</td></tr>
+<tr class="passedodd"><td rowspan="1">com.kisan.kisannet.testscripts.EditChannelProfile</td><td><a href="#m16"><b>editChannelProfile</b>  </a></td><td class="numi">1</td><td>1536578192869</td><td class="numi">99405</td></tr>
+<tr class="passedeven"><td rowspan="1">com.kisan.kisannet.testscripts.FollowChannel</td><td><a href="#m17"><b>followChannelFormChannelProfile</b>  </a></td><td class="numi">1</td><td>1536577782099</td><td class="numi">35761</td></tr>
+<tr class="passedodd"><td rowspan="2">com.kisan.kisannet.testscripts.InviteToDownloadApp</td><td><a href="#m18"><b>inviteToDownloadAppByContactName</b>  </a></td><td class="numi">1</td><td>1536577861965</td><td class="numi">12606</td></tr><tr class="passedodd"><td><a href="#m19"><b>inviteToDownloadAppManually</b>  </a></td><td class="numi">1</td><td>1536577876860</td><td class="numi">10100</td></tr>
+<tr class="passedeven"><td rowspan="2">com.kisan.kisannet.testscripts.InviteToFollowChannel</td><td><a href="#m20"><b>inviteToFollowChannelByContactName</b>  </a></td><td class="numi">1</td><td>1536577898740</td><td class="numi">24269</td></tr><tr class="passedeven"><td><a href="#m21"><b>inviteToFollowChannelManually</b>  </a></td><td class="numi">1</td><td>1536577926964</td><td class="numi">20192</td></tr>
+<tr class="passedodd"><td rowspan="2">com.kisan.kisannet.testscripts.SendAudioToFollowers</td><td><a href="#m22"><b>sendAudioToFollower</b>  </a></td><td class="numi">1</td><td>1536577083509</td><td class="numi">110127</td></tr><tr class="passedodd"><td><a href="#m23"><b>sendAudioUserProfile</b>  </a></td><td class="numi">1</td><td>1536577197287</td><td class="numi">113241</td></tr>
+<tr class="passedeven"><td rowspan="1">com.kisan.kisannet.testscripts.SendImageToFollowers</td><td><a href="#m24"><b>sendImageFromUserProfile</b>  </a></td><td class="numi">1</td><td>1536576997032</td><td class="numi">38330</td></tr>
+<tr class="passedodd"><td rowspan="1">com.kisan.kisannet.testscripts.SendImageToAdmin</td><td><a href="#m25"><b>sendImageToAdmin</b>  </a></td><td class="numi">1</td><td>1536577529117</td><td class="numi">32303</td></tr>
+<tr class="passedeven"><td rowspan="1">com.kisan.kisannet.testscripts.SendImageToFollowers</td><td><a href="#m26"><b>sendImageToFollower</b>  </a></td><td class="numi">1</td><td>1536577041068</td><td class="numi">27747</td></tr>
+<tr class="passedodd"><td rowspan="2">com.kisan.kisannet.testscripts.SendLocationToFollowers</td><td><a href="#m27"><b>sendLocationFromUserProfile</b>  </a></td><td class="numi">1</td><td>1536577325011</td><td class="numi">29255</td></tr><tr class="passedodd"><td><a href="#m28"><b>sendLocationToFollower</b>  </a></td><td class="numi">1</td><td>1536577359352</td><td class="numi">17154</td></tr>
+<tr class="passedeven"><td rowspan="1">com.kisan.kisannet.testscripts.SendLocationToAdmin</td><td><a href="#m29"><b>sendLocationToFollower</b>  </a></td><td class="numi">1</td><td>1536577682373</td><td class="numi">20056</td></tr>
+<tr class="passedodd"><td rowspan="1">com.kisan.kisannet.testscripts.SendTextMessageToFollowers</td><td><a href="#m30"><b>sendTextMessageFromUserProfile</b>  </a></td><td class="numi">1</td><td>1536577388683</td><td class="numi">28300</td></tr>
+<tr class="passedeven"><td rowspan="1">com.kisan.kisannet.testscripts.SendVideoToAdmin</td><td><a href="#m31"><b>sendVideoToAdmin</b>  </a></td><td class="numi">1</td><td>1536577431119</td><td class="numi">32579</td></tr>
+<tr class="passedodd"><td rowspan="2">com.kisan.kisannet.testscripts.SendVideoToFollowers</td><td><a href="#m32"><b>sendVideoToFollower</b>  </a></td><td class="numi">1</td><td>1536576901393</td><td class="numi">37419</td></tr><tr class="passedodd"><td><a href="#m33"><b>sendVideoToFollowerFromUserProfile</b>  </a></td><td class="numi">1</td><td>1536576941779</td><td class="numi">38840</td></tr>
+<tr class="passedeven"><td rowspan="1">com.kisan.kisannet.testscripts.UnfollowChannel</td><td><a href="#m34"><b>unFollowChannelFromMyChat</b>  </a></td><td class="numi">1</td><td>1536578072085</td><td class="numi">32775</td></tr>
 </table>
-<h1>Default test</h1>
-<h2 id="m1">com.kisan.kisannet.testscripts.InviteToFollowChannel:inviteToFollowChannelManually</h2>
+<h1>Test</h1>
+<h2 id="m1">com.kisan.kisannet.testscripts.SendImageToAdmin:sendImageFromUserProfile</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th></tr>
-<tr class="param stripe"><td>27 July</td>
+<tr class="param stripe"><td>grrg</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;KISANABHI-PC&apos;, ip: &apos;192.168.0.71&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, deviceName: Redmi, newCommandTimeout: 1840, noReset: true, platformName: Android, platformVersion: 6.0.1, testobject_api_key: 92F914B9D96C44B0947BD853191...}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 26b4b289, deviceScreenSize: 1080x1920, deviceUDID: 26b4b289, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1840, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 6.0.1, takesScreenshot: true, testobject_api_key: 92F914B9D96C44B0947BD853191..., warnings: {}, webStorageEnabled: false}
+Session ID: d2c9a54a-c58e-4b00-9d67-a46f88648344
+*** Element info: {Using=id, value=com.kisan.samvaad.dev:id/floatingButtonChannelFollowerChat}</p>
+sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+<br/>at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:363)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+<br/>at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:188)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+<br/>at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+<br/>at com.kisan.kisannet.helper.Wait.WaitHelper.waitForElementClickable(WaitHelper.java:71)
+<br/>at com.kisan.kisannet.pagelibrary.ChannelDashboard.clickOnNewMessageButtonForFollower(ChannelDashboard.java:57)
+<br/>at com.kisan.kisannet.testscripts.SendImageToAdmin.sendImageFromUserProfile(SendImageToAdmin.java:81)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.kisan.kisannet.testscripts.ChangeLanguage:changeLanguage</h2>
+<div style="padding-left:3em">
+<p>An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;KISANABHI-PC&apos;, ip: &apos;192.168.0.71&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, deviceName: Redmi, newCommandTimeout: 1840, noReset: true, platformName: Android, platformVersion: 6.0.1, testobject_api_key: 92F914B9D96C44B0947BD853191...}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 26b4b289, deviceScreenSize: 1080x1920, deviceUDID: 26b4b289, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1840, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 6.0.1, takesScreenshot: true, testobject_api_key: 92F914B9D96C44B0947BD853191..., warnings: {}, webStorageEnabled: false}
+Session ID: 8bed8212-592f-4e19-ac8f-a325b2c68869
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;?????&apos;]}</p>
+sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+<br/>at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+<br/>at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+<br/>at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+<br/>at com.kisan.kisannet.helper.Wait.WaitHelper.waitForElementClickable(WaitHelper.java:71)
+<br/>at com.kisan.kisannet.pagelibrary.SelectLanguage.clickMarathi(SelectLanguage.java:42)
+<br/>at com.kisan.kisannet.testscripts.ChangeLanguage.changeLanguage(ChangeLanguage.java:32)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.kisan.kisannet.testscripts.SendVideoToAdmin:sendVideoToAdminFromUserProfile</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>grrg</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;KISANABHI-PC&apos;, ip: &apos;192.168.0.71&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, deviceName: Redmi, newCommandTimeout: 1840, noReset: true, platformName: Android, platformVersion: 6.0.1, testobject_api_key: 92F914B9D96C44B0947BD853191...}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 26b4b289, deviceScreenSize: 1080x1920, deviceUDID: 26b4b289, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1840, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 6.0.1, takesScreenshot: true, testobject_api_key: 92F914B9D96C44B0947BD853191..., warnings: {}, webStorageEnabled: false}
+Session ID: 210b2222-db16-47b8-861d-ec005bb9b92a
+*** Element info: {Using=id, value=com.kisan.samvaad.dev:id/floatingButtonChannelFollowerChat}</p>
+sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+<br/>at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:363)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+<br/>at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:188)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+<br/>at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+<br/>at com.kisan.kisannet.helper.Wait.WaitHelper.waitForElementClickable(WaitHelper.java:71)
+<br/>at com.kisan.kisannet.pagelibrary.ChannelDashboard.clickOnNewMessageButtonForFollower(ChannelDashboard.java:57)
+<br/>at com.kisan.kisannet.testscripts.SendVideoToAdmin.sendVideoToAdminFromUserProfile(SendVideoToAdmin.java:85)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.kisan.kisannet.testscripts.SendTextMessageToAdmin:sendTextMessageFromUserProfile</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>grrg</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>java.io.IOException: unexpected end of stream on Connection{127.0.0.1:4723, proxy=DIRECT hostAddress=/127.0.0.1:4723 cipherSuite=none protocol=http/1.1}
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;KISANABHI-PC&apos;, ip: &apos;192.168.0.71&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: AndroidDriver</p>
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:233)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+<br/>at io.appium.java_client.PerformsTouchActions.performTouchAction(PerformsTouchActions.java:41)
+<br/>at io.appium.java_client.TouchAction.perform(TouchAction.java:187)
+<br/>at com.kisan.kisannet.helper.genericHelper.GenericHelper.scrollByCount(GenericHelper.java:149)
+<br/>at com.kisan.kisannet.testscripts.SendTextMessageToAdmin.sendTextMessageFromUserProfile(SendTextMessageToAdmin.java:66)
+<br/>25 lines not shown
+<p>Caused by unexpected end of stream on Connection{127.0.0.1:4723, proxy=DIRECT hostAddress=/127.0.0.1:4723 cipherSuite=none protocol=http/1.1}</p>
+okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:205)
+<br/>at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+<br/>at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+<br/>at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+<br/>at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+<br/>at okhttp3.RealCall.execute(RealCall.java:77)
+<br/>at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+<br/>at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+<br/>at io.appium.java_client.PerformsTouchActions.performTouchAction(PerformsTouchActions.java:41)
+<br/>at io.appium.java_client.TouchAction.perform(TouchAction.java:187)
+<br/>at com.kisan.kisannet.helper.genericHelper.GenericHelper.scrollByCount(GenericHelper.java:149)
+<br/>at com.kisan.kisannet.testscripts.SendTextMessageToAdmin.sendTextMessageFromUserProfile(SendTextMessageToAdmin.java:66)
+<br/>25 lines not shown
+<p>Caused by \n not found: limit=0 content=…</p>
+okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+<br/>at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:212)
+<br/>at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+<br/>at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+<br/>at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+<br/>at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+<br/>at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+<br/>at okhttp3.RealCall.execute(RealCall.java:77)
+<br/>at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+<br/>at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+<br/>at io.appium.java_client.PerformsTouchActions.performTouchAction(PerformsTouchActions.java:41)
+<br/>at io.appium.java_client.TouchAction.perform(TouchAction.java:187)
+<br/>at com.kisan.kisannet.helper.genericHelper.GenericHelper.scrollByCount(GenericHelper.java:149)
+<br/>at com.kisan.kisannet.testscripts.SendTextMessageToAdmin.sendTextMessageFromUserProfile(SendTextMessageToAdmin.java:66)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.kisan.kisannet.testscripts.SendLocationToAdmin:sendVideoFromUserProfile</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>grrg</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;KISANABHI-PC&apos;, ip: &apos;192.168.0.71&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, deviceName: Redmi, newCommandTimeout: 1840, noReset: true, platformName: Android, platformVersion: 6.0.1, testobject_api_key: 92F914B9D96C44B0947BD853191...}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 26b4b289, deviceScreenSize: 1080x1920, deviceUDID: 26b4b289, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1840, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 6.0.1, takesScreenshot: true, testobject_api_key: 92F914B9D96C44B0947BD853191..., warnings: {}, webStorageEnabled: false}
+Session ID: c16a3e3f-f28b-4f73-b23b-277047db5464
+*** Element info: {Using=id, value=com.kisan.samvaad.dev:id/floatingButtonChannelFollowerChat}</p>
+sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+<br/>at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:363)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+<br/>at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:188)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+<br/>at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+<br/>at com.kisan.kisannet.helper.Wait.WaitHelper.waitForElementClickable(WaitHelper.java:71)
+<br/>at com.kisan.kisannet.pagelibrary.ChannelDashboard.clickOnNewMessageButtonForFollower(ChannelDashboard.java:57)
+<br/>at com.kisan.kisannet.testscripts.SendLocationToAdmin.sendVideoFromUserProfile(SendLocationToAdmin.java:73)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.kisan.kisannet.testscripts.EditSelfProfile:editSelfProfile</h2>
+<div style="padding-left:3em">
+<p>Index: 0, Size: 0</p>
+java.util.ArrayList.rangeCheck(ArrayList.java:653)
+<br/>at java.util.ArrayList.get(ArrayList.java:429)
+<br/>at com.kisan.kisannet.pagelibrary.MyInterests.selectCategories(MyInterests.java:53)
+<br/>at com.kisan.kisannet.testscripts.EditSelfProfile.editSelfProfile(EditSelfProfile.java:57)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.kisan.kisannet.testscripts.UnfollowChannel:unFollowChannelFromDiscover</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Check 2</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Expected condition failed: waiting for visibility of element located by By.id: com.kisan.samvaad.dev:id/textViewCommunityName (tried for 15 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at com.kisan.kisannet.helper.Wait.WaitHelper.waitForElementVisible(WaitHelper.java:55)
+<br/>at com.kisan.kisannet.pagelibrary.DiscoverPage.openChannelProfileToUnfollow(DiscoverPage.java:153)
+<br/>at com.kisan.kisannet.testscripts.UnfollowChannel.unFollowChannelFromDiscover(UnfollowChannel.java:43)
+<br/>25 lines not shown
+<p>Caused by Cannot locate an element using By.id: com.kisan.samvaad.dev:id/textViewCommunityName
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;KISANABHI-PC&apos;, ip: &apos;192.168.0.71&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at com.kisan.kisannet.helper.Wait.WaitHelper.waitForElementVisible(WaitHelper.java:55)
+<br/>at com.kisan.kisannet.pagelibrary.DiscoverPage.openChannelProfileToUnfollow(DiscoverPage.java:153)
+<br/>at com.kisan.kisannet.testscripts.UnfollowChannel.unFollowChannelFromDiscover(UnfollowChannel.java:43)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.kisan.kisannet.testscripts.Logout:logout</h2>
+<div style="padding-left:3em">
+<p>An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;KISANABHI-PC&apos;, ip: &apos;192.168.0.71&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, deviceName: Redmi, newCommandTimeout: 1840, noReset: true, platformName: Android, platformVersion: 6.0.1, testobject_api_key: 92F914B9D96C44B0947BD853191...}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 26b4b289, deviceScreenSize: 1080x1920, deviceUDID: 26b4b289, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1840, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 6.0.1, takesScreenshot: true, testobject_api_key: 92F914B9D96C44B0947BD853191..., warnings: {}, webStorageEnabled: false}
+Session ID: d9a17bf4-f609-4a96-adee-6d792f5ec13b
+*** Element info: {Using=id, value=android:id/button2}</p>
+sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+<br/>at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:363)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+<br/>at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:188)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+<br/>at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+<br/>at com.kisan.kisannet.helper.Wait.WaitHelper.waitForElementClickable(WaitHelper.java:71)
+<br/>at com.kisan.kisannet.pagelibrary.LeftDrawer.clickonLogoutNoButton(LeftDrawer.java:101)
+<br/>at com.kisan.kisannet.testscripts.Logout.logout(Logout.java:21)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.kisan.kisannet.testscripts.FollowChannel:followChannelFormDiscover</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>XYZ</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Expected condition failed: waiting for visibility of element located by By.id: com.kisan.samvaad.dev:id/imageButtonJoin (tried for 10 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at com.kisan.kisannet.helper.Wait.WaitHelper.waitForElementVisible(WaitHelper.java:55)
+<br/>at com.kisan.kisannet.pagelibrary.DiscoverPage.followChannel(DiscoverPage.java:124)
+<br/>at com.kisan.kisannet.testscripts.FollowChannel.followChannelFormDiscover(FollowChannel.java:29)
+<br/>25 lines not shown
+<p>Caused by Cannot locate an element using By.id: com.kisan.samvaad.dev:id/imageButtonJoin
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;KISANABHI-PC&apos;, ip: &apos;192.168.0.71&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at com.kisan.kisannet.helper.Wait.WaitHelper.waitForElementVisible(WaitHelper.java:55)
+<br/>at com.kisan.kisannet.pagelibrary.DiscoverPage.followChannel(DiscoverPage.java:124)
+<br/>at com.kisan.kisannet.testscripts.FollowChannel.followChannelFormDiscover(FollowChannel.java:29)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.kisan.kisannet.testscripts.SendAudioToAdmin:sendAudioToAdmin</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>grrg</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>-1</p>
+java.util.ArrayList.elementData(ArrayList.java:418)
+<br/>at java.util.ArrayList.get(ArrayList.java:431)
+<br/>at com.kisan.kisannet.pagelibrary.ChannelChatWindow.isAudioDelivered(ChannelChatWindow.java:213)
+<br/>at com.kisan.kisannet.testscripts.SendAudioToAdmin.sendAudioToAdmin(SendAudioToAdmin.java:149)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.kisan.kisannet.testscripts.UnfollowChannel:unFollowChannelFromUserProfile</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Jio nee</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>java.net.SocketException: Software caused connection abort: recv failed
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;KISANABHI-PC&apos;, ip: &apos;192.168.0.71&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: AndroidDriver</p>
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:233)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+<br/>at io.appium.java_client.PerformsTouchActions.performTouchAction(PerformsTouchActions.java:41)
+<br/>at io.appium.java_client.TouchAction.perform(TouchAction.java:187)
+<br/>at com.kisan.kisannet.helper.genericHelper.GenericHelper.scrollByCount(GenericHelper.java:149)
+<br/>at com.kisan.kisannet.testscripts.UnfollowChannel.unFollowChannelFromUserProfile(UnfollowChannel.java:111)
+<br/>25 lines not shown
+<p>Caused by Software caused connection abort: recv failed</p>
+java.net.SocketInputStream.socketRead0(Native Method)
+<br/>at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+<br/>at java.net.SocketInputStream.read(SocketInputStream.java:171)
+<br/>at java.net.SocketInputStream.read(SocketInputStream.java:141)
+<br/>at okio.Okio$2.read(Okio.java:139)
+<br/>at okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
+<br/>at okio.RealBufferedSource.indexOf(RealBufferedSource.java:345)
+<br/>at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:217)
+<br/>at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:212)
+<br/>at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+<br/>at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+<br/>at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+<br/>at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+<br/>at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+<br/>at okhttp3.RealCall.execute(RealCall.java:77)
+<br/>at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+<br/>at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+<br/>at io.appium.java_client.PerformsTouchActions.performTouchAction(PerformsTouchActions.java:41)
+<br/>at io.appium.java_client.TouchAction.perform(TouchAction.java:187)
+<br/>at com.kisan.kisannet.helper.genericHelper.GenericHelper.scrollByCount(GenericHelper.java:149)
+<br/>at com.kisan.kisannet.testscripts.UnfollowChannel.unFollowChannelFromUserProfile(UnfollowChannel.java:111)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.kisan.kisannet.testscripts.BlockFollower:blockFollower</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>Need to</td>
+<td>Abhijeet Popalghat</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>io.appium.java_client.android.AndroidDriver cannot be cast to org.openqa.selenium.interactions.HasTouchScreen</p>
+org.openqa.selenium.interactions.touch.TouchActions.&lt;init&gt;(TouchActions.java:38)
+<br/>at com.kisan.kisannet.pagelibrary.FollowerList.longTapOnFollowerName(FollowerList.java:47)
+<br/>at com.kisan.kisannet.testscripts.BlockFollower.blockFollower(BlockFollower.java:39)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.kisan.kisannet.testscripts.SendAudioToAdmin:sendVideoFromUserProfile</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>grrg</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;KISANABHI-PC&apos;, ip: &apos;192.168.0.71&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.kisan.samvaad.NewDashbo..., appPackage: com.kisan.samvaad.dev, autoAcceptAlerts: true, autoGrantPermissions: true, deviceName: Redmi, newCommandTimeout: 1840, noReset: true, platformName: Android, platformVersion: 6.0.1, testobject_api_key: 92F914B9D96C44B0947BD853191...}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 26b4b289, deviceScreenSize: 1080x1920, deviceUDID: 26b4b289, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1840, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 6.0.1, takesScreenshot: true, testobject_api_key: 92F914B9D96C44B0947BD853191..., warnings: {}, webStorageEnabled: false}
+Session ID: 46c75174-44e6-4c7c-9168-4d279aff90e3
+*** Element info: {Using=id, value=com.kisan.samvaad.dev:id/floatingButtonChannelFollowerChat}</p>
+sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+<br/>at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:363)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+<br/>at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:188)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+<br/>at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+<br/>at com.kisan.kisannet.helper.Wait.WaitHelper.waitForElementClickable(WaitHelper.java:71)
+<br/>at com.kisan.kisannet.pagelibrary.ChannelDashboard.clickOnNewMessageButtonForFollower(ChannelDashboard.java:57)
+<br/>at com.kisan.kisannet.testscripts.SendAudioToAdmin.sendVideoFromUserProfile(SendAudioToAdmin.java:175)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.kisan.kisannet.testscripts.SendVideoToFollowers:sendVideoToFollowerFromUserProfile</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Need to</td>
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.kisan.kisannet.testscripts.InviteToFollowChannel:inviteToFollowChannelByContactName</h2>
+<h2 id="m15">com.kisan.kisannet.testscripts.SendImageToFollowers:sendImageFromUserProfile</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th></tr>
-<tr class="param stripe"><td>27 July</td>
+<tr class="param stripe"><td>Need to</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">com.kisan.kisannet.testscripts.SendAudioToFollowers:sendAudioToFollower</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Need to</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">com.kisan.kisannet.testscripts.InviteToDownloadApp:inviteToDownloadAppByContactName</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">com.kisan.kisannet.testscripts.SendLocationToAdmin:sendLocationToFollower</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>grrg</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">com.kisan.kisannet.testscripts.InviteToFollowChannel:inviteToFollowChannelManually</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Need to</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">com.kisan.kisannet.testscripts.InviteToFollowChannel:inviteToFollowChannelByContactName</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Need to</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">com.kisan.kisannet.testscripts.SendLocationToFollowers:sendLocationToFollower</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Need to</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">com.kisan.kisannet.testscripts.SendVideoToFollowers:sendVideoToFollower</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Need to</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">com.kisan.kisannet.testscripts.FollowChannel:followChannelFormChannelProfile</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>raj</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">com.kisan.kisannet.testscripts.InviteToDownloadApp:inviteToDownloadAppManually</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">com.kisan.kisannet.testscripts.SendVideoToAdmin:sendVideoToAdmin</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>grrg</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">com.kisan.kisannet.testscripts.SendImageToAdmin:sendImageToAdmin</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>grrg</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">com.kisan.kisannet.testscripts.EditChannelProfile:editChannelProfile</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Automation Channel</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">com.kisan.kisannet.testscripts.SendTextMessageToFollowers:sendTextMessageFromUserProfile</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Need to</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">com.kisan.kisannet.testscripts.SendTextMessageToAdmin:SendTextMessageToAdmin</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>grrg</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">com.kisan.kisannet.testscripts.UnfollowChannel:unFollowChannelFromMyChat</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Check 1</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">com.kisan.kisannet.testscripts.SendImageToFollowers:sendImageToFollower</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Need to</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">com.kisan.kisannet.testscripts.SendLocationToFollowers:sendLocationFromUserProfile</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Need to</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">com.kisan.kisannet.testscripts.CreateChannel:createPublicChannel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">com.kisan.kisannet.testscripts.SendAudioToFollowers:sendAudioUserProfile</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Need to</td>
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>

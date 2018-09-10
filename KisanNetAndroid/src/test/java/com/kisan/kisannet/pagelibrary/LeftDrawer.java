@@ -24,18 +24,20 @@ public class LeftDrawer {
 	WaitHelper waitHelper;
 	AlertHelper alertHelper;
 	
-	public  By userProfileImage = By.id("com.kisan.samvaad.test:id/circleView");
+	public  By userProfileImage = By.id("com.kisan.samvaad.dev:id/circleView");
 	public  By myChats = By.xpath("//android.support.v7.widget.LinearLayoutCompat[@index='1']");
 	public  By startYourChannel= By.xpath("//android.support.v7.widget.LinearLayoutCompat[@index='2']");
-	public  By language = By.xpath("//android.support.v7.widget.LinearLayoutCompat[@index='4']");
-	public  By share = By.xpath("//android.support.v7.widget.LinearLayoutCompat[@index='5']");
-	public  By support = By.xpath("//android.support.v7.widget.LinearLayoutCompat[@index='6']");
+	public By kisan2018 = By.xpath("//android.support.v7.widget.LinearLayoutCompat[@index='4']");
+	public By myGreenpass = By.xpath("//android.support.v7.widget.LinearLayoutCompat[@index='5']");
+	public  By language = By.xpath("//android.support.v7.widget.LinearLayoutCompat[@index='7']");
+	public  By share = By.xpath("//android.support.v7.widget.LinearLayoutCompat[@index='8']");
+	public  By support = By.xpath("//android.support.v7.widget.LinearLayoutCompat[@index='9']");
 	public  By logout = By.xpath("//android.support.v7.widget.LinearLayoutCompat[@index='7']");
 	public  By logoutYesButton = By.id("android:id/button2");
 	public  By logoutNoButton = By.id("android:id/button2");
 	public  By opacity = By.xpath(""); 
-	public  By appLanguage = By.xpath("//android.widget.CheckedTextView[@resource-id='com.kisan.samvaad.test:id/design_menu_item_text']");
-	public  By userName = By.id("com.kisan.samvaad.test:id/textViewName");
+	public  By appLanguage = By.xpath("//android.widget.CheckedTextView[@resource-id='com.kisan.samvaad.dev:id/design_menu_item_text']");
+	public  By userName = By.id("com.kisan.samvaad.dev:id/textViewName");
 	
 	
 	public LeftDrawer(AndroidDriver driver) {

@@ -22,20 +22,20 @@ public class CreateChannelPage {
 	public Devices device;
 	
 	public By backArrow = By.className("android.widget.ImageButton");
-	public By nextButton = By.id("com.kisan.samvaad.test:id/action_next");
-	public By startYourChannelButton =  By.id("com.kisan.samvaad.test:id/textview_start_channel");
-	public By imageUpload = By.id("com.kisan.samvaad.test:id/imageViewProfilePicture");
-	public By channelName = By.id("com.kisan.samvaad.test:id/editTextGroupName");
-	public By colorBucket = By.id("com.kisan.samvaad.test:id/buttonEditChannelBackgroundColor");
-	public By colorBucketCode = By.id("com.kisan.samvaad.test:id/kisan_viewSatBri");
+	public By nextButton = By.id("com.kisan.samvaad.dev:id/action_next");
+	public By startYourChannelButton =  By.id("com.kisan.samvaad.dev:id/textview_start_channel");
+	public By imageUpload = By.id("com.kisan.samvaad.dev:id/imageViewProfilePicture");
+	public By channelName = By.id("com.kisan.samvaad.dev:id/editTextGroupName");
+	public By colorBucket = By.id("com.kisan.samvaad.dev:id/buttonEditChannelBackgroundColor");
+	public By colorBucketCode = By.id("com.kisan.samvaad.dev:id/kisan_viewSatBri");
 	public By colorBucketOkBtn = By.id("android:id/button1");
 	public By colrBucketCancelBtn = By.id("android:id/button2");
-	public By takeAPicture = By.id("com.kisan.samvaad.test:id/textViewOptionOne");
+	public By takeAPicture = By.id("com.kisan.samvaad.dev:id/textViewOptionOne");
 	By shutter = By.xpath("//android.widget.ImageView[@content-desc='Shutter button']");
 	public By yesAfterCapturingPhoto_lenovo = By.id("com.android.camera2:id/done_button");
 	public By yesAfterCapturingPhoto_redmi = By.id("com.android.camera:id/v6_btn_done");
-	By confirmUploadProfileImage = By.id("com.kisan.samvaad.test:id/imageButtonCrop");
-	public By chooseFromGallery = By.id("com.kisan.samvaad.test:id/textViewOptionTwo");
+	By confirmUploadProfileImage = By.id("com.kisan.samvaad.dev:id/imageButtonCrop");
+	public By chooseFromGallery = By.id("com.kisan.samvaad.dev:id/textViewOptionTwo");
 	public By cancelImage = By.xpath("//android.widget.TextView[@text='Cancel']");
 	
 	public CreateChannelPage(AndroidDriver<?> driver) {

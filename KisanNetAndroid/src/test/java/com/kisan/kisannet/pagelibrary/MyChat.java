@@ -27,15 +27,15 @@ public class MyChat {
 	JavaScriptHelper javaScriptHelper;
 	
 	By leftDrawerButton = By.className("android.widget.ImageButton");
-	By discoverIcon = By.id("com.kisan.samvaad.test:id/action_discover");
+	By discoverIcon = By.id("com.kisan.samvaad.dev:id/action_discover");
 	By notificationIcon = By.xpath("//*[@id='action_notifications']");
 	By rightDrawerMenu = By.xpath("//android.widget.ImageView[@content-desc='More options']");
 	By channelList = By.xpath("//*[@id='listViewRecommendations']");
 	By inviteToKisan = By.xpath("//android.widget.LinearLayout[@index='0']");
 	By changeLanguage = By.xpath("//android.widget.LinearLayout[@index='1']");
 	By searchChannel = By.xpath("//android.widget.LinearLayout[@index='2']");	
-	By searchBox = By.id("com.kisan.samvaad.test:id/searchTextView");
-	By searchedChannelList = By.xpath("//android.widget.TextView[@resource-id='com.kisan.samvaad.test:id/textViewCommunityName']");
+	By searchBox = By.id("com.kisan.samvaad.dev:id/searchTextView");
+	By searchedChannelList = By.xpath("//android.widget.TextView[@resource-id='com.kisan.samvaad.dev:id/textViewCommunityName']");
 	By unfollowedText = By.xpath("//android.widget.TextView[@text='Unfollowed']");
 	
 	public MyChat(AndroidDriver<?> driver) {

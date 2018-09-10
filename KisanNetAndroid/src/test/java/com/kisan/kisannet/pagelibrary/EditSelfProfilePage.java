@@ -22,19 +22,19 @@ public class EditSelfProfilePage {
 	public Devices device;
 
 	public By backArrow = By.className("android.widget.ImageButton");
-	public By userProfileImage = By.id("com.kisan.samvaad.test:id/imageViewProfilePicture");
-	public By doneButton = By.id("com.kisan.samvaad.test:id/action_done");
-	public By firstName = By.id("com.kisan.samvaad.test:id/editTextFirstName");
-	public By lastName = By.id("com.kisan.samvaad.test:id/editTextLastName");
-	public By aboutYou = By.id("com.kisan.samvaad.test:id/editTextAboutYou");
-	public By addMore = By.id("com.kisan.samvaad.test:id/textViewAddMore");
-	public By takeAPicture = By.id("com.kisan.samvaad.test:id/textViewOptionOne");
-	public By chooseFromGallery = By.id("com.kisan.samvaad.test:id/textViewOptionTwo");
+	public By userProfileImage = By.id("com.kisan.samvaad.dev:id/imageViewProfilePicture");
+	public By doneButton = By.id("com.kisan.samvaad.dev:id/action_done");
+	public By firstName = By.id("com.kisan.samvaad.dev:id/editTextFirstName");
+	public By lastName = By.id("com.kisan.samvaad.dev:id/editTextLastName");
+	public By aboutYou = By.id("com.kisan.samvaad.dev:id/editTextAboutYou");
+	public By addMore = By.id("com.kisan.samvaad.dev:id/textViewAddMore");
+	public By takeAPicture = By.id("com.kisan.samvaad.dev:id/textViewOptionOne");
+	public By chooseFromGallery = By.id("com.kisan.samvaad.dev:id/textViewOptionTwo");
 	public By cancelImage = By.xpath("//android.widget.TextView[@text='Cancel']");
 	public By shutter = By.xpath("//android.widget.ImageView[@content-desc='Shutter button']");
 	public By yesAfterCapturingPhoto_lenovo = By.id("com.android.camera2:id/done_button");
 	public By yesAfterCapturingPhoto_redmi = By.id("com.android.camera:id/v6_btn_done");
-	public By confirmUploadProfileImage = By.id("com.kisan.samvaad.test:id/imageButtonCrop");
+	public By confirmUploadProfileImage = By.id("com.kisan.samvaad.dev:id/imageButtonCrop");
 	
 	
 	public EditSelfProfilePage(AndroidDriver<?> driver) {

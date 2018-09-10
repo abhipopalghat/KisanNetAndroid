@@ -28,8 +28,8 @@ public class ChannelChatWindow {
 	public Devices device;
 	
 	public By backArrow = By.xpath("//android.widget.ImageButton[@index='0']");
-	public By channelName = By.id("com.kisan.samvaad.test:id/textViewCommunityName");
-	public By attachmentPin = By.id("com.kisan.samvaad.test:id/action_attach");
+	public By channelName = By.id("com.kisan.samvaad.dev:id/textViewCommunityName");
+	public By attachmentPin = By.id("com.kisan.samvaad.dev:id/action_attach");
 	public By rightDrawer = By.xpath("//android.widget.TextView[@index='1']");
 	public By channelProfile= By.xpath("//android.widget.LinearLayout[@index='0']");
 	public By Search = By.xpath("//android.widget.LinearLayout[@index='1']");
@@ -40,27 +40,27 @@ public class ChannelChatWindow {
 	public By video = By.xpath("//android.widget.LinearLayout[@index='2']");
 	public By audio = By.xpath("//android.widget.LinearLayout[@index='3']");
 	public By location = By.xpath("//android.widget.LinearLayout[@index='4']");
-	public By listOfMessages = By.id("com.kisan.samvaad.test:id/listViewMessages");
-	public By typeAMessage = By.id("com.kisan.samvaad.test:id/chatmessages_editTextMessageText");
-	public By sendMessage = By.id("com.kisan.samvaad.test:id/chatmessages_imageButtonSendMessage");
-	public By sendMedia = By.id("com.kisan.samvaad.test:id/imageButtonSend");
-	public By allMessages = By.id("com.kisan.samvaad.test:id/textViewMessage");
-	public By takeAPicture = By.id("com.kisan.samvaad.test:id/textViewOptionOne");
-	public By recordAVideo = By.id("com.kisan.samvaad.test:id/textViewOptionTwo");
+	public By listOfMessages = By.id("com.kisan.samvaad.dev:id/listViewMessages");
+	public By typeAMessage = By.id("com.kisan.samvaad.dev:id/chatmessages_editTextMessageText");
+	public By sendMessage = By.id("com.kisan.samvaad.dev:id/chatmessages_imageButtonSendMessage");
+	public By sendMedia = By.id("com.kisan.samvaad.dev:id/imageButtonSend");
+	public By allMessages = By.id("com.kisan.samvaad.dev:id/textViewMessage");
+	public By takeAPicture = By.id("com.kisan.samvaad.dev:id/textViewOptionOne");
+	public By recordAVideo = By.id("com.kisan.samvaad.dev:id/textViewOptionTwo");
 	public By shutterButton1 = By.id("com.android.camera2:id/shutter_button");
 	public By shutterButton = By.xpath("//android.widget.ImageView[@content-desc='Shutter button']");
 	public By yesAfterCapturingPhoto_lenovo = By.id("com.android.camera2:id/done_button");
 	public By yesAfterCapturingPhoto_redmi = By.id("com.android.camera:id/v6_btn_done");
 	public By writeACaption = By.xpath("//android.widget.EditText[@text='Write a Caption (Optional)']");
-	public By allCaptions = By.id("com.kisan.samvaad.test:id/textViewMessage");
-	public By recordAudio = By.id("com.kisan.samvaad.test:id/linearLayoutOptionOne");
-	public By startRecording = By.id("com.kisan.samvaad.test:id/buttonRecordAudioStart");
-	public By stopRecording = By.id("com.kisan.samvaad.test:id/buttonRecordAudioStop");
-	public By sendAudio = By.id("com.kisan.samvaad.test:id/buttonSendAudio");
-	public By audioIcon = By.id("com.kisan.samvaad.test:id/imageViewAudioMessage");
-	public By currentLocation =By.id("com.kisan.samvaad.test:id/addressLinearLayout");
-	public By sendLocation = By.id("com.kisan.samvaad.test:id/buttonText");
-	public By sentLocationTitles = By.id("com.kisan.samvaad.test:id/textViewLocationTitle");
+	public By allCaptions = By.id("com.kisan.samvaad.dev:id/textViewMessage");
+	public By recordAudio = By.id("com.kisan.samvaad.dev:id/linearLayoutOptionOne");
+	public By startRecording = By.id("com.kisan.samvaad.dev:id/buttonRecordAudioStart");
+	public By stopRecording = By.id("com.kisan.samvaad.dev:id/buttonRecordAudioStop");
+	public By sendAudio = By.id("com.kisan.samvaad.dev:id/buttonSendAudio");
+	public By audioIcon = By.id("com.kisan.samvaad.dev:id/imageViewAudioMessage");
+	public By currentLocation =By.id("com.kisan.samvaad.dev:id/addressLinearLayout");
+	public By sendLocation = By.id("com.kisan.samvaad.dev:id/buttonText");
+	public By sentLocationTitles = By.id("com.kisan.samvaad.dev:id/textViewLocationTitle");
 	
 	public ChannelChatWindow(AndroidDriver<?> driver) {
 		this.driver = driver;

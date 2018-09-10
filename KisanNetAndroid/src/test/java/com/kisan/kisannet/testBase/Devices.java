@@ -14,11 +14,14 @@ public class Devices {
 	private final Logger logger = LoggerHelper.getLogger(ChannelChatWindow.class);
 	WaitHelper waitHelper;
 	
-	public By yesAfterCapturingPhoto_redmi = By.id("com.android.camera:id/v6_btn_done");
-	public By yesAfterCapturingPhoto_lenovo = By.id("com.android.camera2:id/done_button");
 	public By shutterButton_redmi = By.xpath("//android.widget.ImageView[@content-desc='Shutter button']");
 	public By shutterButton_lenovo = By.xpath("//android.widget.ImageView[@content-desc='Shutter']");
+	public By shutterButton_yureka = By.xpath("//android.widget.ImageView[@content-desc='Shutter']");
 	
+	public By yesAfterCapturingPhoto_redmi = By.id("com.android.camera:id/v6_btn_done");
+	public By yesAfterCapturingPhoto_lenovo = By.id("com.android.camera2:id/done_button");
+	public By yesAfterCapturingPhoto_yureka = By.id("org.codeaurora.snapcam:id/btn_done");
+			
 	public Devices(AndroidDriver<?> driver) {
 		this.driver = driver;
 		waitHelper = new WaitHelper(driver);
@@ -37,6 +40,12 @@ public class Devices {
 			driver.findElement(yesAfterCapturingPhoto_lenovo).click();
 			logger.info("Clicked on yes tickmark after capturing photo");
 			break;
+			
+		case "YU4711":
+			waitHelper.waitForElementVisible(yesAfterCapturingPhoto_yureka, 40);
+			driver.findElement(yesAfterCapturingPhoto_yureka).click();
+			logger.info("Clicked on yes tickmark after capturing photo");
+			break;
 		}
 	}
 	
@@ -51,6 +60,12 @@ public class Devices {
 		case "PixelV1":
 			waitHelper.waitForElementVisible(shutterButton_lenovo, 40);
 			driver.findElement(shutterButton_lenovo).click();
+			logger.info("Clicked on yes tickmark after capturing photo");
+			break;
+			
+		case "YU4711":
+			waitHelper.waitForElementVisible(shutterButton_yureka, 40);
+			driver.findElement(shutterButton_yureka).click();
 			logger.info("Clicked on yes tickmark after capturing photo");
 			break;
 		}

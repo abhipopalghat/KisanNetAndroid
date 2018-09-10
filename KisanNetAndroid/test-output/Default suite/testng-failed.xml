@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.kisan.kisannet.testscripts.InviteToDownloadApp">
+      <class name="com.kisan.kisannet.testscripts.BlockFollower">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="inviteToDownloadAppManually"/>
+          <include name="afterTest"/>
           <include name="beforeSuite"/>
-          <include name="afterMethod"/>
-          <include name="inviteToDownloadAppByContactName"/>
+          <include name="blockFollower"/>
         </methods>
-      </class> <!-- com.kisan.kisannet.testscripts.InviteToDownloadApp -->
+      </class> <!-- com.kisan.kisannet.testscripts.BlockFollower -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -6,6 +6,7 @@
       <class name="com.kisan.kisannet.testscripts.UnfollowChannel">
         <methods>
           <include name="unFollowChannelFromUserProfile" invocation-numbers="0"/>
+          <include name="unFollowChannelFromDiscover" invocation-numbers="0"/>
           <include name="beforeMethod"/>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
@@ -17,21 +18,21 @@
           <include name="beforeMethod"/>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
+          <include name="sendImageFromUserProfile" invocation-numbers="0"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.kisan.kisannet.testscripts.SendImageToAdmin -->
-      <class name="com.kisan.kisannet.testscripts.ChangeLanguage">
+      <class name="com.kisan.kisannet.testscripts.BlockFollower">
         <methods>
           <include name="beforeMethod"/>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
-          <include name="changeLanguage"/>
           <include name="afterMethod"/>
+          <include name="blockFollower" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.kisan.kisannet.testscripts.ChangeLanguage -->
+      </class> <!-- com.kisan.kisannet.testscripts.BlockFollower -->
       <class name="com.kisan.kisannet.testscripts.InviteToDownloadApp">
         <methods>
-          <include name="inviteByContact"/>
           <include name="beforeMethod"/>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
@@ -55,10 +56,20 @@
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.kisan.kisannet.testscripts.SendVideoToFollowers -->
+      <class name="com.kisan.kisannet.testscripts.ChangeLanguage">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="changeLanguage"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.kisan.kisannet.testscripts.ChangeLanguage -->
       <class name="com.kisan.kisannet.testscripts.Logout">
         <methods>
           <include name="beforeMethod"/>
           <include name="afterTest"/>
+          <include name="logout"/>
           <include name="beforeSuite"/>
           <include name="afterMethod"/>
         </methods>
@@ -69,7 +80,6 @@
           <include name="afterTest"/>
           <include name="beforeSuite"/>
           <include name="afterMethod"/>
-          <include name="createPublicChannel"/>
         </methods>
       </class> <!-- com.kisan.kisannet.testscripts.CreateChannel -->
       <class name="com.kisan.kisannet.testscripts.SendVideoToAdmin">
@@ -77,7 +87,7 @@
           <include name="beforeMethod"/>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
-          <include name="sendVideoFromUserProfile" invocation-numbers="0"/>
+          <include name="sendVideoToAdminFromUserProfile" invocation-numbers="0"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.kisan.kisannet.testscripts.SendVideoToAdmin -->
@@ -94,11 +104,13 @@
           <include name="beforeMethod"/>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
+          <include name="sendVideoFromUserProfile" invocation-numbers="0"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.kisan.kisannet.testscripts.SendLocationToAdmin -->
       <class name="com.kisan.kisannet.testscripts.SendTextMessageToAdmin">
         <methods>
+          <include name="sendTextMessageFromUserProfile" invocation-numbers="0"/>
           <include name="beforeMethod"/>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
@@ -114,15 +126,15 @@
           <include name="initializePages"/>
         </methods>
       </class> <!-- com.kisan.kisannet.testscripts.InviteToFollowChannel -->
-      <class name="com.kisan.kisannet.testscripts.EditChannelProfile">
+      <class name="com.kisan.kisannet.testscripts.FollowChannel">
         <methods>
-          <include name="editChannelProfile" invocation-numbers="0"/>
           <include name="beforeMethod"/>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
           <include name="afterMethod"/>
+          <include name="followChannelFormDiscover" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.kisan.kisannet.testscripts.EditChannelProfile -->
+      </class> <!-- com.kisan.kisannet.testscripts.FollowChannel -->
       <class name="com.kisan.kisannet.testscripts.SendImageToFollowers">
         <methods>
           <include name="beforeMethod"/>
@@ -139,19 +151,21 @@
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.kisan.kisannet.testscripts.SendTextMessageToFollowers -->
-      <class name="com.kisan.kisannet.testscripts.FollowChannel">
+      <class name="com.kisan.kisannet.testscripts.EditChannelProfile">
         <methods>
           <include name="beforeMethod"/>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.kisan.kisannet.testscripts.FollowChannel -->
+      </class> <!-- com.kisan.kisannet.testscripts.EditChannelProfile -->
       <class name="com.kisan.kisannet.testscripts.SendAudioToAdmin">
         <methods>
+          <include name="sendAudioToAdmin" invocation-numbers="0"/>
           <include name="beforeMethod"/>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
+          <include name="sendVideoFromUserProfile" invocation-numbers="0"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.kisan.kisannet.testscripts.SendAudioToAdmin -->

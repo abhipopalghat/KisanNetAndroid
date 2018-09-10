@@ -18,10 +18,10 @@ public class ChannelsYouFollow {
 	public WaitHelper waitHelper;
 	
 	public By backArrow = By.className("android.widget.ImageButton");
-	public By channelList = By.xpath("//android.widget.TextView[@resource-id='com.kisan.samvaad.test:id/textViewCommunityName']");
-	public By channelProfile = By.id("com.kisan.samvaad.test:id/textViewViewProfile");
+	public By channelList = By.xpath("//android.widget.TextView[@resource-id='com.kisan.samvaad.dev:id/textViewCommunityName']");
+	public By channelProfile = By.id("com.kisan.samvaad.dev:id/textViewViewProfile");
 	public By sendMessage= By.xpath("//android.widget.TextView[@text='Send a Message']");
-	public By unfollowChannel = By.id("com.kisan.samvaad.test:id/textViewLeave");
+	public By unfollowChannel = By.id("com.kisan.samvaad.dev:id/textViewLeave");
 	public By yesButtonOnUnFollowChannelPopup = By.id("android:id/button1");
 	public By noButtonOnUnFollowChannelPopup = By.id("android:id/button2");
 	

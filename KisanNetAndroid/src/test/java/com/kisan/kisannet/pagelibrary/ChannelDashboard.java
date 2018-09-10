@@ -18,9 +18,9 @@ public class ChannelDashboard {
 	
 	public By channelName = By.xpath("//android.widget.TextView[@instance='0']");
 	public By leftDrawerButton = By.xpath("//android.widget.ImageButton[@content-desc=\"Open\"]");
-	public By notificationIcon = By.id("com.kisan.samvaad.test:id/action_notifications");
-	public By newMessageButtonAdmin = By.id("com.kisan.samvaad.test:id/floatingActionButtonGoToChat");
-	public By newMessageButtonFollower = By.id("com.kisan.samvaad.test:id/floatingButtonChannelFollowerChat");
+	public By notificationIcon = By.id("com.kisan.samvaad.dev:id/action_notifications");
+	public By newMessageButtonAdmin = By.id("com.kisan.samvaad.dev:id/floatingActionButtonGoToChat");
+	public By newMessageButtonFollower = By.id("com.kisan.samvaad.dev:id/floatingButtonChannelFollowerChat");
 	
 	public ChannelDashboard(AndroidDriver<?> driver) {
 		this .driver = driver;

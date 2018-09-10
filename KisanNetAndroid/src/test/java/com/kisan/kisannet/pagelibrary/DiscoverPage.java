@@ -33,17 +33,17 @@ public class DiscoverPage {
 	
 	//TestBase test = new TestBase();
 	//String channel = test.prop.getProperty("FollowersChannel");
-	public By okGotIt = By.id("com.kisan.samvaad.test:id/buttonGotItDiscoverShowOverlay");
+	public By okGotIt = By.id("com.kisan.samvaad.dev:id/buttonGotItDiscoverShowOverlay");
 	public By backArrow = By.className("android.widget.ImageButton");
-	public By refreshButton = By.id("com.kisan.samvaad.test:id/action_refresh");
-	public By searchButton = By.id("com.kisan.samvaad.test:id/action_search");
+	public By refreshButton = By.id("com.kisan.samvaad.dev:id/action_refresh");
+	public By searchButton = By.id("com.kisan.samvaad.dev:id/action_search");
 	//public By searchTextBox = By.className("android.widget.EditText");
 	public By searchTextBox = By.xpath("//android.widget.TextView[@text='Discover']");
-	public By filter = By.id("com.kisan.samvaad.test:id/action_filter");
-	public By channelName = By.id("com.kisan.samvaad.test:id/textViewCommunityName");
+	public By filter = By.id("com.kisan.samvaad.dev:id/action_filter");
+	public By channelName = By.id("com.kisan.samvaad.dev:id/textViewCommunityName");
 	//public By tempChannelName = By.xpath("//android.widget.TextView[starts-with(@text,"+channel+")]");
-	public By followButton = By.id("com.kisan.samvaad.test:id/imageButtonJoin");
-	public By followingButton = By.id("com.kisan.samvaad.test:id/imageButtonLeave");
+	public By followButton = By.id("com.kisan.samvaad.dev:id/imageButtonJoin");
+	public By followingButton = By.id("com.kisan.samvaad.dev:id/imageButtonLeave");
 	
 	
 	public DiscoverPage(AndroidDriver<?> driver) {

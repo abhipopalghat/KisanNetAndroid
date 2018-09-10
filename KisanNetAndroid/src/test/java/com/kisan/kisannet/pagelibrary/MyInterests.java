@@ -18,9 +18,9 @@ public class MyInterests {
 	public WaitHelper waitHelper;
 	
 	public By backArrow = By.className("android.widget.ImageButton");
-	public By nextButton = By.id("com.kisan.samvaad.test:id/action_next");
+	public By nextButton = By.id("com.kisan.samvaad.dev:id/action_next");
 	public By categories = By.className("android.widget.CheckBox");
-	public By doneButton = By.id("com.kisan.samvaad.test:id/action_done");
+	public By doneButton = By.id("com.kisan.samvaad.dev:id/action_done");
 
 	public MyInterests(AndroidDriver<?> driver) {
 		this.driver= driver;

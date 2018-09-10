@@ -15,7 +15,7 @@ public class ChannelProfile {
 	public WaitHelper waitHelper;
 	private final Logger logger = LoggerHelper.getLogger(ChannelProfile.class);
 	
-	By channelProfileImage = By.id("com.kisan.samvaad.test:id/imageViewCommunityIcon");
+	By channelProfileImage = By.id("com.kisan.samvaad.dev:id/imageViewCommunityIcon");
 	By backArrow = By.xpath("//android.widget.ImageButton[@instance='0']");
 	By rightDrawerMenu = By.xpath("//android.widget.ImageView[@content-desc='More options']");
 	By editProfile = By.xpath("//android.widget.LinearLayout[@index='0']");
@@ -23,9 +23,9 @@ public class ChannelProfile {
 	By mute = By.xpath("//android.widget.TextView[@text='Mute']");
 	By deleteChannel = By.xpath("//android.widget.LinearLayout[@index='3']");
 	By leaveChannel = By.xpath("//android.widget.TextView[@text='Unfollow Channel']");
-	By showFollowers = By.id("com.kisan.samvaad.test:id/textViewMember");
-	By chatIcon = By.id("com.kisan.samvaad.test:id/floatingActionButton");
-	By followButton = By.id("com.kisan.samvaad.test:id/floatingActionButton");
+	By showFollowers = By.id("com.kisan.samvaad.dev:id/textViewMember");
+	By chatIcon = By.id("com.kisan.samvaad.dev:id/floatingActionButton");
+	By followButton = By.id("com.kisan.samvaad.dev:id/floatingActionButton");
 	By yesButtonOnUnFollowChannelPopup = By.id("android:id/button1");
 	By noButtonOnUnFollowChannelPopup = By.id("android:id/button2");
 	

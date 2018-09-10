@@ -17,10 +17,10 @@ public class EnterChannelInfo {
 	WaitHelper waitHelper;
 	
 	public By backArrow = By.className("android.widget.ImageButton");
-	public By nextBtn = By.id("com.kisan.samvaad.test:id/action_next");
-	public By aboutChannel = By.id("com.kisan.samvaad.test:id/editTextCommunityDesc");
-	public By publicChannelRadioButton = By.id("com.kisan.samvaad.test:id/radioButtonPublic");
-	public By privateChannelRadioButton = By.cssSelector("com.kisan.samvaad.test:id/radioButtonPrivate");
+	public By nextBtn = By.id("com.kisan.samvaad.dev:id/action_next");
+	public By aboutChannel = By.id("com.kisan.samvaad.dev:id/editTextCommunityDesc");
+	public By publicChannelRadioButton = By.id("com.kisan.samvaad.dev:id/radioButtonPublic");
+	public By privateChannelRadioButton = By.cssSelector("com.kisan.samvaad.dev:id/radioButtonPrivate");
 	
 	public EnterChannelInfo(AndroidDriver<?> driver) {
 		this.driver=driver;

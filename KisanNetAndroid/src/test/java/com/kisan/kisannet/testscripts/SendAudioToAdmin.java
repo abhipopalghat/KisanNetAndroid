@@ -142,7 +142,7 @@ public class SendAudioToAdmin extends TestBase{
 		channelChatWindow.clickOnAudioOption();
 		channelChatWindow.clickOnRecordAudio();
 		channelChatWindow.clickOnStartRecording();
-		Thread.sleep(7);
+		Thread.sleep(2);
 		channelChatWindow.clickOnStopRecording();
 		channelChatWindow.clickOnSendAudio();	
 		
@@ -178,7 +178,7 @@ public class SendAudioToAdmin extends TestBase{
 			channelChatWindow.clickOnAudioOption();
 			channelChatWindow.clickOnRecordAudio();
 			channelChatWindow.clickOnStartRecording();
-			Thread.sleep(7);
+			Thread.sleep(2);
 			channelChatWindow.clickOnStopRecording();
 			channelChatWindow.clickOnSendAudio();	
 		}

@@ -17,8 +17,8 @@ public class InviteManually {
 	WaitHelper waitHelper;
 	
 	public By backArrow = By.className("android.widget.ImageButton");
-	public By inviteButton = By.id("com.kisan.samvaad.test:id/action_invite");
-	public By enterNumberBox = By.id("com.kisan.samvaad.test:id/editTextEnterNo");
+	public By inviteButton = By.id("com.kisan.samvaad.dev:id/action_invite");
+	public By enterNumberBox = By.id("com.kisan.samvaad.dev:id/editTextEnterNo");
 	
 
 	public InviteManually(AndroidDriver<?> driver) {
